@@ -1,0 +1,513 @@
+
+<!DOCTYPE html><!--[if IE]><![endif]-->
+<html lang="de">
+<head>
+<script>
+if (typeof Object.assign != 'function') {
+Object.defineProperty(Object, "assign", {
+value: function assign(target, varArgs) {
+'use strict';
+if (target == null) {
+throw new TypeError('Cannot convert undefined or null to object');
+}
+var to = Object(target);
+for (var index = 1; index < arguments.length; index++) {
+var nextSource = arguments[index];
+if (nextSource != null) {
+for (var nextKey in nextSource) {
+if (Object.prototype.hasOwnProperty.call(nextSource, nextKey)) {
+to[nextKey] = nextSource[nextKey];
+}
+}
+}
+}
+return to;
+},
+writable: true,
+configurable: true
+});
+}
+</script>
+<script src="https://optanon.blob.core.windows.net/consent/88fa580d-4616-44c9-b214-2f8077b249f9.js" type="text/javascript" charset="UTF-8"></script>
+<script type="text/javascript">
+String.prototype.includes = function (str) {
+var returnValue = false;
+if (this.indexOf(str) !== -1) {
+returnValue = true;
+}
+return returnValue;
+}
+var banner_logo = false;
+function OptanonWrapper() {
+if(!(document.cookie.indexOf("euconsent") > -1)){
+//Optanon.Init();
+}
+if(!banner_logo){
+cookieBannerSiteLogo();
+banner_logo = true;
+}
+}
+window.addEventListener("load", function(event) {
+if(!Optanon.IsAlertBoxClosedAndValid()){
+var elemDiv = document.createElement('div');
+elemDiv.id = "cookieBgOverlay";
+elemDiv.style.cssText = 'position:fixed;width:100%;height:100%;top:0;left:0;z-index:199999999;background:rgba(255, 255, 255, .5);';
+document.body.appendChild(elemDiv);
+cookieBgOverlay();
+}
+});
+function cookieBgOverlay(){
+if(!Optanon.IsAlertBoxClosedAndValid()){
+setTimeout(cookieBgOverlay, 500);
+} else {
+var elemDiv = document.getElementById("cookieBgOverlay");
+elemDiv.parentNode.removeChild(elemDiv);
+jQuery('body>*:not(#optanon):not(.optanon-alert-box-wrapper)').css('filter','blur(0)');
+location.reload();
+}
+}
+function cookieBannerSiteLogo(){
+jQuery('#optanon-branding-top-logo' ).clone().css('width', '80px').css('height', '30px').css('background-size', 'contain').css('background-repeat', 'no-repeat').css('background-position', 'center center').css('position', 'relative').css('float', 'left').css('margin', '10px 5px auto auto').prependTo('.optanon-alert-box-body');
+}
+</script>
+<style>
+.optanon-alert-box-wrapper{
+z-index:200000001;
+top:auto!important;
+bottom:0;
+background-color:rgba(255,255,255,.97);
+box-shadow:#333 0 5px 20px
+}
+.optanon-alert-box-wrapper p>a{
+text-decoration:underline;
+color:#6cc04a
+}
+.optanon-alert-box-wrapper p>a:before{
+content:' ';
+display:block
+}
+#optanon-popup-bg{
+z-index:200000000!important
+}
+.optanon-alert-box-wrapper .optanon-alert-box-bottom-top{
+display:none
+}
+.optanon-alert-box-wrapper .optanon-alert-box-corner-close{
+display:none
+}
+.optanon-alert-box-wrapper .optanon-alert-box-button-middle{
+text-align:center
+}
+.optanon-alert-box-wrapper .optanon-button-allow .optanon-alert-box-button-middle{
+box-shadow:#ccc 0 2px 5px;
+border-radius:4px
+}
+.optanon-alert-box-wrapper .optanon-alert-box-button{
+float:none;
+margin-right:auto
+}
+.optanon-alert-box-wrapper .optanon-alert-box-bg p{
+font-size:8pt;
+line-height:10pt
+}
+.optanon-alert-box-wrapper .optanon-alert-box-bg p.optanon-alert-box-title{
+font-size:15pt;
+line-height:12pt;
+padding:15px 0
+}
+#optanon-popup-wrapper{
+z-index:200000002!important
+}
+.optanon-alert-box-wrapper .optanon-allow-all{
+font-size:12pt!important
+}
+.optanon-alert-box-wrapper .optanon-toggle-display{
+font-size:8pt!important
+}
+.optanon-alert-box-bg .optanon-alert-box-button-container{
+padding-right:0
+}
+@media only screen and (min-width:960px){
+.optanon-alert-box-wrapper .optanon-alert-box-bg p{
+line-height:10pt
+}
+.optanon-alert-box-wrapper .optanon-alert-box-bg p.optanon-alert-box-title{
+font-size:15pt;
+padding:20px 0
+}
+.optanon-alert-box-bg .optanon-alert-box-button-container{
+top:15px;
+margin:0
+}
+.optanon-alert-box-wrapper .optanon-button-allow .optanon-alert-box-button-middle{
+padding:15px 30px;
+margin:10px
+}
+}
+</style>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime();</script>
+<link rel="canonical" href="https://www.news.at/a/menschen-grenzg%C3%A4nger-10300197" />
+<title>Menschen - Der genussvolle Grenzgänger • NEWS.AT</title>
+<meta name="description" content="Der wortgewandte Provokateur überrascht im Interview mit Einblicken in seine Entwicklung zur Bühnennaturgewalt"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="revisit-after" content="3 hours"/>
+<meta name="robots" content="index, follow, noarchive"/>
+<link rel="manifest" href="https://mobilstaging.news.at/manifest.json">
+<meta name="theme-color" content="#f3ede9">
+<link rel="preconnect" href="//dispatcher.oewabox.at">
+<link rel="preconnect" href="//newsnetw.oewabox.at">
+<link rel="preconnect" href="//qs.oewabox.at">
+<link rel="preconnect" href="//google-analytics.com">
+<link rel="preconnect" href="//imagesrv.adition.com">
+<link rel="icon" type="image/x-icon" href="/img/favicon-3283e7ad.ico"/>
+<link rel="shortcut icon" type="image/x-icon" href="/img/favicon-3283e7ad.ico"/>
+<link rel="apple-touch-icon" href="/img/touch/touch-icon-iphone-fd85a873.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/img/touch/touch-icon-ipad-2e89e71c.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/img/touch/touch-icon-iphone-retina-27cfc347.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/img/touch/touch-icon-ipad-retina-b16dc795.png">
+<link href="/css/mobile-99f2dfb1.css" rel="stylesheet" type="text/css"/>
+<link href="/css/screen/color-95e23eeb.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+<![endif]-->
+<script type="text/javascript">
+if (typeof window.console === 'undefined') {window.console = {'log':function(){}};}
+var cs_callbacks = [];
+var cs_loadSocials = {};
+var cs_loadScriptsOnReady = [];
+var cs_loadScriptsOnLoad = [];
+var cs_scriptsLoaded = [];
+</script>
+<script type="text/javascript">
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-18264662-6', 'auto');
+ga('set', 'dimension1', '10300197');
+ga('set', 'dimension2', 'nicht eingeloggt');
+ga('set', 'dimension3', 'Menschen - Der genussvolle Grenzgänger • NEWS.AT');
+ga('set', 'dimension4', 'artikel');
+ga('set', 'dimension5', '956188');
+ga('set', 'dimension8', '2018-08-27T06:00:00+02:00');
+ga('set', 'dimension10', 'redcont');
+ga('set', 'dimension11', 'kulturundfreizeit');
+ga('set', 'dimension12', 'buehne');
+if(Optanon.IsAlertBoxClosedAndValid()){
+ga('set', 'dimension14', 'closed');
+} else {
+ga('set', 'dimension14', 'open');
+}
+ga('set', 'contentGroup1', 'Kultur');
+ga('set', 'contentGroup2', '956188');
+ga('set', 'anonymizeIp', true);
+ga('send', 'pageview');
+</script>
+<script type="text/javascript" async src='https://www.google-analytics.com/analytics.js'></script>
+<script type="text/javascript">
+var OAS_PLACEHOLDER =
+{
+Top_mobile : 3372552
+,
+Bottom_mobile : 3372554
+,
+Content_mobile : 3372553 };
+</script>
+<script type="text/javascript" src="https://script-at.iocnt.net/iam.js"></script>
+</head>
+<body id="mobile">
+<!-- OEWA VERSION="3.0" -->
+<div id="ivw" style="display:block;width:1px;height:1px;overflow:hidden;position:absolute;top:-9999px">
+<script type="text/javascript">
+if (window.iom) {
+var oewa_data = {
+"cn":"at",
+"st": "at_w_atnews",
+"cp":"redcont/kulturundfreizeit/buehne/moewa/",
+"sv":"mo",
+"ps":"lin"
+};
+iom.c(oewa_data, 2);
+}
+</script>
+</div>
+<!--/OEWA -->
+<div class="ressort-ffb600">
+<header class="main">
+<a href="/" id="logo">NEWS.at Mobile</a>
+<div>
+<a href="#">Menü <span></span></a>
+</div>
+</header>
+<nav>
+<ul>
+<li class="ressort-default"><a href="https://mobilstaging.news.at/">zur Startseite <span class="ico_more"></span></a></li>
+<li class="ressort ressort-60636c"><span class="title"><a href="/fakten">Fakten <span class="ico_more"></span></a></span></li>
+<li class="ressort ressort-60636c"><span class="title"><a href="/leben">Leben <span class="ico_more"></span></a></span></li>
+<li class="ressort ressort-60636c"><span class="title"><a href="/menschen">Menschen <span class="ico_more"></span></a></span></li>
+<li class="ressort-default"><a class="vollversion vollversion_completeurl" href="http://staging.news.at">zur Vollversion <span class="ico_more"></span></a></li>
+</ul>
+</nav>
+<aside class="ad_con ad_con_mobile ad_marker" id="Top_mobile">
+<div class="ad_con placeholder-top-mobile ad-placeholder ad-placeholder-mobile">
+<div class="placeholder-inner">
+Position: Top_mobile <br />
+Slot-ID: <script type="text/javascript">document.write(OAS_PLACEHOLDER['Top_mobile']);</script><br />
+</div>
+</div>
+</aside>
+<div id="content">
+<div id="article_content">
+<article data-id="10300197">
+<header>
+<h2 class="toprow"><strong itemprop="articleSection">Menschen</strong></h2>
+<div class="info">
+<span class="time">
+<time itemprop="datePublished" datetime="2018-08-27T06:00:00+02:00">Mo, 27. Aug. 2018</time>
+von <span itemprop="author" rel="author" class="author">Nina Kaltenböck</span>
+</span>
+</div>
+
+<!-------------H1 TITEL-------------->
+<h1 itemprop="name">Der genussvolle Grenzgänger</h1>
+<!-------------H1 TITEL-------------->
+
+<!---------- SOCIAL BUTTONS --------->
+<!---- Socialbutton
+<div class="socialbar">
+<a href="http://twitter.com/home?status=https%3A%2F%2Fmobilstaging.news.at%2Fa%2Fmenschen-grenzg%25C3%25A4nger-10300197" class="twitter" target="_blank">Twitter</a>
+<a href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fmobilstaging.news.at%2Fa%2Fmenschen-grenzg%25C3%25A4nger-10300197" class="facebook">Facebook</a>
+<a href="https://plusone.google.com/_/+1/confirm?url=https%3A%2F%2Fmobilstaging.news.at%2Fa%2Fmenschen-grenzg%25C3%25A4nger-10300197" class="google">Google plus</a>
+<a href="whatsapp://send?text=Menschen%20-%20Der%20genussvolle%20Grenzg%C3%A4nger%20%E2%80%A2%20NEWS.AT https%3A%2F%2Fmobilstaging.news.at%2Fa%2Fmenschen-grenzg%25C3%25A4nger-10300197" class="wa-artikel">Whatsapp</a>
+</div>
+-->
+
+</header>
+
+<!---------- Hauptbild --------->
+<img class="teaser_pic" itemprop="image" src="/prod/rescue/news_mobil/images/teaser3.jpg" alt="Menschen - Der genussvolle Grenzgänger" title="Bild: Michael Mazohl" width="618" height="355"/>
+<!---------- Hauptbild --------->
+<!---------- Copyright --------->
+<span class="copyright">
+© Bild: Michael Mazohl
+</span>
+<!---------- Copyright --------->
+
+<!---------article_vorspann----------->
+<p class="intro" itemprop="about">Der ewige Antagonist und wortgewandte Provokateur liebt Gesten des Irrsinns. Große Gesten konnte Schauspieler <a href="/a/philipp-hochmair-schiller-10272415">Philipp Hochmair</a> jetzt auch bei den Salzburger Festspielen als <a href="/a/salzburger-festspiele-jedermann-als-partytier-jubel-um-hochmair-10262905">Jedermann</a> zeigen. Im Gespräch überrascht der komplexe Charakter mit Einblicken in seine Entwicklung vom Außenseiter zur Bühnennaturgewalt, die Lust an Irritation und die Sympathie für den Fiesling Joachim Schnitzler in den <a href="/t/vorstadtweiber">„Vorstadtweibern“</a></p>
+<!---------article_vorspann----------->
+
+<!---------Article_text----------->
+<p>Zum Interview erscheint er per Fahrrad. Ohne die Miene zu verziehen, lässt er ein Sommergewitter auf sich niederprasseln und schlendert barfuß zum Termin an der Alten Donau. Doch so locker die Optik komponiert ist, so hochkonzentriert ist der Geist: Wenn Philipp Hochmair spricht, erinnert er an Robin Williams, den leidenschaftlichen Englischprofessor und unverbesserlichen Idealisten im Filmdrama „Der Club der toten Dichter“: unorthodox, inspiriert, für sein Fach brennend. In welchem Ausmaß der 44-jährige Wiener brennt, bewies er in diesen Tagen: Salzburgs Jedermann Tobias Moretti hatte, schon ernstlich erkrankt, noch eine Vorstellung auf dem Domplatz gespielt. Die nächste wollte er ins weniger heiße und exponierte Festspielhaus verlegen lassen, doch dazu kam es nicht mehr: Eine beidseitige Lungenentzündung zwang ihn ins Krankenhaus. „Es musste in eineinhalb Tagen eine Lösung gefunden werden“, erzählt der tollkühne Einspringer Hochmair. „Durch meine Rockkonzert-Version ,Jedermann Reloaded‘, die ich gerade auch am Burgtheater performe, war ich wahrscheinlich der einzige, der so schnell reagieren konnte.“ </p>
+<p><strong>Haben Sie ohne zu zögern Ja gesagt? </strong>
+<br />Ich habe einen Atemzug lang gezögert. Mit dem Ausatmen kam das „Ja … ich mach’s!“</p>
+<!-------AD Position:Content_mobile ------>
+<!-- Render Adpositions in Content (BottomLeft, Video3, Content_mobile, Content2_mobile) Content_mobile--
+<aside class="ad_con ad_marker" id="Content_mobile">
+<div class="ad_con ad_con_mobile placeholder-Content_mobile placeholder ad-placeholder ad-placeholder-mobile" >
+<div class="placeholder-inner">
+Position: Content_mobile <br />
+Slot-ID: <script type="text/javascript">document.write(OAS_PLACEHOLDER['Content_mobile']);</script><br />
+</div>
+</div>
+</aside>
+<!-------AD Position:Content_mobile ------>
+<p><strong>Vom rockigen „Jedermann Reloaded“ auf den Domplatz. Welche Herausforderungen gab es?</strong>
+<br />Die wichtigste Frage war: Wie können wir die beiden Textfassungen vereinen? Die Domplatzversion mit der von „Jedermann Reloaded“.</p>
+<p><strong>Wie ist Ihre persönliche Premiere am 9. August gelaufen? </strong>
+<br />Für mich war es eine Sternstunde.</p>
+<p><strong>Sind Sie zufrieden? </strong>
+<br />Ich wünsche Tobias Moretti aus ganzem Herzen, dass er so bald wie möglich gesund wird und seinen Jedermann wieder spielen kann.</p>
+<!-------AD Position:Content_mobile ------>
+<!-- Render Adpositions in Content (BottomLeft, Video3, Content_mobile, Content2_mobile) Content2_mobile--
+<!-------AD Position:Content_mobile ------>
+<p><strong>In welchen Rollen steckten Sie, als Sie der Jedermann-Ruf ereilte?</strong>
+<br />Ich hab davor in Oberösterreich Schiller-Balladen mit einem DJ performt und war in Krems mit Dreharbeiten beschäftigt. Dabei geht’s um einen sehr erfolgreichen Chirurgen, der die Kinder seiner Schwester übernehmen muss. Eine Familiengeschichte. Ich bin der Antagonist.</p>
+<p><strong>Wieder einmal der Bösewicht.</strong>
+<br />Das ist kein Genre für einen Bösewicht, aber die bösere Kraft in der Geschichte.</p>
+<p><strong>Was muss eine Rolle haben, damit sie Sie packt?</strong>
+<br />Ich will alles spielen. Das ist so ein bisschen die Krankheit von Schauspielern. Man denkt, man kann alles, aber man ist doch definiert. Denn man bringt etwas mit und ist wer. Man will das Sein aber dehnen und damit spielen und zum Glänzen bringen. Ich spiele zeitgleich Werther, Jedermann, Mephisto, und es sind ganz unterschiedliche Charaktere. Oder ich spiel den Joachim Schnitzler in „Vorstadtweiber“, den blinden Kommissar in „Blind er­mittelt“ und den kubanischen Hehler in „Candelaria“. In diese Komplexität will ich reinleuchten. </p>
+<p><strong>Was bringen Sie aus Ihrer eigenen Komplexität mit?</strong>
+<br />Eine extreme Spielfreude. Und eine extreme Bereitschaft, mich fallen zu lassen. </p>
+<p><strong>Sind Sie dem Drama näher als der Harmonie?</strong>
+<br />Absolut. Harmonie ist kein Zustand, den es sich abzubilden lohnt. Harmonie ist uninteressant. Das ist vielleicht für das Leben wichtig. Oder für den Schlaf. Aber nicht für das Entertainment.</p>
+<p><strong>Turnt Sie Harmonie im Privatleben ab?</strong>
+<br />Man muss im Leben Harmonie haben, um Drama in der Kunst darzustellen. Harmonie ist wichtig, um zu landen. Ich muss mich ja auch irgendwann beruhigen.</p>
+<p><strong>Wie gelingt das?</strong>
+<br />Mit Schlaf und Yoga. Und bewusstem Leben. Ich verkaufe mit dem Aufgedrehtsein eine Projektionsfläche.</p>
+<p><strong>Was bringt Sie in Balance? Würden Sie wieder als Senner auf einer Alm arbeiten?</strong>
+<br />Sicher. Wenn ich Zeit hätte, würde ich es sofort machen. </p>
+
+<p><strong>Was hat Sie Ihr Sennersein in Tamsweg gelehrt?</strong>
+<br />Der Dialog mit der Natur ist ein unglaublich wichtiger Faktor. Sich zu besinnen, dass man letztendlich nur Staub ist. Wenn du nur mit Kühen auf dem Berg bist – ohne andere Menschen –, lernst du ganz andere Schwingungen kennen.</p>
+<p><strong>Welche? </strong>
+<br />Zu beobachten, wie Kühe kommunizieren. Wie sie auf das Wetter reagieren. Das ist wahnsinnig spannend. Sich nur mit einer Lederhose drei Wochen selbst zu versorgen, ist eigentlich das Geilste, was es gibt. </p>
+<p><strong>Sind Kühe sensibel? </strong>
+<br />Extrem. Auf Musik. Auf Gruppendynamik. Das ist eine ganz eigene Welt. </p>
+<p><strong>Erkennen Sie Parallelen vom Sennerdasein in Salzburg zur Yogi-Zeit in Indien? </strong>
+<br />Ja, dass man die Antennen ausfährt und versucht, sich mit der Natur zu connecten.</p>
+<p><strong>In Indien waren Sie im Februar. Konnten Sie sich von dem Zustand dort etwas in den Alltag retten?</strong>
+<br />Natürlich lockt der Teufel, wenn man rauchen oder saufen will oder eine Dynamik da ist im Leben, die nicht so natürlich ist. Das Wochenende in Oberösterreich, heute in Wien, am Mittwoch in Turin, dann bin ich in Düsseldorf. Das ist ja kein natürlicher Weg. Mit den Kühen oder mit Ayurveda hast du natürliche Wege. Das ist ein beruhigender, extrem harmonischer Zustand. Während Schauspielen ein aggressiver Zustand ist. </p>
+<p><strong>Bereuen Sie das manchmal, so sehr in die Fiktion zu tauchen?</strong>
+<br />Nein, meine Zellen und meine DNA sind danach ausgerichtet, Kunst zu machen. Ich bin ein Gestalter und liebe es, Zustände zu beleben, Ordnung aufzuwirbeln und eine neue Realität zu schaffen. Das ist für mich kostbar und sinnvoll.</p>
+<p><strong>Den liebeskranken, jungen Werther haben Sie 1.200-mal gespielt. Wenn Sie sich beruflich so auspowern, wie füllen Sie die Leere danach?</strong>
+<br />Das ist die größte Falle. Ich neige dazu, einen trinken zu gehen und eine halbe Wildsau zu essen. Aber das ist natürlich nicht gesund auf Dauer. Irgendwann wird man begreifen, dass es anders besser ist. Dann hat man diese Erfahrung. Und dann mach ich das auch so. Aktuell zieh ich mich nach Mitternacht zurück. </p>
+<p><strong>Weil Sie aus Schaden klug geworden sind?</strong>
+<br />Sozusagen.</p>
+<p><strong>Sie werden im Oktober 45. Welche Zäsur ziehen Sie?</strong>
+<br />Ich will noch mehr in die Welt hinaus.</p>
+<p><strong>Privat oder beruflich? </strong>
+<br />Für mich gibt es keinen Unterschied zwischen privat und beruflich. Schauspieler sein heißt intensiv Mensch sein. Sich mit der Welt ins Verhältnis zu setzen. Das will ich größer machen. Und mehr davon ­haben.</p>
+<p><strong>Das tun Sie mehrheitlich auf der Achse Wien-Hamburg-Berlin. Verändert Sie jede Stadt in Ihrem Befinden?</strong>
+<br />Gut gesagt. Das ist so erfrischend. Wien ist eine schäumende, sehr belebende Ursuppe. Da wird auch die Arbeit, die ich leiste, gut wahrgenommen – durch „Vorstadtweiber“, „Blind ermittelt“ und Theateraufführungen. Hamburg ist für mich durch das Nordisch-Kühle sehr beruhigend, und in Berlin passiert einfach am meisten. Dieses Hin- und Herspringen zwischen den Städten ist für mich ein idealer Zustand. Das gefällt mir wahnsinnig und ist für mich ein Glück, dass ich das so haben darf. </p>
+<p><strong>Bleiben wir bei Wien und Ihrer „Vorstadtweiber“-Rolle des Joachim Schnitzler, eines fiesen Politstrategen und Mehrfachmörders. Ist es Ihnen schon einmal passiert, dass Sie jemandem aufgrund dieser Rolle unsym­pathisch waren?</strong>
+<br />Ich glaube, die Leute lieben Schnitzler, weil er so unsympathisch ist. </p>
+<p><strong>Das kann einem auch nur in Wien passieren.</strong>
+<br />Beim Münchner Filmfest 2017 hat es ebenfalls ein wahnsinnig positives Echo darauf gegeben. </p>
+<p><strong>Welche persönlichen Züge haben Sie Schnitzler verliehen? Das paranoide Lachen? </strong>
+<br />Wie? Hab ich privat ein paranoides Lachen? Ich bin doch gar nicht paranoid.</p>
+<p><strong>Vielleicht steht die Diagnose noch aus. Wie sieht der Hochmair-Stempel aus, den Sie der Rolle aufgedrückt haben?</strong>
+<br />Vielleicht ist es eine gewisse Manie. Oder Spielfreude. </p>
+<p><strong>Hat es einmal eine Schnitzler-Szene gegeben, die Sie als zu dick aufgetragen empfunden haben?</strong>
+<br />Nein. Nein. Nein.</p>
+<p><strong>Übertreiben Sie im Schauspiel manchmal gerne?</strong>
+<br />Nein. Das steht so im Buch, und dann mach ich’s auch so. Ich nehm die Partitur ernst. </p>
+<p><strong>Im Privaten haben Sie dafür stets Freude daran, alles durcheinander­zubringen?</strong>
+<br />Na sicher. Klar, das ist das Mephistophelische. Die Kraft, die stets das Böse will und stets das Gute schafft. Mephisto ist ein Zerstörer, aber gleichzeitig ein Erneuerer. Können Sie folgen?</p>
+<p><strong>Ja. Das heißt, Sie haben Sachen ruiniert. Beziehungen …</strong>
+<br />Ich hab überhaupt nichts ruiniert. Ich sprenge Ketten, also Zusammenhänge, und würfle Verhältnisse neu. So wie heute im Bootsverleih. Da machen wir die Musik ein bissel lauter und so. Ich irritiere manchmal gerne die Ordnung, aber ich bin in keinster Weise bösartig. Das ist eine reine Verspieltheit gegenüber den Zwängen, die das Leben so mit sich bringt. </p>
+<p><strong>Und um Grenzen auszuloten? Was war Ihr erster großer Regelbruch?</strong>
+<br />Als ich in der Schule auf den Tisch gesprungen bin, um ein Goethe-Gedicht aufzusagen, habe ich das erste Mal gemerkt, dass ein Schultisch auch eine Bühne sein kann. Im Schwimmenden Salon in Bad Vöslau hab ich einmal Goethes „Leiden des jungen Werthers“ gespielt, und weil’s geregnet hat, hab ich das ganze Stück auf einem Wirtshaustisch gemacht. So etwas erfrischt mich total – auf Umstände zu reagieren und damit zu arbeiten, was da ist. Dadurch entstehen Zufälle, die sich alle ineinanderfügen. Ich liebe solche Experimente. Und ich liebe es, wenn die Alltagsrealität zur Kunst wird.</p>
+
+<p><strong>Kann Ihnen ein Drama zu groß sein?</strong>
+<br />Ja, sicher! Flüchtlingskrise. Krankheit. Naturkatastrophen. Das Plastik im Meer. Wobei Mephisto das ja auch liebt, weil es Veränderung ist und ein Ruck durch die Welt geht, der zu Entwicklung führt. Das ist alles eine Frage der Perspektive.</p>
+<p><strong>Sie zeigen sich in Ihrem Job sehr vielseitig. Welche Seiten zeigen Sie nicht?</strong>
+<br />Ich hab immer das Gefühl, mich gibt’s gar nicht, und ich stell mich nur zur Verfügung für das, was passiert. Ich hab nichts zu verbergen in dem Sinn. Ich glaub auch nicht, dass es kleine oder langweilige Rollen gibt, denn man kann jede mit Energie füllen. Aber natürlich sind mir jene Rollen lieber, die von vornherein schon etwas neben der Spur sind. Das macht mir Freude.</p>
+<p><strong>Wieso?</strong>
+<br />Ich wurde in der Schule relativ viel gequält mit Regeln, die man mir nicht nachvollziehbar erklärt hat. Ich war in einer katholischen Volksschule und dann in einem normalen Gymnasium in Ottakring. </p>
+<p><strong>Konnten Sie sich erfolgreich gegen diese Regeln wehren, oder ist das unterdrückt worden?</strong>
+<br />Das ist unterdrückt worden. Und auf der anderen Seite gibt es die Kunst, die zulässt, dass man andere Wege geht. Sich an Regeln zu halten, gebiert nämlich Neurosen und Ängste. Und in der Kunst kann man mit diesen Ängsten spielen und sie wie Gitarrensaiten zum Klingen bringen. Überall schillert’s ja. Kunst ist dafür da, das, was unverarbeitet oder unausgesprochen ist, nach außen zu stülpen. </p>
+<p><strong>Sie waren bis 16 Ministrant, tragen als Fashion-Statement Kreuze. Was ist Ihnen heilig?</strong>
+<br />Respekt ist mir heilig. Vor anderen und vor sich selbst. Wie man den Menschen in seiner Komplexität, seinen Wünschen, seinen Freuden, seinen Ängsten so wahrnehmen und dem so einen Raum lassen kann, dass jeder für sich klingen kann. Mein Benehmen ist da vielleicht immer wieder ein ­Anstoß dafür, zu sagen: Steh zu dem, wie du bist. </p>
+<p><strong>Respekt ist eine schwierige Sache, nachdem jeder etwas anderes darunter versteht.</strong>
+<br />Liebe deinen Nächsten wie dich selbst. Steht in der Bibel und ist ein super Satz.</p>
+<p><strong>Und wie sehr lieben Sie sich?</strong>
+<br />Ich kenn mich gar nicht. Ich lern mich erst kennen. Also wirklich! Ich lern mich über Schnitzler kennen, über den blinden Kommissar etc. Ich liebe es, die Innenwelten auszuleuchten und da hineinzugehen in diese Kanalisation. Das interessiert mich brennend. Die individuelle Kanalisation der Seele ist mir heilig. Und dabei nicht zu werten.</p>
+<p><strong>Und wenn Sie dabei doch mal jemanden verletzen oder zu weit gehen?</strong>
+<br />Ich kann mich entschuldigen. Ich würde versuchen, einen Schlüssel zu finden, das wiedergutzumachen. Grenzverletzungen passieren die ganze Zeit. </p>
+<p><strong>Vor allem einem Grenzgänger. Mögen Sie Selbstexperimente?</strong>
+<br />Ja, klar. Mein ganzes Leben ist ein Selbstexperiment. Irgendwo reinkommen und ein bissel rumwirbeln. Auch bei „Jedermann Reloaded“ oder den Schiller-Texten habe ich das erlebt, dass die Leute anfangs komisch verstört waren und sich denken, dass sind Spinner, die einen Blödsinn machen, dann aber total erreicht und glücklich sind. Die alte, geile Literatur zum Schwingen zu bringen, das ist mein Ziel. </p>
+<p><strong>Woher haben Sie das Vertrauen, dass Sie das alles können, was Sie tun?</strong>
+<br />(Lacht.) Ich bin ein Zweckoptimist, und ich liebe, was ich tue. Da gibt’s dann kein Scheitern, denn selbst das Scheitern ist kreativ. </p>
+<p><strong>Sie waren in Ihrer Schauspielklasse der einzige Österreicher und der Jüngste noch dazu. Wie sind Sie mit dieser Außenseiterrolle umgegangen?</strong>
+<br />Schlecht. Man fühlt sich halt unwohl und falsch in der Welt. Man denkt, alle anderen wissen, wie’s geht, und man selbst weiß gar nichts. Irgendwann wendet sich das alles. Es gibt dann einen Schalter, mit dem sich alles umdreht. </p>
+<p><strong>Vom Frühchen namens Pipi zur wilden Naturgewalt auf der Bühne. Was ist das für ein Schalter?</strong>
+<br />Dazwischen liegt viel Verbiegung. Der Wunsch, sich zurückzubiegen zu dem, was man ist, schafft eine eigene Schubkraft. Es ist die Sehnsucht nach einer Ursprünglichkeit. Das geniale Kind sein. </p>
+<p><strong>Wollen Sie Vater sein irgendwann?</strong>
+<br />Sicher, aber das ist halt ein hoher Organisationsaufwand. (Lacht.) Und den kann ich im Moment in keinster Weise leisten. Wenn man in vier Städten herumhüpft, wie soll man denn da ein Kind großziehen?</p>
+<p><strong>Können Sie davon etwas ableiten, dass Sie selbst als Frühchen noch nicht ganz „fertig gebacken“ waren, als Sie zur Welt kamen?</strong>
+Zum Aspekt von Nähe und Distanz erkenne ich, dass ich im Spielen ganz nah und im Leben irgendwie fern bin. Ist so.<br /><em>Sagt er und springt auf, um den Sonnenuntergang an der alten Donau fotografisch festzuhalten.</em>
+</p>
+<p><em>Dieses Interview erschien ursprünglich in der Printausgabe 33 2018</em>
+</p>
+<!---------Article_text----------->
+
+<aside id="abowerbung">
+<div class="abowerbung_textcontainer">
+<div class="abowerbung_text">
+Jetzt <strong>4 Ausgaben News </strong>
+kostenlos &amp; unverbindlich lesen!* </div>
+<div class="abowerbung_sub">*Abo endet automatisch.</div>
+</div>
+<div class="abowerbung_button">
+<a href="https://aktion.guj-direct.de/vgn-2gratishefte-4?utm_source=news.at&utm_medium=display&utm_content=abo&utm_campaign=Jetzt%204%20Ausgaben%20News%20kostenlos%20%26%20unverbindlich%20lesen!*" target="_blank" class="link-external abowerbung_cta">Hier testen ▶</a>
+</div>
+</aside>
+<div class="OUTBRAIN" data-src="DROP_PERMALINK_HERE" data-widget-id="MB_2" data-ob-template="newsnetworld"></div> <script type="text/javascript" async="async" src="//widgets.outbrain.com/outbrain.js"></script>
+</article>
+
+<!---------- SOCIAL BUTTONS --------->
+<!---- Socialbutton
+<div class="socialbar">
+<a href="http://twitter.com/home?status=https%3A%2F%2Fmobilstaging.news.at%2Fa%2Fmenschen-grenzg%25C3%25A4nger-10300197" class="twitter" target="_blank">Twitter</a>
+<a href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fmobilstaging.news.at%2Fa%2Fmenschen-grenzg%25C3%25A4nger-10300197" class="facebook">Facebook</a>
+<a href="https://plusone.google.com/_/+1/confirm?url=https%3A%2F%2Fmobilstaging.news.at%2Fa%2Fmenschen-grenzg%25C3%25A4nger-10300197" class="google">Google plus</a>
+<a href="whatsapp://send?text=Menschen%20-%20Der%20genussvolle%20Grenzg%C3%A4nger%20%E2%80%A2%20NEWS.AT https%3A%2F%2Fmobilstaging.news.at%2Fa%2Fmenschen-grenzg%25C3%25A4nger-10300197" class="wa-artikel">Whatsapp</a>
+</div>
+-->
+
+
+<section class="GATracking_Maincontentteaser section_wrapper ressort ressort-ffb600 " id="topnews">
+<div class="GATracking_Stageteaser ">
+<div class="ym-g50 ym-gl">
+<div class="ym-gbox-left">
+<a href="/a/news-ambros-attacke-schuss-blaue-10303772" title="Die Ambros-Attacke:<br />Ein Schuss ins Blaue"><article itemscope itemtype="http://schema.org/Article" class="ressort-ffb600 " >
+<img src="/_storage/asset/10303826/storage/newsat:teaser-1_74-1-l/file/136706437/nova-rock-konzert-wolfgang-ambros.jpg" alt="Protest - Die Ambros-Attacke:
+Ein Schuss ins Blaue" title="Bild: HERBERT P. OCZERET / APA / picturedesk.com"/>
+<div class="toprow">
+<strong>Protest</strong>
+</div>
+<h3>Die Ambros-Attacke:<br />Ein Schuss ins Blaue</h3>
+<p>
+Nach der FPÖ-Attacke: So machten Künstlerkollegen und -kolleginnen in News für die Austropop-Legende mobil</p>
+</article></a>
+</div>
+</div>
+<div class="ym-g50 ym-gr">
+<div class="ym-gbox-right">
+<a href="/a/menschen-lizz-goergl-wordrap-10300936" class='rel' title="Lizz Görgl mit ihrem <br />Chris im Wordrap"><article itemscope itemtype="http://schema.org/Article" class="ressort-ffb600 " >
+<img src="/_storage/asset/10300961/storage/newsat:teaser-1_74-1-l/file/136648542/67434713.jpg" alt="Menschen - Lizz Görgl mit ihrem
+Chris im Wordrap" title="Bild: News.at"/>
+<span class="ov_video"></span>
+<div class="toprow">
+<strong>Menschen</strong>
+</div>
+<h3>Lizz Görgl mit ihrem <br />Chris im Wordrap</h3>
+<p>
+Vom gestressten Skistar zur Sängerin: Karaoke, das erste Konzert und der Duett-Partner ihrer Träume</p>
+</article></a>
+</div>
+</div>
+</div>
+</section>
+<div class="links clearfix">
+<a href="https://mobilstaging.news.at/" class="home left">News.at Home&nbsp;<span class="ico_more"></span></a>
+</div>
+</div>
+</div>
+<aside class="ad_con ad_con_mobile ad_marker" id="Bottom_mobile">
+<div class="ad_con placeholder-bottom-mobile ad-placeholder ad-placeholder-mobile">
+<div class="placeholder-inner">
+Position: Bottom_mobile <br />
+Slot-ID: <script type="text/javascript">document.write(OAS_PLACEHOLDER['Bottom_mobile']);</script><br />
+</div>
+</div>
+</aside>
+<footer>
+<div class="clearfix">
+<a href="http://aboshop.vgn.at/news" target="_self">Abo</a>
+<a href="/agb" target="_self">AGB/ANB</a>
+<a href="/Kontakt-Datenschutz" target="_self">Kontakt Datenschutz</a>
+<a href="https://www.vgn.at/pdf/Datenschutzpolicy.pdf" target="_self">Datenschutzpolicy</a>
+<a href="/impressum" target="_self">Impressum</a>
+<a href="#" id="credits">Fotocredits</a>
+<a href="http://staging.news.at" class="last vollversion vollversion_completeurl">Vollversion</a>
+</div>
+<p>1995-2018 © News Networld Internetservice GmbH</p>
+</footer>
+</div>
+<script type="text/javascript" src="/js/bottom_mobile-b8ccf3af.js" ></script>
+<!-- Facebook Pixel Code -->
+<script type="text/plain" class="optanon-category-4">
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1689145364637008');
+fbq('track', "PageView");
+</script>
+<noscript>
+</noscript>
+<!-- End Facebook Pixel Code -->
+</body>
+</html>

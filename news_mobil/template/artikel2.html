@@ -1,0 +1,422 @@
+
+<!DOCTYPE html><!--[if IE]><![endif]-->
+<html lang="de">
+<head>
+<script>
+if (typeof Object.assign != 'function') {
+Object.defineProperty(Object, "assign", {
+value: function assign(target, varArgs) {
+'use strict';
+if (target == null) {
+throw new TypeError('Cannot convert undefined or null to object');
+}
+var to = Object(target);
+for (var index = 1; index < arguments.length; index++) {
+var nextSource = arguments[index];
+if (nextSource != null) {
+for (var nextKey in nextSource) {
+if (Object.prototype.hasOwnProperty.call(nextSource, nextKey)) {
+to[nextKey] = nextSource[nextKey];
+}
+}
+}
+}
+return to;
+},
+writable: true,
+configurable: true
+});
+}
+</script>
+<script src="https://optanon.blob.core.windows.net/consent/88fa580d-4616-44c9-b214-2f8077b249f9.js" type="text/javascript" charset="UTF-8"></script>
+<script type="text/javascript">
+String.prototype.includes = function (str) {
+var returnValue = false;
+if (this.indexOf(str) !== -1) {
+returnValue = true;
+}
+return returnValue;
+}
+var banner_logo = false;
+function OptanonWrapper() {
+if(!(document.cookie.indexOf("euconsent") > -1)){
+//Optanon.Init();
+}
+if(!banner_logo){
+cookieBannerSiteLogo();
+banner_logo = true;
+}
+}
+window.addEventListener("load", function(event) {
+if(!Optanon.IsAlertBoxClosedAndValid()){
+var elemDiv = document.createElement('div');
+elemDiv.id = "cookieBgOverlay";
+elemDiv.style.cssText = 'position:fixed;width:100%;height:100%;top:0;left:0;z-index:199999999;background:rgba(255, 255, 255, .5);';
+document.body.appendChild(elemDiv);
+cookieBgOverlay();
+}
+});
+function cookieBgOverlay(){
+if(!Optanon.IsAlertBoxClosedAndValid()){
+setTimeout(cookieBgOverlay, 500);
+} else {
+var elemDiv = document.getElementById("cookieBgOverlay");
+elemDiv.parentNode.removeChild(elemDiv);
+jQuery('body>*:not(#optanon):not(.optanon-alert-box-wrapper)').css('filter','blur(0)');
+location.reload();
+}
+}
+function cookieBannerSiteLogo(){
+jQuery('#optanon-branding-top-logo' ).clone().css('width', '80px').css('height', '30px').css('background-size', 'contain').css('background-repeat', 'no-repeat').css('background-position', 'center center').css('position', 'relative').css('float', 'left').css('margin', '10px 5px auto auto').prependTo('.optanon-alert-box-body');
+}
+</script>
+<style>
+.optanon-alert-box-wrapper{
+z-index:200000001;
+top:auto!important;
+bottom:0;
+background-color:rgba(255,255,255,.97);
+box-shadow:#333 0 5px 20px
+}
+.optanon-alert-box-wrapper p>a{
+text-decoration:underline;
+color:#6cc04a
+}
+.optanon-alert-box-wrapper p>a:before{
+content:' ';
+display:block
+}
+#optanon-popup-bg{
+z-index:200000000!important
+}
+.optanon-alert-box-wrapper .optanon-alert-box-bottom-top{
+display:none
+}
+.optanon-alert-box-wrapper .optanon-alert-box-corner-close{
+display:none
+}
+.optanon-alert-box-wrapper .optanon-alert-box-button-middle{
+text-align:center
+}
+.optanon-alert-box-wrapper .optanon-button-allow .optanon-alert-box-button-middle{
+box-shadow:#ccc 0 2px 5px;
+border-radius:4px
+}
+.optanon-alert-box-wrapper .optanon-alert-box-button{
+float:none;
+margin-right:auto
+}
+.optanon-alert-box-wrapper .optanon-alert-box-bg p{
+font-size:8pt;
+line-height:10pt
+}
+.optanon-alert-box-wrapper .optanon-alert-box-bg p.optanon-alert-box-title{
+font-size:15pt;
+line-height:12pt;
+padding:15px 0
+}
+#optanon-popup-wrapper{
+z-index:200000002!important
+}
+.optanon-alert-box-wrapper .optanon-allow-all{
+font-size:12pt!important
+}
+.optanon-alert-box-wrapper .optanon-toggle-display{
+font-size:8pt!important
+}
+.optanon-alert-box-bg .optanon-alert-box-button-container{
+padding-right:0
+}
+@media only screen and (min-width:960px){
+.optanon-alert-box-wrapper .optanon-alert-box-bg p{
+line-height:10pt
+}
+.optanon-alert-box-wrapper .optanon-alert-box-bg p.optanon-alert-box-title{
+font-size:15pt;
+padding:20px 0
+}
+.optanon-alert-box-bg .optanon-alert-box-button-container{
+top:15px;
+margin:0
+}
+.optanon-alert-box-wrapper .optanon-button-allow .optanon-alert-box-button-middle{
+padding:15px 30px;
+margin:10px
+}
+}
+</style>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime();</script>
+<link rel="canonical" href="https://www.news.at/a/nachwuchs-meghan-harry-10307207" />
+<title>Nachwuchs für Meghan &amp; Harry • NEWS.AT</title>
+<meta name="description" content="Bekommen Harry und Meghan bald ein Baby? Die Spekulationen, ob die Herzogin von Sussex bereits schwanger ist, nehmen kein Ende. Und ..."/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="revisit-after" content="3 hours"/>
+<meta name="robots" content="index, follow, noarchive"/>
+<link rel="manifest" href="https://mobilstaging.news.at/manifest.json">
+<meta name="theme-color" content="#f3ede9">
+<link rel="preconnect" href="//dispatcher.oewabox.at">
+<link rel="preconnect" href="//newsnetw.oewabox.at">
+<link rel="preconnect" href="//qs.oewabox.at">
+<link rel="preconnect" href="//google-analytics.com">
+<link rel="preconnect" href="//imagesrv.adition.com">
+<link rel="icon" type="image/x-icon" href="/img/favicon-3283e7ad.ico"/>
+<link rel="shortcut icon" type="image/x-icon" href="/img/favicon-3283e7ad.ico"/>
+<link rel="apple-touch-icon" href="/img/touch/touch-icon-iphone-fd85a873.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/img/touch/touch-icon-ipad-2e89e71c.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/img/touch/touch-icon-iphone-retina-27cfc347.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/img/touch/touch-icon-ipad-retina-b16dc795.png">
+<link href="/css/mobile-99f2dfb1.css" rel="stylesheet" type="text/css"/>
+<link href="/css/screen/color-95e23eeb.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+<![endif]-->
+<script type="text/javascript">
+if (typeof window.console === 'undefined') {window.console = {'log':function(){}};}
+var cs_callbacks = [];
+var cs_loadSocials = {};
+var cs_loadScriptsOnReady = [];
+var cs_loadScriptsOnLoad = [];
+var cs_scriptsLoaded = [];
+</script>
+<script type="text/javascript">
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-18264662-6', 'auto');
+ga('set', 'dimension1', '10307207');
+ga('set', 'dimension2', 'nicht eingeloggt');
+ga('set', 'dimension3', 'Nachwuchs für Meghan & Harry • NEWS.AT');
+ga('set', 'dimension4', 'artikel');
+ga('set', 'dimension5', '956135');
+ga('set', 'dimension8', '2018-08-27T11:53:37+02:00');
+ga('set', 'dimension10', 'redcont');
+ga('set', 'dimension11', 'nachrichten');
+ga('set', 'dimension12', 'gesellschaftundleute');
+ga('set', 'dimension13', '3789802');
+if(Optanon.IsAlertBoxClosedAndValid()){
+ga('set', 'dimension14', 'closed');
+} else {
+ga('set', 'dimension14', 'open');
+}
+ga('set', 'contentGroup1', 'Royals');
+ga('set', 'contentGroup2', '956135');
+ga('set', 'anonymizeIp', true);
+ga('send', 'pageview');
+</script>
+<script type="text/javascript" async src='https://www.google-analytics.com/analytics.js'></script>
+<script type="text/javascript">
+var OAS_PLACEHOLDER =
+{
+Top_mobile : 3372577
+,
+Bottom_mobile : 3372579
+,
+Content_mobile : 3372578 };
+</script>
+<script type="text/javascript" src="https://script-at.iocnt.net/iam.js"></script>
+</head>
+<body id="mobile">
+<!-- OEWA VERSION="3.0" -->
+<div id="ivw" style="display:block;width:1px;height:1px;overflow:hidden;position:absolute;top:-9999px">
+<script type="text/javascript">
+if (window.iom) {
+var oewa_data = {
+"cn":"at",
+"st": "at_w_atnews",
+"cp":"redcont/nachrichten/gesellschaftundleute/moewa/",
+"sv":"mo",
+"ps":"lin"
+};
+iom.c(oewa_data, 2);
+}
+</script>
+</div>
+<!--/OEWA -->
+<div class="ressort-">
+<header class="main">
+<a href="/" id="logo">NEWS.at Mobile</a>
+<div>
+<a href="#">Menü <span></span></a>
+</div>
+</header>
+<nav>
+<ul>
+<li class="ressort-default"><a href="https://mobilstaging.news.at/">zur Startseite <span class="ico_more"></span></a></li>
+<li class="ressort ressort-60636c"><span class="title"><a href="/fakten">Fakten <span class="ico_more"></span></a></span></li>
+<li class="ressort ressort-60636c"><span class="title"><a href="/leben">Leben <span class="ico_more"></span></a></span></li>
+<li class="ressort ressort-60636c"><span class="title"><a href="/menschen">Menschen <span class="ico_more"></span></a></span></li>
+<li class="ressort-default"><a class="vollversion vollversion_completeurl" href="http://staging.news.at">zur Vollversion <span class="ico_more"></span></a></li>
+</ul>
+</nav>
+<header class="title">
+<h1><a href="/menschen">Menschen</a></h1>
+</header>
+<aside class="ad_con ad_con_mobile ad_marker" id="Top_mobile">
+<div class="ad_con placeholder-top-mobile ad-placeholder ad-placeholder-mobile">
+<div class="placeholder-inner">
+Position: Top_mobile <br />
+Slot-ID: <script type="text/javascript">document.write(OAS_PLACEHOLDER['Top_mobile']);</script><br />
+</div>
+</div>
+</aside>
+<div id="content">
+<div id="article_content">
+<article data-id="10307207">
+<header>
+<h2 class="toprow"><strong itemprop="articleSection">Wie süss!</strong></h2>
+<div class="info">
+<span class="time">
+<time itemprop="datePublished" datetime="2018-08-27T11:53:37+02:00">Mo, 27. Aug. 2018</time>
+von <span itemprop="author" rel="author" class="author">Sophia Koller</span>
+</span>
+</div>
+
+<!-------------H1 TITEL-------------->
+<h1 itemprop="name">Nachwuchs für <br />Meghan und Harry</h1>
+<!-------------H1 TITEL-------------->
+
+<!---------- SOCIAL BUTTONS --------->
+<!---- Socialbutton
+<div class="socialbar">
+<a href="http://twitter.com/home?status=https%3A%2F%2Fmobilstaging.news.at%2Fa%2Fnachwuchs-meghan-harry-10307207" class="twitter" target="_blank">Twitter</a>
+<a href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fmobilstaging.news.at%2Fa%2Fnachwuchs-meghan-harry-10307207" class="facebook">Facebook</a>
+<a href="https://plusone.google.com/_/+1/confirm?url=https%3A%2F%2Fmobilstaging.news.at%2Fa%2Fnachwuchs-meghan-harry-10307207" class="google">Google plus</a>
+<a href="whatsapp://send?text=Nachwuchs%20f%C3%BCr%20Meghan%20%26%20Harry%20%E2%80%A2%20NEWS.AT https%3A%2F%2Fmobilstaging.news.at%2Fa%2Fnachwuchs-meghan-harry-10307207" class="wa-artikel">Whatsapp</a>
+</div>
+-->
+
+</header>
+
+<!---------- Hauptbild --------->
+<img class="teaser_pic" itemprop="image" src="/prod/rescue/news_mobil/images/teaser2.jpg" alt="Wie süss! - Nachwuchs für
+Meghan und Harry" title="Bild: APA/AFP/POOL/Yui MOK" width="618" height="355"/>
+<!---------- Hauptbild --------->
+<!---------- Copyright --------->
+<span class="copyright">
+© Bild: APA/AFP/POOL/Yui MOK
+</span>
+<!---------- Copyright --------->
+
+<!---------article_vorspann----------->
+<p class="intro" itemprop="about">Bekommen <a href="/a/%C3%BCberraschende-auszeit-harry-meghan-clooneys-comer-see-10288586">Harry und Meghan</a> bald ein Baby? Die Spekulationen, ob die <a href="/a/royals-meghan-dreht-vater-durch-10289700">Herzogin von Sussex</a> bereits schwanger ist, nehmen kein Ende. Und tatsächlich: Bei den Royals hat sich Nachwuchs eingestellt - vorerst aber &quot;nur&quot; vierbeiniger.</p>
+<!---------article_vorspann----------->
+
+<!---------Article_text----------->
+<p>Es ist kein Geheimnis, dass <a href="/a/im-gehirn-herzogin-meghan-f%C3%A4higkeit-ambidextrie-10258939">Herzogin Meghan</a> ein absoluter Hundenarr ist. Schon vor ihrer Hochzeit mit Prinz Harry, als sie noch als Schauspielerin in Kanada lebte, holte die 37-Jährige die Hunde Bogart und Guy aus dem Tierheim zu sich. Während sie Bogart schweren Herzens bei Freunden in Toronto ließ, da sie dem betagten Hund den Flug nach London nicht zumuten wollte, zog Guy mit ihr in den Kensington Palast. </p>
+
+<p>Bei ihrem Besuch in Irland herzten Meghan und Harry den Hund des Präsidentenpaares Michael und Sabrina Higgins, nun legte sich das Paar selbst den ersten gemeinsamen tierischen Nachwuchs zu. Zu Beagle Guy gesellt sich laut &quot;Daily Mail&quot; ein Labrador. &quot;Der Hund ist bereits glücklich in ihrem Häuschen untergebracht. Wie die Sussexes wird der Hund im Palast und in ihrem Landhaus in den Cotswolds leben&quot;, zitiert das Blatt eine Quelle aus dem Palast.</p>
+
+<!-------AD Position:Content_mobile ------>
+<!-- Render Adpositions in Content (BottomLeft, Video3, Content_mobile, Content2_mobile) Content_mobile--
+<aside class="ad_con ad_marker" id="Content_mobile">
+<div class="ad_con ad_con_mobile placeholder-Content_mobile placeholder ad-placeholder ad-placeholder-mobile" >
+<div class="placeholder-inner">
+Position: Content_mobile <br />
+Slot-ID: <script type="text/javascript">document.write(OAS_PLACEHOLDER['Content_mobile']);</script><br />
+</div>
+</div>
+</aside>
+<!-------AD Position:Content_mobile ------>
+
+<p>Herzogin Meghan passt mit ihrer Hundeliebe gut zu den Royals. Vor allem Queen Elizabeth hat ein riesiges Herz für Hunde, die Regentin bevorzugt Corgis. Prinz Harrys Bruder William und seine Frau Kate haben ebenfalls einen Familienhund. Lupo nahm das Paar noch vor der Geburt ihrer drei Kinder George, Charlotte und Louis zu sich.</p>
+
+<!---------Article_text----------->
+
+<aside id="abowerbung">
+<div class="abowerbung_textcontainer">
+<div class="abowerbung_text">
+Jetzt <strong>4 Ausgaben News </strong>
+kostenlos &amp; unverbindlich lesen!* </div>
+<div class="abowerbung_sub">*Abo endet automatisch.</div>
+</div>
+<div class="abowerbung_button">
+<a href="https://aktion.guj-direct.de/vgn-2gratishefte-4?utm_source=news.at&utm_medium=display&utm_content=abo&utm_campaign=Jetzt%204%20Ausgaben%20News%20kostenlos%20%26%20unverbindlich%20lesen!*" target="_blank" class="link-external abowerbung_cta">Hier testen ▶</a>
+</div>
+</aside>
+<div class="OUTBRAIN" data-src="DROP_PERMALINK_HERE" data-widget-id="MB_2" data-ob-template="newsnetworld"></div> <script type="text/javascript" async="async" src="//widgets.outbrain.com/outbrain.js"></script>
+</article>
+<!---------- SOCIAL BUTTONS --------->
+<!---- Socialbutton
+<div class="socialbar">
+<a href="http://twitter.com/home?status=https%3A%2F%2Fmobilstaging.news.at%2Fa%2Fnachwuchs-meghan-harry-10307207" class="twitter" target="_blank">Twitter</a>
+<a href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fmobilstaging.news.at%2Fa%2Fnachwuchs-meghan-harry-10307207" class="facebook">Facebook</a>
+<a href="https://plusone.google.com/_/+1/confirm?url=https%3A%2F%2Fmobilstaging.news.at%2Fa%2Fnachwuchs-meghan-harry-10307207" class="google">Google plus</a>
+<a href="whatsapp://send?text=Nachwuchs%20f%C3%BCr%20Meghan%20%26%20Harry%20%E2%80%A2%20NEWS.AT https%3A%2F%2Fmobilstaging.news.at%2Fa%2Fnachwuchs-meghan-harry-10307207" class="wa-artikel">Whatsapp</a>
+</div>
+-->
+<section class="GATracking_Maincontentteaser section_wrapper ressort ressort- " id="topnews">
+<div class="GATracking_Stageteaser ">
+<div class="ym-g50 ym-gl">
+<div class="ym-gbox-left">
+<a href="/a/schule-prinz-george-lehrplan-schuljahr-10303289" title="Was Prinz George im<br />neuen Schuljahr lernt"><article itemscope itemtype="http://schema.org/Article" class="ressort- " >
+<img src="/_storage/asset/10303339/storage/newsat:teaser-1_74-1-l/file/136697773/67455888.jpg" alt="Schule - Was Prinz George im
+neuen Schuljahr lernt" title="Bild: APA/AFP/DUKE AND DUCHESS OF CAMBRIDGE/Matt
+"/>
+<div class="toprow">
+<strong>Schule</strong>
+</div>
+<h3>Was Prinz George im<br />neuen Schuljahr lernt</h3>
+<p>
+Bald geht es für Prinz George zurück in die Schule - und im zweiten Jahr muss der kleine Royal so einige neue Aufgaben meistern.</p>
+</article></a>
+</div>
+</div>
+<div class="ym-g50 ym-gr">
+<div class="ym-gbox-right">
+<a href="/a/royals-meghan-dreht-vater-durch-10289700" title="Meghan: Dreht ihr Vater<br />jetzt komplett durch?"><article itemscope itemtype="http://schema.org/Article" class="ressort- " >
+<img src="/_storage/asset/10289689/storage/newsat:teaser-1_74-1-l/file/136547318/meghan-markle-duchess-of-sussex-watching-the-ladies-final-between-angelique-kerber-and-serena-will.jpg" alt="Royals - Meghan: Dreht ihr Vater
+jetzt komplett durch?" title="Bild: imago/Paul Marriott"/>
+<div class="toprow">
+<strong>Royals</strong>
+</div>
+<h3>Meghan: Dreht ihr Vater<br />jetzt komplett durch?</h3>
+<p>
+Vergleiche mit Scientology und Cyborgs: Thomas Markle geht in einem neuen Interview hart ins Gericht gegen die Royals</p>
+</article></a>
+</div>
+</div>
+</div>
+</section>
+<div class="links clearfix">
+<a href="https://mobilstaging.news.at/" class="home left">News.at Home&nbsp;<span class="ico_more"></span></a>
+<span class="title"><a href="/menschen" class="right toprow">Menschen&nbsp;<span class="ico_more"></span></a></span>
+</div>
+</div>
+</div>
+<aside class="ad_con ad_con_mobile ad_marker" id="Bottom_mobile">
+<div class="ad_con placeholder-bottom-mobile ad-placeholder ad-placeholder-mobile">
+<div class="placeholder-inner">
+Position: Bottom_mobile <br />
+Slot-ID: <script type="text/javascript">document.write(OAS_PLACEHOLDER['Bottom_mobile']);</script><br />
+</div>
+</div>
+</aside>
+<footer>
+<div class="clearfix">
+<a href="http://aboshop.vgn.at/news" target="_self">Abo</a>
+<a href="/agb" target="_self">AGB/ANB</a>
+<a href="/Kontakt-Datenschutz" target="_self">Kontakt Datenschutz</a>
+<a href="https://www.vgn.at/pdf/Datenschutzpolicy.pdf" target="_self">Datenschutzpolicy</a>
+<a href="/impressum" target="_self">Impressum</a>
+<a href="#" id="credits">Fotocredits</a>
+<a href="http://staging.news.at" class="last vollversion vollversion_completeurl">Vollversion</a>
+</div>
+<p>1995-2018 © News Networld Internetservice GmbH</p>
+</footer>
+</div>
+<script type="text/javascript" src="/js/bottom_mobile-b8ccf3af.js" ></script>
+<!-- Facebook Pixel Code -->
+<script type="text/plain" class="optanon-category-4">
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1689145364637008');
+fbq('track', "PageView");
+</script>
+<noscript>
+</noscript>
+<!-- End Facebook Pixel Code -->
+</body>
+</html>

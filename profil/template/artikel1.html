@@ -1,0 +1,1184 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<!--[if IE 8]> <html class="ie8" lang="de-AT"> <![endif]-->
+<!--[if gt IE 8]> <html class="ie" lang="de-AT"> <![endif]-->
+<head>
+<script>
+if (typeof Object.assign != 'function') {
+Object.defineProperty(Object, "assign", {
+value: function assign(target, varArgs) {
+'use strict';
+if (target == null) {
+throw new TypeError('Cannot convert undefined or null to object');
+}
+var to = Object(target);
+for (var index = 1; index < arguments.length; index++) {
+var nextSource = arguments[index];
+if (nextSource != null) {
+for (var nextKey in nextSource) {
+if (Object.prototype.hasOwnProperty.call(nextSource, nextKey)) {
+to[nextKey] = nextSource[nextKey];
+}
+}
+}
+}
+return to;
+},
+writable: true,
+configurable: true
+});
+}
+</script>
+<script src="https://optanon.blob.core.windows.net/consent/a7c494b1-8a18-4fed-9297-c2930c6a40dd.js" type="text/javascript" charset="UTF-8"></script>
+<script type="text/javascript">
+String.prototype.includes = function (str) {
+var returnValue = false;
+if (this.indexOf(str) !== -1) {
+returnValue = true;
+}
+return returnValue;
+}
+var banner_logo = false;
+function OptanonWrapper() {
+if(!(document.cookie.indexOf("euconsent") > -1)){
+//Optanon.Init();
+}
+if(!banner_logo){
+cookieBannerSiteLogo();
+banner_logo = true;
+}
+}
+window.addEventListener("load", function(event) {
+if(!Optanon.IsAlertBoxClosedAndValid()){
+var elemDiv = document.createElement('div');
+elemDiv.id = "cookieBgOverlay";
+elemDiv.style.cssText = 'position:fixed;width:100%;height:100%;top:0;left:0;z-index:199999999;background:rgba(255, 255, 255, .5);';
+document.body.appendChild(elemDiv);
+cookieBgOverlay();
+}
+});
+function cookieBgOverlay(){
+if(!Optanon.IsAlertBoxClosedAndValid()){
+setTimeout(cookieBgOverlay, 500);
+} else {
+var elemDiv = document.getElementById("cookieBgOverlay");
+elemDiv.parentNode.removeChild(elemDiv);
+jQuery('body>*:not(#optanon):not(.optanon-alert-box-wrapper)').css('filter','blur(0)');
+location.reload();
+}
+}
+function cookieBannerSiteLogo(){
+jQuery('#optanon-branding-top-logo' ).clone().css('width', '80px').css('height', '30px').css('background-size', 'contain').css('background-repeat', 'no-repeat').css('background-position', 'center center').css('position', 'relative').css('float', 'left').css('margin', '10px 5px auto auto').prependTo('.optanon-alert-box-body');
+}
+</script>
+<style>
+.optanon-alert-box-wrapper{
+z-index:200000001;
+top:auto!important;
+bottom:0;
+background-color:rgba(255,255,255,.97);
+box-shadow:#333 0 5px 20px
+}
+.optanon-alert-box-wrapper p>a{
+text-decoration:underline;
+color:#6cc04a
+}
+.optanon-alert-box-wrapper p>a:before{
+content:' ';
+display:block
+}
+#optanon-popup-bg{
+z-index:200000000!important
+}
+.optanon-alert-box-wrapper .optanon-alert-box-bottom-top{
+display:none
+}
+.optanon-alert-box-wrapper .optanon-alert-box-corner-close{
+display:none
+}
+.optanon-alert-box-wrapper .optanon-alert-box-button-middle{
+text-align:center
+}
+.optanon-alert-box-wrapper .optanon-button-allow .optanon-alert-box-button-middle{
+box-shadow:#ccc 0 2px 5px;
+border-radius:4px
+}
+.optanon-alert-box-wrapper .optanon-alert-box-button{
+float:none;
+margin-right:auto
+}
+.optanon-alert-box-wrapper .optanon-alert-box-bg p{
+font-size:8pt;
+line-height:10pt
+}
+.optanon-alert-box-wrapper .optanon-alert-box-bg p.optanon-alert-box-title{
+font-size:15pt;
+line-height:12pt;
+padding:15px 0
+}
+#optanon-popup-wrapper{
+z-index:200000002!important
+}
+.optanon-alert-box-wrapper .optanon-allow-all{
+font-size:12pt!important
+}
+.optanon-alert-box-wrapper .optanon-toggle-display{
+font-size:8pt!important
+}
+.optanon-alert-box-bg .optanon-alert-box-button-container{
+padding-right:0
+}
+@media only screen and (min-width:960px){
+.optanon-alert-box-wrapper .optanon-alert-box-bg p{
+line-height:10pt
+}
+.optanon-alert-box-wrapper .optanon-alert-box-bg p.optanon-alert-box-title{
+font-size:15pt;
+padding:20px 0
+}
+.optanon-alert-box-bg .optanon-alert-box-button-container{
+top:15px;
+margin:0
+}
+.optanon-alert-box-wrapper .optanon-button-allow .optanon-alert-box-button-middle{
+padding:15px 30px;
+margin:10px
+}
+}
+</style>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime();</script>
+<link rel="canonical" href="https://www.profil.at/oesterreich/titelgeschichte-no-go-gesellschaft-10305684"/>
+<title>Titelgeschichte: Die No-Go-Gesellschaft | PROFIL.at</title>
+<meta name="description" content="Verbote sind unverzichtbar. Sie definieren die roten Linien unseres Zusammenlebens. Zunehmend greift jedoch eine Politik der Regelwut um sich – vom Essverbot in der Wiener U-Bahn bis zum Burkiniverbot in Freibädern. Woher kommt die Sehnsucht nach ..."/>
+<meta name="robots" content="index, follow, noarchive">
+<meta property="fb:app_id" content="1513285065584670" />
+<meta property="og:site_name" content="profil.at" />
+<meta property="og:title" content="Titelgeschichte: Die No-Go-Gesellschaft" />
+<meta property="og:description" content="Verbote sind unverzichtbar. Sie definieren die roten Linien unseres Zusammenlebens. Zunehmend greift jedoch eine Politik der Regelwut um sich – vom Essverbot in der Wiener U-Bahn bis zum Burkiniverbot in Freibädern. Woher kommt die Sehnsucht nach der starken Hand?"/>
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-08-25T09:00:40+02:00" />
+<meta property="og:url" content="https://www.profil.at/oesterreich/titelgeschichte-no-go-gesellschaft-10305684" />
+<meta property="og:image" content="https://www.profil.at/_storage/asset/10305687/storage/preview/file/136729238/themenbild-verbot-von-starkriechenden-speisen-in-wiener-u-ab-herbst.jpg" />
+<meta property="og:image:width" content="1000" />
+<meta property="og:image:height" content="617" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@profilonline" />
+<meta name="twitter:title" content="Titelgeschichte: Die No-Go-Gesellschaft" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="revisit-after" content="3 hours"/>
+<link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700%7CDroid+Serif:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/css/minified-e5c1d454.css" type="text/css" />
+<script type="text/javascript">
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-50598477-1', 'auto');
+ga('set', 'dimension1', '10305684');
+ga('set', 'dimension2', 'nicht eingeloggt');
+ga('set', 'dimension3', 'Titelgeschichte: Die No-Go-Gesellschaft | PROFIL.at');
+ga('set', 'dimension4', 'artikel');
+ga('set', 'dimension5', '5200433');
+ga('set', 'dimension6', '5130709');
+ga('set', 'dimension8', '2018-08-25T09:00:40+02:00');
+ga('set', 'dimension10', 'redcont');
+ga('set', 'dimension11', 'politik');
+ga('set', 'dimension12', 'politikinland');
+if(Optanon.IsAlertBoxClosedAndValid()){
+ga('set', 'dimension14', 'closed');
+} else {
+ga('set', 'dimension14', 'open');
+}
+ga('set', 'contentGroup1', 'Österreich');
+ga('set', 'contentGroup2', '5200433');
+ga('set', 'anonymizeIp', true);
+ga('send', 'pageview');
+</script>
+<script type="text/javascript" async src='https://www.google-analytics.com/analytics.js'></script>
+<script type="text/javascript">
+if (typeof window.console === 'undefined') {window.console = {'log':function(){}};}
+var cs_callbacks = [];
+var cs_loadSocials = {};
+var cs_loadScriptsOnReady = [];
+var cs_loadScriptsOnLoad = [];
+var cs_scriptsLoaded = [];
+</script>
+<!-- Adserver Config Start-->
+<script type="text/javascript">
+var pageWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+var pageHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+var oasPageWidth = pageWidth;
+var adition = adition || {};
+adition.srq = adition.srq || [];
+(function() {
+var script = document.createElement("script");
+script.type = "text/javascript";
+script.src = (document.location.protocol === "https:" ?
+"https:" : "http:") + "//imagesrv.adition.com/js/srp.js";
+script.charset = "utf-8";
+script.async = true;
+var firstScript = document.getElementsByTagName("script")[0];
+firstScript.parentNode.insertBefore(script, firstScript);
+})()
+adition.srq.push(function(api) {
+api.modules.setLoadingTimeout(3000);
+if(OptanonActiveGroups.includes(',4,')) {
+if (pageWidth > 640) {
+api.modules.configureModule("yieldlab")
+.mapContentunit(2918088, 133662, 9595)
+.mapContentunit(2918089, 333091, 7216)
+.mapContentunit(2918090, 133664, 5769)
+.mapContentunit(2918090, 316510, 3798)
+.mapContentunit(2918090, 333063, 7161)
+.mapContentunit(2918091, 133663, 4134)
+.enable();
+} else {
+}
+}
+api.registerAdfarm("ad1.adfarm1.adition.com")
+.setProfile("pagetype", "article")
+.setProfile("assetid", "10305684")
+.setProfile("pagewidth", pageWidth.toString())
+.setProfile("consent", OptanonActiveGroups.includes(",4,") ? "optin" : "optout")
+if (pageWidth > 640) {
+api.configureRenderSlot("Top")
+.setContentunitId(2918088);
+api.configureRenderSlot("Top1")
+.setContentunitId(2918089);
+api.configureRenderSlot("Right1")
+.setContentunitId(2918090);
+api.configureRenderSlot("Position10")
+.setContentunitId(3374667);
+api.configureRenderSlot("Middle1")
+.setContentunitId(2918091);
+api.configureRenderSlot("Middle2")
+.setContentunitId(2918096);
+api.configureRenderSlot("Middle3")
+.setContentunitId(2918097);
+} else {
+api.configureRenderSlot("Top_mobile")
+.setContentunitId(3372488);
+api.configureRenderSlot("Bottom_mobile")
+.setContentunitId(3372490);
+api.configureRenderSlot("Content_mobile")
+.setContentunitId(3372489);
+api.configureRenderSlot("Content2_mobile")
+.setContentunitId(4248161);
+}
+var blockAdserverReload = false;
+var adInterval;
+var adcounter =0;
+api.events.onPreRender(function(renderSlotElement, bannerDescriptionApi, renderControlApi) {
+if(bannerDescriptionApi.getOptions() && bannerDescriptionApi.getOptions().reload === "block") {
+blockAdserverReload = true;
+}
+});
+function handleVisibilityChange(isVisible) {
+if (isVisible) {
+// adInterval = setInterval(reloadAdpositions, 25000);
+} else {
+// clearInterval(adInterval);
+}
+}
+function reloadAdpositions() {
+adcounter++;
+//console.log("Adcounter: "+adcounter);
+adition.srq.push(function(api) {
+//api.setProfile("reload", "1")
+api.setProfile("reload", adcounter+"")
+.load(['Right1','Right2']).completeRendering();
+});
+}
+window.onload = function() {
+if(typeof adition !== 'undefined' && blockAdserverReload === false && pageWidth > 640) {
+// adInterval = setInterval(reloadAdpositions, 25000);
+window.onblur = function() {
+handleVisibilityChange(false);
+}
+window.onfocus = function() {
+handleVisibilityChange(true);
+}
+}
+}
+api.load().completeRendering();
+});
+var displayAd = function(pos) {
+switch(pos) {
+case 'Top':
+if(oasPageWidth < 728)
+return false;
+break;
+case 'Top1':
+case 'Top2':
+case 'Position1':
+case 'Position2':
+case 'Position3':
+case 'Fishtank':
+case 'Position10':
+if(oasPageWidth < 960)
+return false;
+break;
+case 'Position1_728':
+case 'Position2_728':
+case 'Position3_728':
+if(oasPageWidth < 775)
+return false;
+break;
+case 'BottomLeft':
+case 'Middle1':
+case 'Middle2':
+case 'Middle3':
+case 'Right1':
+case 'Right2':
+case 'Video3':
+case 'Button1':
+case 'Button2':
+case 'Button2':
+case 'Button4':
+if(oasPageWidth < 641)
+return false;
+break;
+case 'Top_mobile':
+case 'Bottom_mobile':
+case 'Position1_mobile':
+case 'Content_mobile':
+case 'Content2_mobile':
+case 'Button1_mobile':
+case 'Button2_mobile':
+if(oasPageWidth > 640)
+return false;
+break;
+default:
+return true;
+}
+return true;
+}
+</script>
+<!-- Adserver Config End -->
+<link rel="manifest" href="https://www.profil.at/manifest.json">
+<meta name="theme-color" content="#d00700">
+<link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="//dispatcher.oewabox.at">
+<link rel="preconnect" href="//newsnetw.oewabox.at">
+<link rel="preconnect" href="//qs.oewabox.at">
+<link rel="preconnect" href="//google-analytics.com">
+<link rel="preconnect" href="//imagesrv.adition.com">
+<link rel="icon" type="image/x-icon" href="/img/favicon-8cffdf86.ico"/>
+<link rel="shortcut icon" type="image/x-icon" href="/img/favicon-8cffdf86.ico"/>
+<link rel="apple-touch-icon" href="/img/touch/touch-icon-iphone-a6780b60.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/img/touch/touch-icon-ipad-c0158409.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/img/touch/touch-icon-iphone-retina-25e8aa8f.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/img/touch/touch-icon-ipad-retina-5626d343.png">
+<!--[if lt IE 9]>
+<script src="/js/html5shiv-e527c316.js"></script>
+<![endif]-->
+<script type="text/javascript" src="https://script-at.iocnt.net/iam.js"></script>
+<meta property="fb:pages" content="100626156097">
+<meta property="uvp-data-attr" content="data-uvp" />
+</head>
+<body class="loading">
+<div id="fb-root"></div>
+<!-- OEWA VERSION="3.0" -->
+<div id="ivw" style="display:block;width:1px;height:1px;overflow:hidden;position:absolute;top:-9999px">
+<script type="text/javascript">
+if (window.iom) {
+var oewa_data = {
+"cn":"at",
+"st": "at_w_atprofil",
+"cp":"redcont/politik/politikinland/",
+"sv":"in",
+"ps":"lin"
+};
+iom.c(oewa_data, 2);
+}
+</script>
+</div>
+<!--/OEWA -->
+<aside id="right2">
+<div class="ad_con ad_con_desktop" id="Right1">
+<script type="text/javascript">
+if(typeof adition !== 'undefined' && typeof displayAd !== 'undefined' && displayAd('Right1')){
+adition.srq.push(function(api) {
+api.renderSlot('Right1');
+})
+}
+</script>
+</div>
+</aside>
+<main class="slide-wrapper">
+<section class="top-leiste">
+<div class="social-wrapper">
+<ul>
+<li class="sprite-social fb-top"><a href="https://www.facebook.com/profilonline" title="Zum Facebook-Profil von profil.at" target="_blank">&nbsp;</a></li>
+<li class="sprite-social tw-top"><a href="https://twitter.com/profilonline" title="Zum Twitter-Profil von profil.at" target="_blank">&nbsp;</a></li>
+<li class="sprite-social goo-top"><a href="https://plus.google.com/116034780742576912789/posts" title="Zum Google+-Profil von profil.at" target="_blank">&nbsp;</a></li>
+<li class="sprite-social you-top"><a href="https://www.youtube.com/user/profilonline/" target="_blank">&nbsp;</a></li>
+<!--Hierkommt Pinterest-->
+<li class="sprite-social pin-top"><a href="https://www.pinterest.com/profilonline" target="_blank">&nbsp;</a></li>
+<!--Hierkommt Instagramm-->
+<li class="sprite-social inst-top"><a href="https://www.instagram.com/profilonline/" target="_blank">&nbsp;</a></li>
+</ul>
+</div>
+<div class="top-leiste-content">
+<ul>
+<li>
+<a href="/newsletter" target="_self" title="Newsletter">Newsletter</a>
+</li>
+<li>
+<a href="/impressum" target="_self" title="Impressum">Impressum</a>
+</li>
+<li>
+<a href="http://www.vgn.at/agb" target="_self" title="AGB/ANB">AGB/ANB</a>
+</li>
+<li>
+<a href="https://www.vgn.at/pdf/Datenschutzpolicy.pdf" target="_self" title="Datenschutzpolicy">Datenschutzpolicy</a>
+</li>
+<li>
+<a href="/spiele" target="_self" title="Spiele">Spiele</a>
+</li>
+<li>
+<a href="/Kontakt-Datenschutz" target="_self" title="Kontakt-Datenschutz">Kontakt-Datenschutz</a>
+</li>
+<li><a href="/abo" title="Abonnement" target="_blank">Abo</a></li>
+<li><a href="https://shop.profil.at/" title="Profil Shop" target="_blank">Shop</a></li>
+</ul>
+<a class="login-link top-login" href="/login?login.redirectlogin=/oesterreich/titelgeschichte-no-go-gesellschaft-10305684" title="Anmelden oder Registrieren">Anmelden oder Registrieren</a>
+<a class="login-link sprite login-symbol" href="/login?login.redirectlogin=/oesterreich/titelgeschichte-no-go-gesellschaft-10305684">&nbsp;</a>
+</div>
+</section>
+<div id="ad-top" class="fullsize">
+<aside class="ad_con ad_con_desktop" id="Top">
+<script type="text/javascript">
+if(typeof adition !== 'undefined' && typeof displayAd !== 'undefined' && displayAd('Top')){
+adition.srq.push(function(api) {
+api.renderSlot('Top');
+})
+}
+</script>
+</aside>
+</div>
+<div class="menu-inner-wrapper">
+<button id="nav-toggle" class="sprite">&nbsp;</button>
+<div class="nav-mobile">
+<section class="mobile-suche">
+<div class="ym-fbox">
+<span class="mobile-suche-h">SUCHE:</span>
+<form action="/suche" method="GET">
+<input name="s.text" type="text" placeholder="Suche" />
+<input type="submit" value="&nbsp;" class="sprite mobile-s-btn">
+</form>
+</div>
+</section>
+<div class="mobiles-menu">
+<ul>
+<li class="mainnav shortlist-nav"><a href="/shortlist" title="Ressort Shortlist" target="_self"><span>//</span>shortlist</a></li>
+<li >
+<a href="/meinung">Meinung</a>
+</li>
+<li class="current-submenu">
+<a href="#">Österreich</a>
+<div class="mobile-submenu">
+<ul>
+<li >
+<a href="/oesterreich" title="Ressort Österreich" target="_self">Übersicht</a>
+</li>
+<li >
+<a href="/oesterreich/history" title="Ressort History" target="_self">History</a>
+</li>
+</ul>
+</div>
+</li>
+<li >
+<a href="/wirtschaft">Wirtschaft</a>
+</li>
+<li >
+<a href="/ausland">Ausland</a>
+</li>
+<li >
+<a href="/gesellschaft">Gesellschaft</a>
+</li>
+<li >
+<a href="/wissenschaft">Wissenschaft</a>
+</li>
+<li >
+<a href="/kultur">Kultur</a>
+</li>
+<li >
+<a href="#">Portfolio</a>
+<div class="mobile-submenu">
+<ul>
+<li >
+<a href="/portfolio" title="Ressort Portfolio" target="_self">Übersicht</a>
+</li>
+<li >
+<a href="/highpotential" title="Ressort High Potential Day" target="_self">High Potential Day</a>
+</li>
+<li >
+<a href="/themen/dac-test" title="Ressort profil-DAC-Test" target="_self">profil-DAC-Test</a>
+</li>
+<li >
+<a href="/portfolio/innovation" title="Ressort Innovation" target="_self">Innovation</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+<div class="mobile-newsletter-etc">
+<ul>
+<li>
+<a href="/newsletter" target="_self" title="Newsletter">Newsletter</a>
+</li>
+<li>
+<a href="/impressum" target="_self" title="Impressum">Impressum</a>
+</li>
+<li>
+<a href="http://www.vgn.at/agb" target="_self" title="AGB/ANB">AGB/ANB</a>
+</li>
+<li>
+<a href="https://www.vgn.at/pdf/Datenschutzpolicy.pdf" target="_self" title="Datenschutzpolicy">Datenschutzpolicy</a>
+</li>
+<li>
+<a href="/spiele" target="_self" title="Spiele">Spiele</a>
+</li>
+<li>
+<a href="/Kontakt-Datenschutz" target="_self" title="Kontakt-Datenschutz">Kontakt-Datenschutz</a>
+</li>
+<li><a href="/abo" target="_blank" title="Abonnement">Abo</a></li>
+<li><a href="http://blog.profil.at/" title="Profil Blog" target="_blank">Blog</a></li>
+<li><a href="https://shop.profil.at/" title="Profil Shop" target="_blank">Shop</a></li>
+<li id="credits_mobil"><a href="#" title="Fotocredits">Fotocredits</a></li>
+</ul>
+</div>
+<a class="mobile-login" href="/login?login.redirectlogin=/oesterreich/titelgeschichte-no-go-gesellschaft-10305684" title="Anmelden oder registrieren">
+<div class="sprite mobile-login-symbol">&nbsp;</div>
+Anmelden oder Registrieren
+</a>
+</div>
+</div>
+</div>
+<section id="ad-fireplace" class="ym-wrapper pagecontent">
+<header>
+<section class="logo-ad-wrapper">
+<div class="top-suche">
+<div class="ym-fbox">
+<form action="/suche" method="GET">
+<input name="s.text" type="text" placeholder="Suche" />
+<input type="submit" value="&nbsp;" class="sprite top-such-btn"/>
+</form>
+</div>
+</div>
+<div class="haupt-logo-wrapper"><a class="sprite haupt-logo" href="/home">&nbsp;</a></div>
+<div class="ad_con ad_con_desktop" id="Position10">
+<script type="text/javascript">
+if(typeof adition !== 'undefined' && typeof displayAd !== 'undefined' && displayAd('Position10')){
+adition.srq.push(function(api) {
+api.renderSlot('Position10');
+})
+}
+</script>
+</div>
+</section>
+<nav>
+<ul>
+<li class="mainnav shortlist-nav"><a href="/shortlist" title="Ressort Shortlist" target="_self"><span>//</span>shortlist</a></li>
+<li class="mainnav ">
+<a href="/meinung" title="Ressort Meinung" target="_self">Meinung</a>
+<div class="sub-menu" style="display: none;" data-url="/ajax/navigation-top-teaser/5200407">
+</div>
+</li>
+<li class="mainnav current">
+<a href="/oesterreich" title="Ressort Österreich" target="_self">Österreich</a>
+<div class="sub-menu" style="display: none;" data-url="/ajax/navigation-top-teaser/5200433">
+<ul class="links">
+<li class="">
+<a href="/oesterreich/history" title="Ressort History" target="_self">History</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="mainnav ">
+<a href="/wirtschaft" title="Ressort Wirtschaft" target="_self">Wirtschaft</a>
+<div class="sub-menu" style="display: none;" data-url="/ajax/navigation-top-teaser/5200435">
+</div>
+</li>
+<li class="mainnav ">
+<a href="/ausland" title="Ressort Ausland" target="_self">Ausland</a>
+<div class="sub-menu" style="display: none;" data-url="/ajax/navigation-top-teaser/5200437">
+</div>
+</li>
+<li class="mainnav ">
+<a href="/gesellschaft" title="Ressort Gesellschaft" target="_self">Gesellschaft</a>
+<div class="sub-menu" style="display: none;" data-url="/ajax/navigation-top-teaser/5200439">
+</div>
+</li>
+<li class="mainnav ">
+<a href="/wissenschaft" title="Ressort Wissenschaft" target="_self">Wissenschaft</a>
+<div class="sub-menu" style="display: none;" data-url="/ajax/navigation-top-teaser/5200441">
+</div>
+</li>
+<li class="mainnav ">
+<a href="/kultur" title="Ressort Kultur" target="_self">Kultur</a>
+<div class="sub-menu" style="display: none;" data-url="/ajax/navigation-top-teaser/5149038">
+</div>
+</li>
+<li class="mainnav ">
+<a href="/portfolio" title="Ressort Portfolio" target="_self">Portfolio</a>
+<div class="sub-menu" style="display: none;" data-url="/ajax/navigation-top-teaser/5200445">
+<ul class="links">
+<li class="">
+<a href="/highpotential" title="Ressort High Potential Day" target="_self">High Potential Day</a>
+</li>
+<li class="">
+<a href="/themen/dac-test" title="Ressort profil-DAC-Test" target="_self">profil-DAC-Test</a>
+</li>
+<li class="">
+<a href="/portfolio/innovation" title="Ressort Innovation" target="_self">Innovation</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</nav>
+</header>
+<aside class="ad_con ad_con_mobile ad_marker" id="Top_mobile">
+<script type="text/javascript">
+if(typeof adition !== 'undefined' && typeof displayAd !== 'undefined' && displayAd('Top_mobile')){
+adition.srq.push(function(api) {
+api.renderSlot('Top_mobile');
+})
+}
+</script>
+</aside>
+<aside class="ad_con ad_con_desktop ad_marker" id="Top1">
+<script type="text/javascript">
+if(typeof adition !== 'undefined' && typeof displayAd !== 'undefined' && displayAd('Top1')){
+adition.srq.push(function(api) {
+api.renderSlot('Top1');
+})
+}
+</script>
+</aside>
+<!-- Content Start -->
+<div class="ym-column linearize-level-2">
+<article class="ym-col1" data-id="10305684">
+<header>
+<section class="breadcrumbs">
+profil.at ›
+<div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="/oesterreich" title="Österreich" itemprop="url">
+<span itemprop="title">Österreich</span>
+</a>
+</div>
+</section>
+<!-- TITEL H1 -->
+<h1 itemprop="headline">Titelgeschichte: Die No-Go-Gesellschaft</h1>
+<!-- TITEL H1 -->
+
+<section class="author-date ">
+Von
+<a href="/autoren/jakob-winter" rel="author" title="Zur Autorenseite von Jakob Winter">Jakob Winter</a>
+und
+<a href="/autoren/christina-pausackl" rel="author" title="Zur Autorenseite von Christina Pausackl">Christina Pausackl</a>
+(<time datetime="2018-08-25" itemprop="datepublished">
+<a href="/archiv/2018/8/25" title="Alle Artikel vom 25. 8. 2018">
+25. 8. 2018
+</a>
+</time>)
+</section>
+<aside class="artikel-social-kommentar">
+<div class="artikel-kommentarlink">
+<a href="#kommentare" title="Zu den Kommentaren">7 Kommentare</a>
+<div class="sprite kommentar-symbol">&nbsp;</div>
+</div>
+<!---- Socialbutton
+<div class="artikel-social">
+<a class="socialpopup" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.profil.at/oesterreich/titelgeschichte-no-go-gesellschaft-10305684" title="Auf Facebook teilen">
+<div class="sprite-social fb-artikel">&nbsp;</div>
+</a>
+<a class="socialpopup" target="_blank" href="https://plus.google.com/share?url=https://www.profil.at/oesterreich/titelgeschichte-no-go-gesellschaft-10305684" title="Auf Google Plus teilen">
+<div class="sprite-social goo-artikel ">&nbsp;</div>
+</a>
+<a class="socialpopup" target="_blank" href="https://twitter.com/intent/tweet?text=Titelgeschichte%3A%20Die%20No-Go-Gesellschaft%20%7C%20PROFIL.at&amp;via=profilonline&amp;url=https://www.profil.at/oesterreich/titelgeschichte-no-go-gesellschaft-10305684" title="Auf Twitter teilen">
+<div class="sprite-social tw-artikel">&nbsp;</div>
+</a>
+<a href="whatsapp://send?text=Titelgeschichte%3A%20Die%20No-Go-Gesellschaft%20%7C%20PROFIL.at https://www.profil.at/oesterreich/titelgeschichte-no-go-gesellschaft-10305684" title="Auf WhatsApp teilen">
+<div class="sprite-social wa-artikel" style="display:none;">&nbsp;</div>
+</a>
+</div>
+-->
+</aside>
+<!-- Hauptbild  -->
+<figure class="teaser-bild-wrapper">
+<div class="teaser-bild">
+<img src="../images/teaser.jpg" alt="Titelgeschichte: Die No-Go-Gesellschaft" title="Bild: APA" width="930" height="574"/>
+</div>
+<figcaption class="bild-unterschrift">
+<div class="bild-copyright" itemprop="copyrightHolder">© APA</div>
+</figcaption>
+</figure>
+<!-- Hauptbild  -->
+
+</header>
+<section itemprop="articlebody">
+<!---------article_vorspann----------->
+<p class="auszug">Verbote sind unverzichtbar. Sie definieren die roten Linien unseres Zusammenlebens. Zunehmend greift jedoch eine Politik der Regelwut um sich – vom Essverbot in der Wiener U-Bahn bis zum Burkiniverbot in Freibädern. Woher kommt die Sehnsucht nach der starken Hand?</p>
+<!---------article_vorspann----------->
+
+<!---------Article_text----------->
+<!-- Render Adpositions in Content (BottomLeft, Video3, Content_mobile, Content2_mobile) Video3-->
+<p>Groß muss die Aufregung im Gablitzer Freibad gewesen sein, als diesen Sommer erstmals eine Frau im Burkini baden ging. Den Ganzkörperbadeanzug für muslimische Frauen kannten die meisten Badegäste davor nur aus der Zeitung. Die Reaktion der Gemeinde im Wiener Speckgürtel fiel radikal aus: Angestachelt von Beschwerden der Besucher verordnete ÖVP-Bürgermeister Michael Cech Ende Juli ein Burkini-Verbot. Ein entsprechendes Schild wurde direkt vor dem Kassahäuschen angebracht – wegen einer einzigen Badbesucherin. Rassismus-Vorwürfe folgten auf dem Fuß, Cech versuchte die Flucht nach vorn. Inzwischen wurde das Schild ausgetauscht, nun sind neben Burkini auch Nachthemden, Straßenbekleidung und Neoprenanzüge „aus hygienischen Gründen verboten“. Dass Jeans und Baumwollshirts im Schwimmbecken nichts verloren haben, versteht sich von selbst. Nur was an Wassersportbekleidung aus Neopren und an Badeanzügen unhygienisch sein soll, konnte der Bürgermeister nicht erklären.</p>
+<p>.....</p>
+<!---------Article_text----------->
+
+<!-- Render Adpositions in Content (BottomLeft, Video3, Content_mobile, Content2_mobile) Content_mobile-->
+<aside class="ad_con ad_marker" id="Content_mobile">
+<script type="text/javascript">
+if(typeof adition !== 'undefined' && typeof displayAd !== 'undefined' && displayAd('Content_mobile')){
+adition.srq.push(function(api) {
+api.renderSlot('Content_mobile');
+})
+}
+</script>
+</aside>
+
+<!-- Render Adpositions in Content (BottomLeft, Video3, Content_mobile, Content2_mobile) BottomLeft-->
+</section>
+<aside class="ym-grid kommentar-thema-social-wrapper">
+<!-------- ABO WERBUNG -------->
+<aside id="abowerbung">
+<div class="abowerbung_bild_container">
+<img class="abowerbung_bild" src="/_storage/asset/10082052/storage/thumbnail/file/133114636/65915641.jpg" alt="" title="Bild: profil" width="250" height="333"/>
+</div>
+<div class="abowerbung_textcontainer">
+<div class="abowerbung_text">
+Jetzt <strong>4 Ausgaben profil E-Paper </strong>
+kostenlos &amp; unverbindlich lesen!* </div>
+<div class="abowerbung_sub">*Abo endet automatisch.</div>
+</div>
+<div class="abowerbung_button">
+<a href="https://aboshop.vgn.at/profil/4digital/?utm_source=profil.at&utm_medium=display&utm_content=abo&utm_campaign=Jetzt%204%20Ausgaben%20profil%20E-Paper%20%20kostenlos%20%26%20unverbindlich%20lesen!*" target="_blank" class="link-external abowerbung_cta">Hier testen ▶</a>
+</div>
+</aside>
+<!-------- ABO WERBUNG -------->
+<aside class="artikel-social-kommentar">
+<!---- Socialbutton
+<div class="artikel-social">
+<a class="socialpopup" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.profil.at/oesterreich/titelgeschichte-no-go-gesellschaft-10305684" title="Auf Facebook teilen">
+<div class="sprite-social fb-artikel">&nbsp;</div>
+</a>
+<a class="socialpopup" target="_blank" href="https://plus.google.com/share?url=https://www.profil.at/oesterreich/titelgeschichte-no-go-gesellschaft-10305684" title="Auf Google Plus teilen">
+<div class="sprite-social goo-artikel ">&nbsp;</div>
+</a>
+<a class="socialpopup" target="_blank" href="https://twitter.com/intent/tweet?text=Titelgeschichte%3A%20Die%20No-Go-Gesellschaft%20%7C%20PROFIL.at&amp;via=profilonline&amp;url=https://www.profil.at/oesterreich/titelgeschichte-no-go-gesellschaft-10305684" title="Auf Twitter teilen">
+<div class="sprite-social tw-artikel">&nbsp;</div>
+</a>
+<a href="whatsapp://send?text=Titelgeschichte%3A%20Die%20No-Go-Gesellschaft%20%7C%20PROFIL.at https://www.profil.at/oesterreich/titelgeschichte-no-go-gesellschaft-10305684" title="Auf WhatsApp teilen">
+<div class="sprite-social wa-artikel" style="display:none;">&nbsp;</div>
+</a>
+</div>
+-->
+</aside>
+<div class="marbot" id="kommentare">
+Kommentar verfassen
+<span class="writeCommentButton sprite"></span>
+</div>
+<div class="ym-grid inputsection">
+<textarea class="fake kommentar-input" placeholder=""></textarea>
+<a href="#" class="button anmelde-btn fb_connect" title="Anmelden mit facebook">Anmelden mit facebook</a>
+<a class="button login_now anmelde-btn" href="/login?login.redirectlogin=/oesterreich/titelgeschichte-no-go-gesellschaft-10305684" title="Anmelden">Anmelden</a>
+</div>
+<!--Mager 
+<ul class="kommentar-liste">
+<li class="userkommentar">
+<div class="sprite kommentar-platzhalter"></div>
+<div class="kommentar-ben-dat">
+<span class="kommentar-username">
+Henry Knuddi
+</span>
+<span class="kommentar-datum">vor 10 h</span>
+</div>
+<div class="kommentar-text">
+<p>
+ideal sind quargeln - ganz geruchsneutral
+</p>
+</div>
+<span class="kommentar-link">
+<a href="/login?login.redirectlogin=/oesterreich/titelgeschichte-no-go-gesellschaft-10305684" class="com_review login_now">Antworten</a>
+<a href="/ajax/reportcomment/10306722" title="Kommentar melden" class="com_report">Melden</a>
+</span>
+</li>
+<li class="userkommentar">
+<img class="kommentar-ben-bild" src="/_storage/asset/6163506/storage/womanat:avatar-s/file/89643862/49714455.jpg" width="40" height="40" alt="Kurt Blaha"/>
+<div class="kommentar-ben-dat">
+<span class="kommentar-username">
+Kurt Blaha
+</span>
+<span class="kommentar-datum">So, 26. Aug. 2018 12:04</span>
+</div>
+<div class="kommentar-text">
+<p>
+Es gehört auch verboten schwarzen Text auf rotem Hintergrund zu drucken.
+</p>
+</div>
+<span class="kommentar-link">
+<a href="/login?login.redirectlogin=/oesterreich/titelgeschichte-no-go-gesellschaft-10305684" class="com_review login_now">Antworten</a>
+<a href="/ajax/reportcomment/10306417" title="Kommentar melden" class="com_report">Melden</a>
+</span>
+<ul>
+<li class="userkommentar">
+<div class="sprite kommentar-platzhalter"></div>
+<div class="kommentar-ben-dat">
+<span class="kommentar-username">
+Friedrich Fuhs
+</span>
+<span class="kommentar-datum">vor 17 h</span>
+</div>
+<div class="kommentar-text">
+<p>
+Das ist wieder typisch für &quot;Die Roten&quot;: alles verbieten aber jede Anormalität als Errungenschaft zu verkaufen. <br />Deshalb gehen den Briten jetzt die Spermavorräte aus...
+</p>
+</div>
+<span class="kommentar-link">
+<a href="/ajax/reportcomment/10306546" title="Kommentar melden" class="com_report">Melden</a>
+</span>
+</li>
+</ul>
+
+</li>
+<li class="userkommentar">
+<div class="sprite kommentar-platzhalter"></div>
+<div class="kommentar-ben-dat">
+<span class="kommentar-username">
+Friedrich Fuhs
+</span>
+<span class="kommentar-datum">So, 26. Aug. 2018 10:42</span>
+</div>
+<div class="kommentar-text">
+<p>
+Jetzt schlägt das Pendel wieder auf der anderen Seite und wieder zu extrem, aus. <br />Ich frage mich: warum sind so viele Sozialisten extrem wohlhabend? Wurden sie deshalb abgewählt oder lieferte die politische Kaste logisch nicht nachvollziehbare Lösungen?<br />Wird mit Gendern, Feminismus, Zuwanderung ein Mehrwert generiert? Das nicht aber bestimmte Gruppen schaffen sich damit ein gutes Einkommen.<br />
+</p>
+</div>
+<span class="kommentar-link">
+<a href="/login?login.redirectlogin=/oesterreich/titelgeschichte-no-go-gesellschaft-10305684" class="com_review login_now">Antworten</a>
+<a href="/ajax/reportcomment/10306399" title="Kommentar melden" class="com_report">Melden</a>
+</span>
+</li>
+<li class="userkommentar">
+<div class="sprite kommentar-platzhalter"></div>
+<div class="kommentar-ben-dat">
+<span class="kommentar-username">
+Franz Maier (Waehler1234)
+</span>
+<span class="kommentar-datum">So, 26. Aug. 2018 08:01</span>
+</div>
+<div class="kommentar-text">
+<p>
+Zeitungen wie Profil haben die Multi Kulti Gesellschaft so lange schöngeschrieben bis es der Mehrheit der Bevölkerung reichte. Bitte sich jetzt nicht über Verbote zu mokieren. Da kommt noch viel mehr nach als manche heute zu denken wagen. Nicht nur dass das Pendel politisch ausschlägt weil sich endlich die noch arbeitende Bevölkerung nicht länger von Leistungsverweigerern schikanieren läßt.
+</p>
+</div>
+<span class="kommentar-link">
+<a href="/login?login.redirectlogin=/oesterreich/titelgeschichte-no-go-gesellschaft-10305684" class="com_review login_now">Antworten</a>
+<a href="/ajax/reportcomment/10306277" title="Kommentar melden" class="com_report">Melden</a>
+</span>
+</li>
+<li class="userkommentar">
+<div class="sprite kommentar-platzhalter"></div>
+<div class="kommentar-ben-dat">
+<span class="kommentar-username">
+Friedrich Fuhs
+</span>
+<span class="kommentar-datum">Sa, 25. Aug. 2018 23:59</span>
+</div>
+<div class="kommentar-text">
+<p>
+Wer schreit nach Regeln? Die Linken oder die Liberalen? Genügt eine gute Kinderstube und somit guten Benehmen? <br />Jene, die die U-Bahnzeitungen in den Waggons liegen lassen, sind auch jene, die unbedingt in den Öffis Essen und trinken &quot;müssen&quot;. Sind das nicht jene, die eine gute Kinderstube hatten?<br />&quot;Mach' dich Friedhof...&quot; ist das bald ein Teil der neueren Normen?
+</p>
+</div>
+<span class="kommentar-link">
+<a href="/login?login.redirectlogin=/oesterreich/titelgeschichte-no-go-gesellschaft-10305684" class="com_review login_now">Antworten</a>
+<a href="/ajax/reportcomment/10306249" title="Kommentar melden" class="com_report">Melden</a>
+</span>
+</li>
+</ul>
+-->
+</aside>
+</article>
+<aside class="ym-col3">
+<section class="ym-g960-3 linearize-level-1 ym-gl three-block shortlist-widget shortlist-widget-marginal">
+<a href="/shortlist" title="profil Shortlist">
+<div class="shortlist-header">
+<span class="sprite shortlist-logo">&nbsp;</span>
+<span class="shortlist-text">shortlist</span>
+</div>
+</a>
+<div class="shortlist-content">
+<a href="/shortlist/gesellschaft/wien-tripadvisor-check-10304038" title="Wien im knallharten TripAdvisor-Check" data-id="10304038">
+<div class="smallTeaser">
+<img class="grid-bild lazyLoad" src="/_storage/asset/6301006/storage/thumbnail/file/94570694/52050802.jpg" data-src="/_storage/asset/10304056/storage/thumbnail/file/136713224/Sebastian%20Hofer.jpg" alt="Sebastian Hofer" title="Bild: Philip Dulle" width="250" height="275"/>
+<h3 class="grid-titel">Wien im knallharten TripAdvisor-Check</h3>
+<p class="grid-text">Viel Elend, viel Schmutz? Wie das Netz Österreichs Bundeshauptstadt bewertet.</p>
+<span class="grid-more">mehr</span>
+</div>
+</a>
+<a href="/shortlist/oesterreich/unsere-empfehlungen-10305773" title="Diese Woche im profil – Unsere Empfehlungen" data-id="10305773">
+<div class="smallTeaser">
+<img class="grid-bild lazyLoad" src="/_storage/asset/6301006/storage/thumbnail/file/94570694/52050802.jpg" data-src="/_storage/asset/10305680/storage/thumbnail/file/136729115/67468163.jpg" alt="Diese Woche im profil – Unsere Empfehlungen" title="Bild: profil" width="250" height="275"/>
+<h3 class="grid-titel">Diese Woche im profil – Unsere Empfehlungen</h3>
+<p class="grid-text">Verbote, ein Blick in die Zukunft, Neues vom Krankenhaus Nord, Brexit, Thomas ...</p>
+<span class="grid-more">mehr</span>
+</div>
+</a>
+<a href="/shortlist/ausland/amtsenthebungsverfahren-usa-10304277" title="Das Amtsenthebungsverfahren in den USA" data-id="10304277">
+<div class="smallTeaser">
+<img class="grid-bild lazyLoad" src="/_storage/asset/6301006/storage/thumbnail/file/94570694/52050802.jpg" data-src="/_storage/asset/10304291/storage/thumbnail/file/136717273/67464605.jpg" alt="Das Amtsenthebungsverfahren in den USA" title="Bild: AFP" width="250" height="274"/>
+<h3 class="grid-titel">Das Amtsenthebungsverfahren in den USA</h3>
+<p class="grid-text"></p>
+<span class="grid-more">mehr</span>
+</div>
+</a>
+</div>
+</section>
+<section class="ym-g960-3 linearize-level-1 ym-gl sidebar-ads-wrapper">
+<a href="https://ad1.adfarm1.adition.com/redi?sid=2916323&kid=2238804&bid=7558576" target="_blank" class="link-external" rel="noopener">
+<div class="eigenwerbung-wrapper">
+<img src="https://ad1.adfarm1.adition.com/banner?sid=2916323&kid=2238804&bid=7558576&wpt=C&ts=54565783" border="0" style="width:1px; height:1px;">
+<a href="https://ad1.adfarm1.adition.com/redi?sid=2916323&kid=2238804&bid=7558576" target="_blank" class="link-external" rel="noopener">
+<figure class="right" itemscope itemtype="http://schema.org/ImageObject">
+<img src="/_storage/asset/8322074/storage/master/file/125858844/Immowelt_profil_seitenansicht.jpg" alt="" title="Bild: profil.at" width="300" height="250"/>
+<figcaption class="bild-unterschrift">
+<div class="bild-copyright" itemprop="copyrightHolder">© profil.at</div>
+</figcaption>
+</figure>
+</a>
+</div>
+</a>
+</section>
+<section class="ym-g960-3 linearize-level-1 ym-gl sidebar-ads-wrapper">
+<aside class="ym-g960-3 linearize-level-2 ym-gl sidebar-middle">
+<div class="ad_con ad_con_desktop ad_marker" id="Middle1">
+<script type="text/javascript">
+if(typeof adition !== 'undefined' && typeof displayAd !== 'undefined' && displayAd('Middle1')){
+adition.srq.push(function(api) {
+api.renderSlot("Middle1");
+})
+}
+</script>
+</div>
+</aside>
+<div class="eigenwerbung-wrapper">
+<a href="/newsletter" >
+<img src="/_storage/asset/5420181/storage/vgnat:onecolumn_450:x/file/74988287/42779920.jpg" alt="" title="Bild: profil.at" width="450" height="375"/>
+</a>
+</div>
+</section>
+<div class="OUTBRAIN" data-src="https://www.profil.at/oesterreich/titelgeschichte-no-go-gesellschaft-10305684" data-widget-id="SB_3" data-ob-template="AT_Profil.at"></div>
+<script>
+Optanon.InsertScript('//widgets.outbrain.com/outbrain.js', 'body', null, null, 4);
+</script>
+<section class="ym-g960-3 linearize-level-1 ym-gl sidebar-newsticker-wrapper linkbuilding-wrapper">
+<div class="newsticker-wrapper">
+<div class="newsticker-header">Neues aus dem <span>Netzwerk</span></div>
+<div class="newsticker-content">
+<a href="https://www.e-media.at/gewinnen/jetzt-beko-lufthygiene-set-10239337?utm_source=profil.at&amp;utm_medium=TrafficCircle&amp;utm_campaign=NetzwerkBox" target="_blank" rel="nofollow" title="Artikel lesen: Lufthygiene-Set von Beko zu gewinnen!">Lufthygiene-Set von Beko zu gewinnen!<br />(e-media.at)</a>
+<hr />
+<a href="https://www.yachtrevue.at/news-allgemein/ausstellung-irene-ganser-siebdruck-10286468?utm_source=profil.at&amp;utm_medium=TrafficCircle&amp;utm_campaign=NetzwerkBox" target="_blank" rel="nofollow" title="Artikel lesen: Augenschmaus für Segler">Augenschmaus für Segler<br />(yachtrevue.at)</a>
+<hr />
+<a href="https://www.lustaufsleben.at/spirit-soul/boyfriend-bragging-wenn-frauen-10307002?utm_source=profil.at&amp;utm_medium=TrafficCircle&amp;utm_campaign=NetzwerkBox" target="_blank" rel="nofollow" title="Artikel lesen: Boyfriend Bragging: Wenn er von anderen Frauen redet">Boyfriend Bragging: Wenn er von anderen Frauen redet<br />(lustaufsleben.at)</a>
+<hr />
+<a href="https://www.gusto.at/rezepte/ravioli-steinpilzfuelle-thymianbutter-10253524?utm_source=profil.at&amp;utm_medium=TrafficCircle&amp;utm_campaign=NetzwerkBox" target="_blank" rel="nofollow" title="Artikel lesen: Ravioli mit Steinpilzfülle und Thymianbutter">Ravioli mit Steinpilzfülle und Thymianbutter<br />(gusto.at)</a>
+<hr />
+<a href="https://www.trend.at/branchen/bonitaet/aktuelle-insolvenzfaelle?utm_source=profil.at&amp;utm_medium=TrafficCircle&amp;utm_campaign=NetzwerkBox" target="_blank" rel="nofollow" title="Artikel lesen: Out of Business: Aktuelle Insolvenzen">Out of Business: Aktuelle Insolvenzen<br />(trend.at)</a>
+<hr />
+<a href="https://www.tv-media.at/top-storys/unvergessen-diese-stars-sind-viel-zu-frueh-gestorben?utm_source=profil.at&amp;utm_medium=TrafficCircle&amp;utm_campaign=NetzwerkBox" target="_blank" rel="nofollow" title="Artikel lesen: Unvergessen: Diese Stars sind viel zu früh gestorben!">Unvergessen: Diese Stars sind viel zu früh gestorben!<br />(tv-media.at)</a>
+<hr />
+<a href="https://autorevue.at/kurioses/amazon-f1-kupplung-bmw?utm_source=profil.at&amp;utm_medium=TrafficCircle&amp;utm_campaign=NetzwerkBox" target="_blank" rel="nofollow" title="Artikel lesen: Teures Versehen: Amazon schickt irrtümlich Formel 1-Kupplung an BMW-Besitzer">Teures Versehen: Amazon schickt irrtümlich Formel 1-Kupplung an BMW-Besitzer<br />(autorevue.at)</a>
+<hr />
+<a href="https://www.news.at/a/heidi-klum-tom-kaulitz-kuss-9607619?utm_source=profil.at&amp;utm_medium=TrafficCircle&amp;utm_campaign=NetzwerkBox" target="_blank" rel="nofollow" title="Artikel lesen: Ja, da läuft was
+zwischen Heidi &amp; Tom">Ja, da läuft was
+zwischen Heidi & Tom<br />(news.at)</a>
+</div>
+</div>
+</section>
+<section class="ym-g960-3 linearize-level-1 ym-gl sidebar-ads-wrapper">
+<aside class="ym-g960-3 linearize-level-2 ym-gl sidebar-middle">
+<div class="ad_con ad_con_desktop ad_marker" id="Middle3">
+<script type="text/javascript">
+if(typeof adition !== 'undefined' && typeof displayAd !== 'undefined' && displayAd('Middle3')){
+adition.srq.push(function(api) {
+api.renderSlot("Middle3");
+})
+}
+</script>
+</div>
+</aside>
+<div class="eigenwerbung-wrapper">
+<a href="/themen/unerhoert" >
+<img src="/_storage/asset/5420182/storage/vgnat:onecolumn_450:x/file/74988288/42779921.jpg" alt="" title="Bild: profil.at" width="450" height="375"/>
+</a>
+</div>
+</section>
+<section class="ym-g960-3 linearize-level-1 ym-gl sidebar-ads-wrapper">
+<aside class="ym-g960-3 linearize-level-2 ym-gl sidebar-middle">
+<div class="ad_con ad_con_desktop ad_marker" id="Middle2">
+<script type="text/javascript">
+if(typeof adition !== 'undefined' && typeof displayAd !== 'undefined' && displayAd('Middle2')){
+adition.srq.push(function(api) {
+api.renderSlot("Middle2");
+})
+}
+</script>
+</div>
+</aside>
+<div class="eigenwerbung-wrapper">
+<a href="/erster-weltkrieg/" >
+<img src="/_storage/asset/5420183/storage/vgnat:onecolumn_450:x/file/74988341/42779930.jpg" alt="" title="Bild: profil.at" width="450" height="375"/>
+</a>
+</div>
+</section>
+</aside>
+</div>
+<!-- Content End -->
+<aside class="ad_con ad_con_mobile ad_marker" id="Bottom_mobile">
+<script type="text/javascript">
+if(typeof adition !== 'undefined' && typeof displayAd !== 'undefined' && displayAd('Bottom_mobile')){
+adition.srq.push(function(api) {
+api.renderSlot('Bottom_mobile');
+})
+}
+</script>
+</aside>
+<!-- Content Bottom Start -->
+<section class="ym-grid gridSection">
+<section class="gridItem gridItem100 contentWidget ">
+<div class="eigenwerbung-wrapper">
+<div class="profilShop">
+<figure class="right" itemscope itemtype="http://schema.org/ImageObject">
+<img src="/_storage/asset/7681198/storage/master/file/112461452/pr_logo_300_NEU.jpg" alt="" title="Bild: profil" width="300" height="90"/>
+<figcaption class="bild-unterschrift">
+<div class="bild-copyright" itemprop="copyrightHolder">© profil</div>
+</figcaption>
+</figure>
+<p>Diese Produkte und vieles mehr finden Sie im <em><a href="https://shop.profil.at/?utm_source=profil.at&amp;utm_medium=Content&amp;utm_campaign=produktbox" target="_blank" class="link-external" rel="noopener">profil Shop</a></em>
+</p>
+<a href="https://shop.profil.at/cube-feuerkorb-grill-hocker?utm_source=profil.at&utm_medium=Content&utm_campaign=produktbox" target="_blank" class="link-external" rel="noopener">
+<figure class="right" itemscope itemtype="http://schema.org/ImageObject">
+<img src="/_storage/asset/9622724/storage/vgnat:onecolumn_450:x/file/131161958/65020630.jpg" alt="" title="Bild: martin erd photographer / höfats GmbH" width="450" height="450"/>
+<figcaption class="bild-unterschrift">
+<div class="bild-copyright" itemprop="copyrightHolder">© martin erd photographer / höfats GmbH</div>
+</figcaption>
+</figure>
+</a>
+<a href="https://shop.profil.at/tischlampe-picia?utm_source=profil.at&utm_medium=Content&utm_campaign=produktbox" target="_blank" class="link-external" rel="noopener">
+<figure class="right" itemscope itemtype="http://schema.org/ImageObject">
+<img src="/_storage/asset/7703721/storage/vgnat:onecolumn_450:x/file/113004939/56544072.jpg" alt="" title="Bild: profil" width="450" height="450"/>
+<figcaption class="bild-unterschrift">
+<div class="bild-copyright" itemprop="copyrightHolder">© profil</div>
+</figcaption>
+</figure>
+</a>
+<a href="https://shop.profil.at/brillenetui-aus-holz?utm_source=profil.at&utm_medium=Content&utm_campaign=produktbox" target="_blank" class="link-external" rel="noopener">
+<figure class="right" itemscope itemtype="http://schema.org/ImageObject">
+<img src="/_storage/asset/8103564/storage/vgnat:onecolumn_450:x/file/118496166/59209863.jpg" alt="" title="Bild: Holt" width="450" height="450"/>
+<figcaption class="bild-unterschrift">
+<div class="bild-copyright" itemprop="copyrightHolder">© Holt</div>
+</figcaption>
+</figure>
+</a>
+<a href="https://shop.profil.at/sonnenglas?utm_source=profil.at&utm_medium=Content&utm_campaign=produktbox" target="_blank" class="link-external" rel="noopener">
+<figure class="right" itemscope itemtype="http://schema.org/ImageObject">
+<img src="/_storage/asset/7095342/storage/vgnat:onecolumn_450:x/file/103850041/53871316.jpg" alt="" title="Bild: profil Shop" width="450" height="450"/>
+<figcaption class="bild-unterschrift">
+<div class="bild-copyright" itemprop="copyrightHolder">© profil Shop</div>
+</figcaption>
+</figure>
+</a>
+<a href="https://shop.profil.at/interieur/weinregal-c-aus-eschenholz?utm_source=profil.at&utm_medium=Content&utm_campaign=produktbox" target="_blank" class="link-external" rel="noopener">
+<figure class="right" itemscope itemtype="http://schema.org/ImageObject">
+<img src="/_storage/asset/7703108/storage/vgnat:onecolumn_450:x/file/112989815/56537171.jpg" alt="" title="Bild: profil" width="450" height="450"/>
+<figcaption class="bild-unterschrift">
+<div class="bild-copyright" itemprop="copyrightHolder">© profil</div>
+</figcaption>
+</figure>
+</a>
+<a href="https://shop.profil.at/holzuhr-premium-gams?utm_source=profil.at&utm_medium=Content&utm_campaign=produktbox" target="_blank" class="link-external" rel="noopener">
+<figure class="right" itemscope itemtype="http://schema.org/ImageObject">
+<img src="/_storage/asset/8103531/storage/vgnat:onecolumn_450:x/file/118495351/59209538.jpg" alt="" title="Bild: waidzeit" width="450" height="450"/>
+<figcaption class="bild-unterschrift">
+<div class="bild-copyright" itemprop="copyrightHolder">© waidzeit</div>
+</figcaption>
+</figure>
+</a>
+</div>
+</div>
+</section>
+<script type="text/javascript">
+teaserlistparams = {
+'max.articles' : 11,
+'content.id' : 10305684,
+'ad.position[0]' : 'Middle3',
+'ad.position[1]' : 'Position3',
+'skip.id[0]' : 10305773,
+'skip.id[1]' : 10304277,
+'skip.id[2]' : 10305684,
+'skip.id[3]' : 10304038
+};
+</script>
+<script type="text/javascript">
+var url = "/ajax/load-ressortteaser/5200433";
+var appendTo = ".pagecontent";
+cs_callbacks.push(function(){
+load_more_content(url, appendTo, teaserlistparams);
+});
+</script>
+<div class="OUTBRAIN" data-src="https://www.profil.at/oesterreich/titelgeschichte-no-go-gesellschaft-10305684" data-widget-id="AR_5" data-ob-template="AT_Profil.at"></div>
+<script>
+Optanon.InsertScript('//widgets.outbrain.com/outbrain.js', 'body', null, null, 4);
+</script>
+</section>
+<!-- Content Bottom End -->
+</section>
+<section class="sprite backtotop"><a href="#">&nbsp;</a></section>
+</main>
+<!-- twyn start -->
+<div id="twyn-div">
+<script type="text/javascript">
+Optanon.InsertHtml('<img src="//et.twyn.com/sense?pubid=154360" class="pixle_count" width="10" height="1" alt="pixel" />', 'twyn-div', null, null, 4);
+</script>
+</div>
+<!-- twyn end -->
+<script async src="/js/bottom-15252c88.js" type="text/javascript"></script>
+<script>
+var uvp_debug = false;
+Optanon.InsertScript("https://uvp-profil.sf.apa.at/scripts/jquery.uvp.stable.js", 'body', null, null, 1);
+</script>
+<!-- Facebook Pixel Code -->
+<script type="text/plain" class="optanon-category-4">
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1002587256465930');
+fbq('track', "PageView");
+</script>
+<noscript>
+</noscript>
+<!-- End Facebook Pixel Code -->
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "WebSite",
+"url": "https://www.profil.at",
+"potentialAction": {
+"@type": "SearchAction",
+"target": "https://www.profil.at/suche?s.text={search_term}",
+"query-input": "required name=search_term" }
+}
+</script>
+<script>
+/* 20180827114101 */ !function(e,r,t){function a(r,t){var a=0,n=50,i=!1,o=e.setInterval(function(){r()&&(e.clearInterval(o),t(i)),a++>n&&(e.clearInterval(o),i=!0,t(i))},10)}function n(e){var r=e.toLowerCase();if(0===r.indexOf("msie")&&0===r.indexOf("trident"))return!1;var t=/(?:msie|rv:)\s?([\d\.]+)/.exec(r);return!!(t&&parseInt(t[1],10)>=10)}function o(e,r){try{var t,i=new RegExp("Firefox/([0-9]+)[.]{1}");if(r.webkitRequestFileSystem)r.webkitRequestFileSystem(r.TEMPORARY,1,function(){t=!1},function(e){t=!0});else if(r.indexedDB&&/Firefox/.test(r.navigator.userAgent)&&i.exec(r.navigator.userAgent)[1]>50&&i.exec(r.navigator.userAgent)[1]<56){var o;try{o=r.indexedDB.open("test")}catch(e){t=!0}"undefined"==typeof t&&a(function(){return"done"===o.readyState},function(e){e||(t=!o.result)})}else if(n(r.navigator.userAgent)){t=!1;try{r.indexedDB||(t=!0)}catch(e){t=!0}}else if(r.localStorage&&/Safari/.test(r.navigator.userAgent)){try{r.localStorage.setItem("test",1)}catch(e){t=!0}"undefined"==typeof t&&(t=!1,r.localStorage.removeItem("test"))}else t=!1;a(function(){return"undefined"!=typeof t},function(r){e(t)})}catch(e){}}function d(e,r){var t=S(e);if(!t)return t;if(""!=r)for(var a=0;a<r.length;a++)"^"==r.charAt(a)&&(t=t.parentNode),"<"==r.charAt(a)&&(t=t.previousElementSibling),">"==r.charAt(a)&&(t=t.nextElementSibling),"y"==r.charAt(a)&&(t=t.firstChild);return t}function u(e,r){var t=r.getBoundingClientRect(),a=e.clientX-t.left,n=e.clientY-t.top;return{x:a,y:n}}function p(e){for(var r=0,t=0;e;)r+=e.offsetLeft+e.clientLeft,t+=e.offsetTop+e.clientTop,e=e.offsetParent;return{x:r,y:t}}function h(e,r){var t=0,a=0,n=p(r);return(e.pageX||e.pageY)&&(t=e.pageX,a=e.pageY),(e.clientX||e.clientY)&&(t=e.clientX+document.body.scrollLeft+document.documentElement.scrollLeft,a=e.clientY+document.body.scrollTop+document.documentElement.scrollTop),t-=n.x,a-=n.y,{x:t,y:a}}function b(e,r){return r.getBoundingClientRect?u(e,r):h(e,r)}function s(e,r){e.addEventListener?e.addEventListener("click",r,!0):e.attachEvent&&e.attachEvent("onclick",function(){return r.call(e,window.event)})}function f(e){if("function"==typeof e.createShadowRoot)try{var r=e.createShadowRoot();r.innerHTML=atob("ICAgICAgICA8Y29udGVudD48L2NvbnRlbnQ+DQogICAgICAgIDxzdHlsZT4jamtkZnZqayB7IG1hcmdpbjogMDsgcGFkZGluZzogMDsgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7IH1ib2R5IHttYXJnaW46IDBweCFpbXBvcnRhbnQ7fTwvc3R5bGU+DQogICAg")}catch(e){}}function l(e){v(e)}function v(e){function t(e){if(e){window.uabpdadcv="1.0";var r=0,t=50,n=function(e,r){if(e&&r)for(var t=Object.keys(r),a=0;a<t.length;a++)"[object Array]"===Object.prototype.toString.call(r[t[a]])?e.style.setProperty(t[a],r[t[a]],"important"):e.style.setProperty(t[a],r[t[a]],"")},i=setInterval(function(){++r>=t&&clearInterval(i);for(var o=0;o<e.length;o++)if(e[o]){var d=void 0===e[o].dependency?"nil":e[o].dependency&&"undefined"!=typeof a&&a[e[o].dependency]?"true":"false";if("false"===d)continue;if(!e[o].skipSelectorCSS&&!e[o].cssSelectorDone&&(e[o].selector||e[o].selectorAll))for(var u=document.querySelectorAll(e[o].selector||e[o].selectorAll),p=0;p<u.length&&(n(u[p],e[o].cssApply),e[o].cssSelectorDone=!0,!e[o].selector);p++);e[o].applyToDependency&&!e[o].cssDependencyDone&&e[o].cssApply&&(e[o].cssDependencyDone=!0,n(a[e[o].dependency],e[o].cssApply)),e[o].function&&!e[o].functionDone&&(e[o].functionDone=e[o].function(e[o]))}},100)}}if(e.uabpdl&&!e.uabInject){e.uabInject=!0,e.uabPc={},e.uabOc=[],e.uabAv={},e.uabAvt={};var a=[];if(!uabpMobile){Y(P(".eigenwerbung-wrapper"),function(e,r){r.className=r.className+" aobj"+e}),window.uabpFlags.disableAb=!0,window.uabpFlags.forceImp=!0,t([{dependency:"BACK",selector:"#ad-fireplace",cssApply:{position:"relative"}},{dependency:"BACK",selector:".top-leiste",cssApply:{position:"relative"}}],!0);var n=!1;if(e.uabpnewinject||e.uabpFlags.newInject)for(var i,o=document.styleSheets,d=0;d<o.length;d++)try{if(o[d].cssRules){if(o[d].href&&(e.uabpnewinject3||e.uabpFlags.newInject3))continue;n=!0;var u=o[d];if(e.uabpnewinject2||e.uabpFlags.newInject2)for(var p in u.cssRules)if(u.cssRules.hasOwnProperty(p)&&u.cssRules[p].selectorText.indexOf("plista")>-1){n=!1;break}if(e.uabpnewinject4||e.uabpFlags.newInject4){i=Object.values(o[d].ownerNode.attributes);for(var h=0;h<i.length;h++)if(i[h].nodeName.indexOf("data-styled-components")>-1){n=!1;break}}if(n){try{setTimeout(w(u,a),500)}catch(e){}break}}}catch(e){}if(!e.uabpnewinject&&!e.uabpFlags.newInject||!n){var b=k("style");b.type="text/css",T(b,'#EfXEIowBx img {cursor: pointer;width: initial;}#EfXEIowBx:before {content: "Anzeige";color: #979797;display: block;margin-bottom: 2px;font: bold 10px/10px "Helvetica Neue Condensed", Helvetica, sans-serif;}.EashYy {position: fixed; left: 0; top: 0px; right: 0; bottom: 0; background-color: #000000;cursor: pointer;}.EashYy img {width: 100%;height: 100%;}.eRYdyCivhQ img {cursor: pointer;max-width: 960px;width: initial;}.eRYdyCivhQ:before {content: "Anzeige";color: #979797;display: block;margin-bottom: 2px;font: bold 10px/10px "Helvetica Neue Condensed", Helvetica, sans-serif;}#shfAMgTT img {cursor: pointer;max-width: 960px;width: initial;}#shfAMgTT:before {content: "Anzeige";color: #979797;display: block;margin-bottom: 2px;font: bold 10px/10px "Helvetica Neue Condensed", Helvetica, sans-serif;}.bQpRoNYs {}.bQpRoNYs img {cursor: pointer;}.zVsmROiA {display: block;}.zVsmROiA img {cursor: pointer;}#XpOKTJa {}#XpOKTJa img {cursor: pointer;width: initial;}.aIZUCemzua {position: relative;direction: rtl;text-align: right;max-width: 965px;}.aIZUCemzua img {cursor: pointer;width: initial;max-width: 100%;}.yKPCTWqG img {cursor: pointer;width: initial;}.yKPCTWqG:before {content: "Anzeige";color: #979797;display: block;margin-bottom: 2px;font: bold 10px/10px "Helvetica Neue Condensed", Helvetica, sans-serif;}.yxVyrxD img {cursor: pointer;width: initial;}.yxVyrxD:before {content: "Anzeige";color: #979797;display: block;margin-bottom: 2px;font: bold 10px/10px "Helvetica Neue Condensed", Helvetica, sans-serif;}.XFglpqRzGH {position: fixed;margin-left: 961.1px;top: 129px;}.XFglpqRzGH img {cursor: pointer;}.tnlSKgqcET {position: fixed;top: 37px;margin-left: 965.1px;}.tnlSKgqcET img {cursor: pointer;width: initial;}#yDUWOth {}#yDUWOth img {cursor: pointer;}#ylykknxg {position: relative;}.gykDYgVlX {}@media print {.bQpRoNYs,.zVsmROiA,#ylykknxg,.gykDYgVlX,#yDUWOth,#EfXEIowBx,.EashYy,.eRYdyCivhQ,#shfAMgTT,#XpOKTJa,.aIZUCemzua,.yKPCTWqG,.yxVyrxD,.XFglpqRzGH,.tnlSKgqcET{display:none;}} .uabpHid {display:none !important;}'),D(ne,b),setTimeout(g(a),0)}(e.uabpdisableab||e.uabpFlags.disableAb)&&f(r.documentElement)}}}function c(e,r){if(r<0)return c(e,r+26);for(var t="",a=0;a<e.length;a++){var n=e[a];if(n.match(/[a-z]/i)){var i=e.charCodeAt(a);i>=65&&i<=90?n=String.fromCharCode((i-65+r)%26+65):i>=97&&i<=122&&(n=String.fromCharCode((i-97+r)%26+97))}t+=n}return t}function w(r,t){e[c("fmdsqfEtqqf",-12)]=r;for(var a='#EfXEIowBx img {cursor: pointer;width: initial;}#EfXEIowBx:before {content: "Anzeige";color: #979797;display: block;margin-bottom: 2px;font: bold 10px/10px "Helvetica Neue Condensed", Helvetica, sans-serif;}.EashYy {position: fixed; left: 0; top: 0px; right: 0; bottom: 0; background-color: #000000;cursor: pointer;}.EashYy img {width: 100%;height: 100%;}.eRYdyCivhQ img {cursor: pointer;max-width: 960px;width: initial;}.eRYdyCivhQ:before {content: "Anzeige";color: #979797;display: block;margin-bottom: 2px;font: bold 10px/10px "Helvetica Neue Condensed", Helvetica, sans-serif;}#shfAMgTT img {cursor: pointer;max-width: 960px;width: initial;}#shfAMgTT:before {content: "Anzeige";color: #979797;display: block;margin-bottom: 2px;font: bold 10px/10px "Helvetica Neue Condensed", Helvetica, sans-serif;}.bQpRoNYs {}.bQpRoNYs img {cursor: pointer;}.zVsmROiA {display: block;}.zVsmROiA img {cursor: pointer;}#XpOKTJa {}#XpOKTJa img {cursor: pointer;width: initial;}.aIZUCemzua {position: relative;direction: rtl;text-align: right;max-width: 965px;}.aIZUCemzua img {cursor: pointer;width: initial;max-width: 100%;}.yKPCTWqG img {cursor: pointer;width: initial;}.yKPCTWqG:before {content: "Anzeige";color: #979797;display: block;margin-bottom: 2px;font: bold 10px/10px "Helvetica Neue Condensed", Helvetica, sans-serif;}.yxVyrxD img {cursor: pointer;width: initial;}.yxVyrxD:before {content: "Anzeige";color: #979797;display: block;margin-bottom: 2px;font: bold 10px/10px "Helvetica Neue Condensed", Helvetica, sans-serif;}.XFglpqRzGH {position: fixed;margin-left: 961.1px;top: 129px;}.XFglpqRzGH img {cursor: pointer;}.tnlSKgqcET {position: fixed;top: 37px;margin-left: 965.1px;}.tnlSKgqcET img {cursor: pointer;width: initial;}#yDUWOth {}#yDUWOth img {cursor: pointer;}#ylykknxg {position: relative;}.gykDYgVlX {}@media print {.bQpRoNYs,.zVsmROiA,#ylykknxg,.gykDYgVlX,#yDUWOth,#EfXEIowBx,.EashYy,.eRYdyCivhQ,#shfAMgTT,#XpOKTJa,.aIZUCemzua,.yKPCTWqG,.yxVyrxD,.XFglpqRzGH,.tnlSKgqcET{display:none;}} .uabpHid {display:none !important;}'.replace(new RegExp(atob("fVxzK30="),"g"),function(e){return"}}"}),n=a.replace(new RegExp(e.atob("fVtefV0="),"g"),function(e){return e[0]+"randomString"+e[1]}).split("randomString"),i=0;i<n.length;i++)e[c("fmdsqfEtqqf",-12)][c("uzeqdfDgxq",-12)](n[i],e[c("fmdsqfEtqqf",-12)].cssRules.length);setTimeout(g(t),0)}function g(e){var r=[];j(e,r),m(e,r),y()}function j(r,t){var a=d("#ad-fireplace","");if(a){var n=k("div");t.BILLMFooterWrapper=n,r.BILLMFooterWrapper=n,navigator.userAgent.toLowerCase().indexOf("chrome")>-1&&(e.uabpforceimp||e.uabpFlags.forceImp)&&_(n),W(n,"bQpRoNYs "),a.nextSibling?L(a.nextSibling,n):D(a.parentNode,n),e.uabpd4.w[2954]=n}var a=d("#ad-fireplace > header","");if(a){var n=k("span");t.BILLWrapper=n,r.BILLWrapper=n,navigator.userAgent.toLowerCase().indexOf("chrome")>-1&&(e.uabpforceimp||e.uabpFlags.forceImp)&&_(n),W(n,"zVsmROiA "),a.nextSibling?L(a.nextSibling,n):D(a.parentNode,n),e.uabpd4.w[2953]=n}var a=d("#ad-fireplace","");if(a){var n=k("div");t.WallpaperWrapper=n,r.WallpaperWrapper=n,navigator.userAgent.toLowerCase().indexOf("chrome")>-1&&(e.uabpforceimp||e.uabpFlags.forceImp)&&_(n),M(n,"ylykknxg"),L(a,n),e.uabpd4.w[4858]=n}var a=d("#ad-top","");if(a){var n=k("div");t.Wrapper=n,r.Wrapper=n,navigator.userAgent.toLowerCase().indexOf("chrome")>-1&&(e.uabpforceimp||e.uabpFlags.forceImp)&&_(n),M(n,"DrRSif"),W(n,"gykDYgVlX "),L(a,n),e.uabpd4.w[1888]=n}var a=t.Wrapper;if(a){var n=k("div");t.SKYRightWrapper=n,r.SKYRightWrapper=n,navigator.userAgent.toLowerCase().indexOf("chrome")>-1&&(e.uabpforceimp||e.uabpFlags.forceImp)&&_(n),M(n,"yDUWOth"),D(a,n),e.uabpd4.w[3915]=n}}function m(r,t){if(e.uabpPtl=10,e.uabpPl=0,location.host+"/"!==location.host+window.location.pathname){var a=d(".ym-grid.kommentar-thema-social-wrapper",""),n=!1;a?K(U("2bvwrudjh2dvvhw29748652vwrudjh2yjqdw=wzrfroxpqb783=5::2iloh264:;54392"+e.uabpRnd+"b557889;:1msj",-3),function(){if(x(),!n){n=!0;var t=this;if(!(t.height<2)){var i=a,o=k("span");r.ARTENDM=o,navigator.userAgent.toLowerCase().indexOf("chrome")>-1&&(e.uabpforceimp||e.uabpFlags.forceImp)&&_(o),M(o,"EfXEIowBx");var d=t;s(d,function(r,t){if(!e.uabPc[2166]){r.preventDefault(),r.stopPropagation();for(var t=b(r,this),a=0;a<e.uabOc.length;a++){var n=e.uabOc[a];if(2166==n.p&&t.x>=n.x&&t.x<n.x+n.w&&t.y>=n.y&&t.y<n.y+n.h){if(n.u){var i=n.t.length>0?n.t:"_self";i=0==r.button&&r.ctrlKey?"_blank":i,X(e,n.u,i,!0)}return}}var o=[U("2bvwrudjh2dvvhw28;856:2vwrudjh2yjqdw=rqhfroxpqb<:4=56:2iloh2444468:42"+e.uabpRnd+"b7785:;441msj",-3),U("2bvwrudjh2dvvhw29:;39;2vwrudjh2yjqdw=wzrfroxpqb<63=8:92iloh2;;<6<77;2"+e.uabpRnd+"b;5;795931msj",-3),U("2bvwrudjh2dvvhw26<763<2vwrudjh2yjqdw=rqhfroxpqb633=4<32iloh2569766942"+e.uabpRnd+"b;8;<583;1msj",-3)],d=o[3*Math.floor(1*t.y/this.offsetHeight)+Math.floor(3*t.x/this.offsetWidth)];X(e,d,"_blank")}}),D(o,t),L(i,o),e.uabpd4.a[2166]=o,te(o,2166,U("2bvwrudjh2dvvhw2844<<62vwrudjh2yjqdw=rqhfroxpqb953=7942iloh2984973332"+e.uabpRnd+"b7;5473761msj",-3))}}},x):x()}else x();var i=d("body",""),o=!1;i?K(U("2bvwrudjh2dvvhw27;99<<2vwrudjh2yjqdw=rqhfroxpqb783=5::2iloh24;<66:;82"+e.uabpRnd+"b<7:484<;1msj",-3),function(){if(x(),!o){o=!0;var t=this;if(!(t.height<2)){var a=i,n=k("div");r.BACK=n,navigator.userAgent.toLowerCase().indexOf("chrome")>-1&&(e.uabpforceimp||e.uabpFlags.forceImp)&&_(n),W(n,"EashYy ");var d=t;s(d,function(r,t){if(!e.uabPc[4861]){r.preventDefault(),r.stopPropagation();for(var t=b(r,this),a=0;a<e.uabOc.length;a++){var n=e.uabOc[a];if(4861==n.p&&t.x>=n.x&&t.x<n.x+n.w&&t.y>=n.y&&t.y<n.y+n.h){if(n.u){var i=n.t.length>0?n.t:"_self";i=0==r.button&&r.ctrlKey?"_blank":i,X(e,n.u,i,!0)}return}}var o=[U("2bvwrudjh2dvvhw26<;5352vwrudjh2yjqdw=wzrfroxpqb953=7942iloh2:36895992"+e.uabpRnd+"b449565<;1msj",-3)],d=o[1*Math.floor(1*t.y/this.offsetHeight)+Math.floor(1*t.x/this.offsetWidth)];X(e,d,"_blank")}}),D(n,t),a.firstChild?L(a.firstChild,n):D(a,n),e.uabpd4.a[4861]=n,te(n,4861,U("2bvwrudjh2dvvhw25:677<2vwrudjh2yjqdw=wzrfroxpqb<:4=56:2iloh2:59<84982"+e.uabpRnd+"b44;<;9<;1msj",-3))}}},x):x();var u=t.BILLWrapper,p=!1;u?K(U("2bvwrudjh2dvvhw24:949:2vwrudjh2yjqdw=rqhfroxpqb953=7942iloh249:;<9662"+e.uabpRnd+"b:5:9:<<81msj",-3),function(){if(x(),!p){p=!0;var t=this;if(!(t.height<2)){var a=u,n=k("KlUFw");r.BILL=n,navigator.userAgent.toLowerCase().indexOf("chrome")>-1&&(e.uabpforceimp||e.uabpFlags.forceImp)&&_(n),M(n,"wNDUqy"),W(n,"eRYdyCivhQ ");var i=t;s(i,function(r,t){if(!e.uabPc[1892]){r.preventDefault(),r.stopPropagation();for(var t=b(r,this),a=0;a<e.uabOc.length;a++){var n=e.uabOc[a];if(1892==n.p&&t.x>=n.x&&t.x<n.x+n.w&&t.y>=n.y&&t.y<n.y+n.h){if(n.u){var i=n.t.length>0?n.t:"_self";i=0==r.button&&r.ctrlKey?"_blank":i,X(e,n.u,i,!0)}return}}var o=[U("2bvwrudjh2dvvhw2;<58:52vwrudjh2yjqdw=rqhfroxpqb633=4<32iloh28:4956692"+e.uabpRnd+"b967;79881msj",-3),U("2bvwrudjh2dvvhw27<94<42vwrudjh2yjqdw=rqhfroxpqb783=5::2iloh297587;6<2"+e.uabpRnd+"b<4<<44;51msj",-3),U("2bvwrudjh2dvvhw26;38;62vwrudjh2yjqdw=wzrfroxpqb<:3=56;2iloh257;;3<:82"+e.uabpRnd+"b658;<9:41msj",-3),U("2bvwrudjh2dvvhw2:435882vwrudjh2yjqdw=rqhfroxpqb953=7942iloh24;33543:2"+e.uabpRnd+"b:;;;<4351msj",-3),U("2bvwrudjh2dvvhw294945<2vwrudjh2yjqdw=wzrfroxpqb<64=8:82iloh2:9;5<93;2"+e.uabpRnd+"b<;:<:49<1msj",-3),U("2bvwrudjh2dvvhw247:7762vwrudjh2yjqdw=rqhfroxpqb633=4<32iloh265<6;:972"+e.uabpRnd+"b744;87981msj",-3),U("2bvwrudjh2dvvhw27;<:4;2vwrudjh2yjqdw=rqhfroxpqb953=7942iloh265<5:8832"+e.uabpRnd+"b;:94<::61msj",-3),U("2bvwrudjh2dvvhw29684582vwrudjh2yjqdw=rqhfroxpqb94<=7932iloh2;3<4:84;2"+e.uabpRnd+"b<63:<4441msj",-3),U("2bvwrudjh2dvvhw2543<<92vwrudjh2yjqdw=wzrfroxpqb784=5:;2iloh2<4:586852"+e.uabpRnd+"b576846<41msj",-3),U("2bvwrudjh2dvvhw29;45;;2vwrudjh2yjqdw=wzrfroxpqb783=5::2iloh2638;45642"+e.uabpRnd+"b:75797491msj",-3),U("2bvwrudjh2dvvhw2968;;82vwrudjh2yjqdw=rqhfroxpqb633=4<32iloh2<:5:86582"+e.uabpRnd+"b:<;689771msj",-3),U("2bvwrudjh2dvvhw27<5<882vwrudjh2yjqdw=rqhfroxpqb94<=7932iloh245859:442"+e.uabpRnd+"b6;467:981msj",-3)],d=o[12*Math.floor(1*t.y/this.offsetHeight)+Math.floor(12*t.x/this.offsetWidth)];X(e,d,"_blank")}}),D(n,t),D(a,n),e.uabpd4.a[1892]=n;var o=k("div");T(o,"<div> </div>"),Y(o.childNodes,function(e,r){L(n,r)}),te(n,1892,U("2bvwrudjh2dvvhw279;<<72vwrudjh2yjqdw=rqhfroxpqb953=7942iloh2;55433642"+e.uabpRnd+"b899445861msj",-3))}}},x):x();var h=t.BILLMFooterWrapper,f=!1;h?K(U("2bvwrudjh2dvvhw27<67;<2vwrudjh2yjqdw=rqhfroxpqb783=5::2iloh27:63;3:52"+e.uabpRnd+"b:<:4:7671msj",-3),function(){if(x(),!f){f=!0;var t=this;if(!(t.height<2)){var a=h,n=k("figure");r.BILLMFooter=n,navigator.userAgent.toLowerCase().indexOf("chrome")>-1&&(e.uabpforceimp||e.uabpFlags.forceImp)&&_(n),M(n,"shfAMgTT");var i=t;s(i,function(r,t){if(!e.uabPc[2165]){r.preventDefault(),r.stopPropagation();for(var t=b(r,this),a=0;a<e.uabOc.length;a++){var n=e.uabOc[a];if(2165==n.p&&t.x>=n.x&&t.x<n.x+n.w&&t.y>=n.y&&t.y<n.y+n.h){if(n.u){var i=n.t.length>0?n.t:"_self";i=0==r.button&&r.ctrlKey?"_blank":i,X(e,n.u,i,!0)}return}}var o=[U("2bvwrudjh2dvvhw2;44;592vwrudjh2yjqdw=wzrfroxpqb634=4<42iloh2<89<68;92"+e.uabpRnd+"b9757364<1msj",-3),U("2bvwrudjh2dvvhw27989<62vwrudjh2yjqdw=rqhfroxpqb634=4<42iloh299<5864<2"+e.uabpRnd+"b57433:581msj",-3),U("2bvwrudjh2dvvhw2:4:7<92vwrudjh2yjqdw=rqhfroxpqb633=4<32iloh2874;;:772"+e.uabpRnd+"b8:9993391msj",-3),U("2bvwrudjh2dvvhw259:3862vwrudjh2yjqdw=rqhfroxpqb<64=8:82iloh2984767462"+e.uabpRnd+"b478363;31msj",-3),U("2bvwrudjh2dvvhw2883;<72vwrudjh2yjqdw=wzrfroxpqb783=5::2iloh2<374763;2"+e.uabpRnd+"b4::5395;1msj",-3),U("2bvwrudjh2dvvhw275<64:2vwrudjh2yjqdw=wzrfroxpqb953=7942iloh287<996832"+e.uabpRnd+"b866:97461msj",-3),U("2bvwrudjh2dvvhw2:;487;2vwrudjh2yjqdw=rqhfroxpqb<:3=56;2iloh2867<64742"+e.uabpRnd+"b838<3<<:1msj",-3),U("2bvwrudjh2dvvhw2549;532vwrudjh2yjqdw=wzrfroxpqb<64=8:82iloh276354:;;2"+e.uabpRnd+"b9<64<;:71msj",-3),U("2bvwrudjh2dvvhw2;76<;:2vwrudjh2yjqdw=wzrfroxpqb634=4<42iloh2:7:753;42"+e.uabpRnd+"b7<887:691msj",-3),U("2bvwrudjh2dvvhw2744<362vwrudjh2yjqdw=rqhfroxpqb784=5:;2iloh26<:87;862"+e.uabpRnd+"b<445569<1msj",-3),U("2bvwrudjh2dvvhw25948;72vwrudjh2yjqdw=wzrfroxpqb634=4<42iloh2:3<947892"+e.uabpRnd+"b9;4378:81msj",-3),U("2bvwrudjh2dvvhw2865<;72vwrudjh2yjqdw=rqhfroxpqb953=7942iloh2:44937442"+e.uabpRnd+"b4:;763561msj",-3)],d=o[12*Math.floor(1*t.y/this.offsetHeight)+Math.floor(12*t.x/this.offsetWidth)];X(e,d,"_blank")}}),D(n,t),D(a,n),e.uabpd4.a[2165]=n,te(n,2165,U("2bvwrudjh2dvvhw2::3<4:2vwrudjh2yjqdw=rqhfroxpqb784=5:;2iloh29:9876:82"+e.uabpRnd+"b7579879<1msj",-3))}}},x):x();var l=t.Wrapper,v=!1;l?K(U("2bvwrudjh2dvvhw25696<42vwrudjh2yjqdw=rqhfroxpqb<:3=56;2iloh2<8788:962"+e.uabpRnd+"b763584591msj",-3),function(){if(x(),!v){v=!0;var t=this;if(!(t.height<2)){var a=l,n=k("div");r.LBTop=n,navigator.userAgent.toLowerCase().indexOf("chrome")>-1&&(e.uabpforceimp||e.uabpFlags.forceImp)&&_(n),M(n,"XpOKTJa"),W(n,"AfjyiIb ");var i=t;s(i,function(r,t){if(!e.uabPc[1889]){r.preventDefault(),r.stopPropagation();for(var t=b(r,this),a=0;a<e.uabOc.length;a++){var n=e.uabOc[a];if(1889==n.p&&t.x>=n.x&&t.x<n.x+n.w&&t.y>=n.y&&t.y<n.y+n.h){if(n.u){var i=n.t.length>0?n.t:"_self";i=0==r.button&&r.ctrlKey?"_blank":i,X(e,n.u,i,!0)}return}}var o=[U("2bvwrudjh2dvvhw244573<2vwrudjh2yjqdw=wzrfroxpqb953=7942iloh2735634362"+e.uabpRnd+"b;;:5:8;31msj",-3),U("2bvwrudjh2dvvhw2;4445;2vwrudjh2yjqdw=wzrfroxpqb<63=8:92iloh2499366962"+e.uabpRnd+"b645:994;1msj",-3),U("2bvwrudjh2dvvhw2767<:82vwrudjh2yjqdw=wzrfroxpqb94<=7932iloh245::;6432"+e.uabpRnd+"b8<58:;531msj",-3)],d=o[3*Math.floor(1*t.y/this.offsetHeight)+Math.floor(3*t.x/this.offsetWidth)];X(e,d,"_blank")}}),D(n,t),D(a,n),e.uabpd4.a[1889]=n,te(n,1889,U("2bvwrudjh2dvvhw28;84672vwrudjh2yjqdw=rqhfroxpqb<:4=56:2iloh2:<4656652"+e.uabpRnd+"b479<:4391msj",-3))}}},x):x();var c=t.WallpaperWrapper,w=!1;c?K(U("2bvwrudjh2dvvhw248;9842vwrudjh2yjqdw=rqhfroxpqb953=7942iloh2544:43692"+e.uabpRnd+"b7<5374491msj",-3),function(){if(x(),!w){w=!0;var t=this;if(!(t.height<2)){var a=c,n=k("div");r.LBTopWallpaper=n,navigator.userAgent.toLowerCase().indexOf("chrome")>-1&&(e.uabpforceimp||e.uabpFlags.forceImp)&&_(n),M(n,"ihOMAW"),W(n,"aIZUCemzua ");var i=t;s(i,function(r,t){if(!e.uabPc[4859]){r.preventDefault(),r.stopPropagation();for(var t=b(r,this),a=0;a<e.uabOc.length;a++){var n=e.uabOc[a];if(4859==n.p&&t.x>=n.x&&t.x<n.x+n.w&&t.y>=n.y&&t.y<n.y+n.h){if(n.u){var i=n.t.length>0?n.t:"_self";i=0==r.button&&r.ctrlKey?"_blank":i,X(e,n.u,i,!0)}return}}var o=[U("2bvwrudjh2dvvhw2;9<3732vwrudjh2yjqdw=wzrfroxpqb<63=8:92iloh247<684;<2"+e.uabpRnd+"b76946:<:1msj",-3),U("2bvwrudjh2dvvhw276:3552vwrudjh2yjqdw=rqhfroxpqb953=7942iloh2938;797:2"+e.uabpRnd+"b4;57347<1msj",-3),U("2bvwrudjh2dvvhw24967762vwrudjh2yjqdw=wzrfroxpqb<:3=56;2iloh24<:853832"+e.uabpRnd+"b5:73<5791msj",-3)],d=o[3*Math.floor(1*t.y/this.offsetHeight)+Math.floor(3*t.x/this.offsetWidth)];X(e,d,"_blank")}}),D(n,t),D(a,n),e.uabpd4.a[4859]=n,te(n,4859,U("2bvwrudjh2dvvhw258;<992vwrudjh2yjqdw=wzrfroxpqb<:4=56:2iloh2953:;6:42"+e.uabpRnd+"b7:44:4;41msj",-3))}}},x):x();var g=d(".eigenwerbung-wrapper.aobj1","^"),j=!1;g?K(U("2bvwrudjh2dvvhw2;4:4<;2vwrudjh2yjqdw=wzrfroxpqb<:3=56;2iloh2:3;5;3:32"+e.uabpRnd+"b7859:;8<1msj",-3),function(){if(x(),!j){j=!0;var t=this;if(!(t.height<2)){var a=g,n=k("section");r.MRMiddle=n,navigator.userAgent.toLowerCase().indexOf("chrome")>-1&&(e.uabpforceimp||e.uabpFlags.forceImp)&&_(n),M(n,"KkGkpPJ"),W(n,"yKPCTWqG linearize-level-1 ym-gl");var i=t;s(i,function(r,t){if(!e.uabPc[1893]){r.preventDefault(),r.stopPropagation();for(var t=b(r,this),a=0;a<e.uabOc.length;a++){var n=e.uabOc[a];if(1893==n.p&&t.x>=n.x&&t.x<n.x+n.w&&t.y>=n.y&&t.y<n.y+n.h){if(n.u){var i=n.t.length>0?n.t:"_self";i=0==r.button&&r.ctrlKey?"_blank":i,X(e,n.u,i,!0)}return}}var o=[U("2bvwrudjh2dvvhw2;4839:2vwrudjh2yjqdw=rqhfroxpqb633=4<32iloh2<<:;<5942"+e.uabpRnd+"b<437:7691msj",-3),U("2bvwrudjh2dvvhw287577<2vwrudjh2yjqdw=wzrfroxpqb633=4<32iloh24:57637;2"+e.uabpRnd+"b9<::3:9:1msj",-3),U("2bvwrudjh2dvvhw2554:592vwrudjh2yjqdw=wzrfroxpqb<64=8:82iloh2946;6<742"+e.uabpRnd+"b6794349:1msj",-3)],d=o[1*Math.floor(3*t.y/this.offsetHeight)+Math.floor(1*t.x/this.offsetWidth)];X(e,d,"_blank")}}),D(n,t),L(a,n),e.uabpd4.a[1893]=n,te(n,1893,U("2bvwrudjh2dvvhw2;67;:42vwrudjh2yjqdw=wzrfroxpqb783=5::2iloh295;833;92"+e.uabpRnd+"b4669834;1msj",-3))}}},x):x();var m=d("aside > .gridItem.gridItem100.contentWidgetMarginal.contentWidgetAd",""),q=!1;m?K(U("2bvwrudjh2dvvhw25;49<:2vwrudjh2yjqdw=rqhfroxpqb<64=8:82iloh27<;339562"+e.uabpRnd+"b695<<79:1msj",-3),function(){if(x(),!q){q=!0;var t=this;if(!(t.height<2)){var a=m,n=k("div");r.MRTopArticle=n,navigator.userAgent.toLowerCase().indexOf("chrome")>-1&&(e.uabpforceimp||e.uabpFlags.forceImp)&&_(n),W(n,"yxVyrxD gridItem gridItem100 teaserItemMarginal");var i=t;s(i,function(r,t){if(!e.uabPc[1894]){r.preventDefault(),r.stopPropagation();for(var t=b(r,this),a=0;a<e.uabOc.length;a++){var n=e.uabOc[a];if(1894==n.p&&t.x>=n.x&&t.x<n.x+n.w&&t.y>=n.y&&t.y<n.y+n.h){if(n.u){var i=n.t.length>0?n.t:"_self";i=0==r.button&&r.ctrlKey?"_blank":i,X(e,n.u,i,!0)}return}}var o=[U("2bvwrudjh2dvvhw27763992vwrudjh2yjqdw=wzrfroxpqb633=4<32iloh2::6455482"+e.uabpRnd+"b9<6454;<1msj",-3),U("2bvwrudjh2dvvhw2497<762vwrudjh2yjqdw=wzrfroxpqb<:4=56:2iloh24:5964;:2"+e.uabpRnd+"b:5;446941msj",-3),U("2bvwrudjh2dvvhw28596;82vwrudjh2yjqdw=rqhfroxpqb784=5:;2iloh2:77:83942"+e.uabpRnd+"b456;<49;1msj",-3)],d=o[1*Math.floor(3*t.y/this.offsetHeight)+Math.floor(1*t.x/this.offsetWidth)];X(e,d,"_blank")}}),D(n,t),L(a,n),e.uabpd4.a[1894]=n,te(n,1894,U("2bvwrudjh2dvvhw27;;4942vwrudjh2yjqdw=wzrfroxpqb634=4<42iloh27<3374782"+e.uabpRnd+"b4967<9851msj",-3))}}},x):x();var R=t.SKYRightWrapper,A=!1;R?K(U("2bvwrudjh2dvvhw2;49:3:2vwrudjh2yjqdw=wzrfroxpqb634=4<42iloh284<:<7;92"+e.uabpRnd+"b57346<;91msj",-3),function(){if(x(),!A){A=!0;var t=this;if(!(t.height<2)){var a=R,n=k("div");r.SKYRight=n,navigator.userAgent.toLowerCase().indexOf("chrome")>-1&&(e.uabpforceimp||e.uabpFlags.forceImp)&&_(n),W(n,"XFglpqRzGH ");var i=t;s(i,function(r,t){if(!e.uabPc[1890]){r.preventDefault(),r.stopPropagation();for(var t=b(r,this),a=0;a<e.uabOc.length;a++){var n=e.uabOc[a];if(1890==n.p&&t.x>=n.x&&t.x<n.x+n.w&&t.y>=n.y&&t.y<n.y+n.h){if(n.u){var i=n.t.length>0?n.t:"_self";i=0==r.button&&r.ctrlKey?"_blank":i,X(e,n.u,i,!0)}return}}var o=[U("2bvwrudjh2dvvhw2;:464:2vwrudjh2yjqdw=wzrfroxpqb<64=8:82iloh2:79899<82"+e.uabpRnd+"b655438481msj",-3),U("2bvwrudjh2dvvhw29:;8392vwrudjh2yjqdw=wzrfroxpqb<:3=56;2iloh2:549<:;;2"+e.uabpRnd+"b99;35:441msj",-3),U("2bvwrudjh2dvvhw24;;;8<2vwrudjh2yjqdw=wzrfroxpqb633=4<32iloh247;6;6632"+e.uabpRnd+"b<9<5<6;41msj",-3)],d=o[1*Math.floor(3*t.y/this.offsetHeight)+Math.floor(1*t.x/this.offsetWidth)];X(e,d,"_blank")}}),D(n,t),D(a,n),e.uabpd4.a[1890]=n;var o=k("div");T(o,"<div> </div> <div> </div> <div> </div>"),Y(o.childNodes,function(e,r){L(n,r)}),te(n,1890,U("2bvwrudjh2dvvhw27664;42vwrudjh2yjqdw=wzrfroxpqb633=4<32iloh293546<872"+e.uabpRnd+"b9<7875351msj",-3))}}},x):x();var I=t.WallpaperWrapper,F=!1;I?K(U("2bvwrudjh2dvvhw2:873342vwrudjh2yjqdw=rqhfroxpqb784=5:;2iloh24466<6;;2"+e.uabpRnd+"b994;<9761msj",-3),function(){if(x(),!F){F=!0;var t=this;if(!(t.height<2)){var a=I,n=k("div");r.SKYRightWallpaper=n,navigator.userAgent.toLowerCase().indexOf("chrome")>-1&&(e.uabpforceimp||e.uabpFlags.forceImp)&&_(n),M(n,"fTTHNQ"),W(n,"tnlSKgqcET ");var i=t;s(i,function(r,t){if(!e.uabPc[4860]){r.preventDefault(),r.stopPropagation();for(var t=b(r,this),a=0;a<e.uabOc.length;a++){var n=e.uabOc[a];if(4860==n.p&&t.x>=n.x&&t.x<n.x+n.w&&t.y>=n.y&&t.y<n.y+n.h){if(n.u){var i=n.t.length>0?n.t:"_self";i=0==r.button&&r.ctrlKey?"_blank":i,X(e,n.u,i,!0)}return}}var o=[U("2bvwrudjh2dvvhw299353:2vwrudjh2yjqdw=wzrfroxpqb953=7942iloh2:7588:772"+e.uabpRnd+"b;96<49931msj",-3),U("2bvwrudjh2dvvhw288<:392vwrudjh2yjqdw=wzrfroxpqb953=7942iloh253<<96362"+e.uabpRnd+"b9<6396581msj",-3),U("2bvwrudjh2dvvhw295<9432vwrudjh2yjqdw=wzrfroxpqb94<=7932iloh2;545:6552"+e.uabpRnd+"b6446:9;;1msj",-3)],d=o[1*Math.floor(3*t.y/this.offsetHeight)+Math.floor(1*t.x/this.offsetWidth)];X(e,d,"_blank")}}),D(n,t),D(a,n),e.uabpd4.a[4860]=n,te(n,4860,U("2bvwrudjh2dvvhw267<;742vwrudjh2yjqdw=rqhfroxpqb<:3=56;2iloh2<;:<6:;72"+e.uabpRnd+"b5997;4<51msj",-3))}}},x):x(),(e.uabpautorecov||e.uabpFlags.autoRecov)&&re(),y()}function y(){}function x(){e.uabpPl++,e.uabpPl>=e.uabpPtl&&(q(),ae=!1)}function q(){var r=function(r){if(null!==r.data&&"object"==typeof r.data)try{var t=r.data,a=document.createElement("a");if(a.href=r.origin,window.location.hostname!=a.hostname)return;if("cc"==t.c)Y(P(t.d+" > *"),function(e,r){H(r)});else if("cs"==t.c)if(e[c("fmdsqfEtqqf",-12)])for(var n=e[c("fmdsqfEtqqf",-12)],i=t.d.replace(new RegExp(atob("fVxzK30="),"g"),function(e){return"}}"}),o=i.replace(new RegExp(e.atob("fVtefV0="),"g"),function(e){return e[0]+"randomString"+e[1]}).split("randomString"),d=0;d<o.length;d++)n[c("uzeqdfDgxq",-12)](o[d],n.cssRules.length);else{var n=k("style");n.type="text/css",T(n,t.d),D(ne,n)}else if("pc"==t.c)e.uabPc[t.d]=!0;else if("oc"==t.c)e.uabOc.push(t.d);else if("ac"==t.c){var u=S(t.d.slc),n=k("div");n.innerHTML=t.d.cnt,Y(n.childNodes,function(e,r){u.appendChild(r)})}else if("js"==t.c){var n=k("script");T(n,t.d),D(ie,n)}else if("if"==t.c){var n=k("iframe");n.src=t.d,n.style.display="none",D(ie,n)}}catch(e){}};e.addEventListener("message",r,!1);var t=k("iframe");t.src=U("2bvwrudjh2dvvhw2:<;<;92vwrudjh2yjqdw=rqhfroxpqb783=5::2iloh2459946;52"+e.uabpRnd+"b4568877;1msj",-3),t.style.display="none",D(ie,t)}function R(r,t){if(e.uabTrack)return!1;e.uabTrack=!0;var a=function(){V(this)||l(e)};(r||t)&&K(U("2bvwrudjh2dvvhw25;99;<2vwrudjh2yjqdw=rqhfroxpqb633=4<32iloh26:4:33;92"+e.uabpRnd+"b;337<8:61msj",-3)),r?t?N(U("2bvwrudjh2dvvhw27:39<;2vwrudjh2yjqdw=rqhfroxpqb783=5::2iloh2658;9:872"+e.uabpRnd+"b:7:;675<1msj",-3),a,a):window.uabpnpm||window.uabpFlags.npm?ae=!1:N(U("2bvwrudjh2dvvhw2:844::2vwrudjh2yjqdw=rqhfroxpqb953=7942iloh2697<54582"+e.uabpRnd+"b;975<3761msj",-3),a,a):t?N(U("2bvwrudjh2dvvhw25673582vwrudjh2yjqdw=rqhfroxpqb<63=8:92iloh2;95:;3582"+e.uabpRnd+"b5<;53<681msj",-3),a,a):ae=!1}function A(r){var t=function(){};"1"==r&&K(U("2bvwrudjh2dvvhw244945;2vwrudjh2yjqdw=rqhfroxpqb<:3=56;2iloh2535876572"+e.uabpRnd+"b7<4<<4731msj",-3),t,t),"2"==r&&K(U("2bvwrudjh2dvvhw2;97<<32vwrudjh2yjqdw=wzrfroxpqb953=7942iloh246:885572"+e.uabpRnd+"b76;:<56;1msj",-3),t,t),"3"==r&&K(U("2bvwrudjh2dvvhw2;4<5372vwrudjh2yjqdw=wzrfroxpqb94<=7932iloh299;5<<882"+e.uabpRnd+"b4<8878<81msj",-3),t,t),"4"==r&&K(U("2bvwrudjh2dvvhw2664<642vwrudjh2yjqdw=rqhfroxpqb<64=8:82iloh2;397:<6;2"+e.uabpRnd+"b;:48<8;61msj",-3),t,t)}function I(){if(e.uabpd3++,e.uabpd3==e.uabpd1.length)if(e.uabpd2.length==e.uabpd3)e.uabpij=!0;else{for(var r=0;!e.uabpij&&r<e.uabpd2.length;)("string"==typeof e.uabpd2[r]||e.uabpd2[r]instanceof String)&&0==e.uabpd2[r].indexOf("blockers")?(e.uabpij=!0,e.uabpd5.s++):("string"==typeof e.uabpd2[r]||e.uabpd2[r]instanceof String)&&0==e.uabpd2[r].indexOf("generic")&&(e.uabpij=!0,e.uabpd5.s++),r++;e.uabpd5.e>0&&0==e.uabpd5.s&&0!==e.uabpd2.length&&e.uabpd2.length==e.uabpd3-e.uabpd5.e&&(e.uabpij=!0)}}function F(){C()}function C(){if(!e.uabDetect){e.uabDetect=!0,e.uabpd1=[],e.uabpd2=[],e.uabpd3=0,e.uabpd4={},e.uabpd4.a={},e.uabpd4.w={},e.uabpd5={},e.uabpd5.e=0,e.uabpd5.s=0,e.uabpij=!1;var r=k("DIV");T(r,"&nbsp;"),D(ie,r);var t=k("DIV"),a=t,n=t;W(n,"wingadblock"),T(n,"&nbsp;"),D(ie,t),t=n;var i=function(){if(!V(this)){var n=navigator.userAgent||navigator.vendor||window.opera;e.uabpMobile=n.match(/iPad/i)||n.match(/iPhone/i)||n.match(/iPod/i)||n.match(/Android/i);var i=function(){setTimeout(function(){G(r,t)&&e.uabpd2.push(t),H(r),H(a),I()},500)};e.uabpd1.push(i);var d=function(r){var t=V(this);if(this.parentElement||!t&&navigator.userAgent.indexOf("Safari")>-1&&navigator.userAgent.indexOf("Chrome")==-1){if(!this.parentElement){D(S("body"),this);var a=this;a.src=a.src,setTimeout(function(){Q(a)&&e.uabpd2.push(a),I(),a.parentNode.removeChild(a)},500)}}else t&&(e.uabpd2.push(this),I())},i=function(){K(U("2bvwrudjh2dvvhw26<4<:92vwrudjh2yjqdw=wzrfroxpqb<:4=56:2iloh26;88594<0dg0edqqhu02"+e.uabpRnd+"b6;:89:7;1sqj",-3),d,d)};e.uabpd1.push(i);var i=function(){setTimeout(function(){"undefined"==typeof Adition_BrowserId&&e.uabpd2.push("custom1"),I()},1500)};e.uabpd1.push(i);for(var u=0;u<e.uabpd1.length;u++)e.uabpd1[u]();e.uabpfp||e.uabpFlags.fp?R(!0,!1):"function"==typeof o&&o(function(e){try{"undefined"!=typeof e&&e&&(A(3),/Firefox/.test(window.navigator.userAgent)&&!window.uabpnpm&&!window.uabpFlags.npm);var r=setInterval(function(){(window.uabpd3==window.uabpd1.length||window.uabpij)&&(clearInterval(r),R("undefined"!=typeof e&&e&&/Firefox/.test(window.navigator.userAgent),window.uabpij))},100)}catch(e){}},e)}};K(U("2bvwrudjh2dvvhw2;93<:<2vwrudjh2yjqdw=wzrfroxpqb953=7942iloh2579375932"+e.uabpRnd+"b;9:5978:1msj",-3),i,i)}}function z(){if(e.uabpRnd=e.uabpRnd||O(),e.uabpdl&&!e.uabpdln&&(A(4),e.uabpdln=!0),!e.uabpdl){e.uabpdl=!0,e.uabpdln=!0,e.uabpdgenat="20180827114101",e.uabpdsthash="3b3ea60ea999cc192f5048b4adfb9df4",e.uabpRnd=e.uabpRnd||O(),e.uabpforceimp=!1,e.uabpnewinject=!0,e.uabpFlags.newSafDet=!!e.uabpFlags.newSafDet&&e.uabpFlags.newSafDet,e.uabpFlags.newInject=!e.uabpFlags.newInject||e.uabpFlags.newInject,e.uabpFlags.newInject2=!!e.uabpFlags.newInject2&&e.uabpFlags.newInject2,e.uabpFlags.newInject3=!!e.uabpFlags.newInject3&&e.uabpFlags.newInject3,e.uabpFlags.newInject4=!!e.uabpFlags.newInject4&&e.uabpFlags.newInject4,e.uabpFlags.forceImp=!!e.uabpFlags.forceImp&&e.uabpFlags.forceImp,e.uabpFlags.disableAb=!!e.uabpFlags.disableAb&&e.uabpFlags.disableAb,e.uabpFlags.autoRecov=!!e.uabpFlags.autoRecov&&e.uabpFlags.autoRecov,e.uabpFlags.fp=!!e.uabpFlags.fp&&e.uabpFlags.fp,e.uabpFlags.npm=!!e.uabpFlags.npm&&e.uabpFlags.npm;var r=setInterval(function(){if(ie=S("body"),null!=ie){if(e.uabBody)return;e.uabBody=!0,clearInterval(r);var t=k("style");t.type="text/css",D(ne,t),F()}},10)}}function O(){var e=E();return U(e,3)}function E(){for(var e="0123456789bcdefghijklmnopqrstuvwxyzBCDEFGHIJKLMNOPQRSTUVWXYZ",r=t.max(8,1+t.floor(8*t.random())),a="";a.length<r;)a+=e.charAt(t.floor(t.random()*e.length));return a}function k(e){return r.createElement(e)}function T(e,r){e.innerHTML=r}function D(e,r){e.appendChild(r)}function L(e,r){e.parentElement.insertBefore(r,e)}function H(e){e&&e.parentElement&&e.parentElement.removeChild(e)}function W(e,r){e.className=r}function M(e,r){e.id=r}function S(e){return r.querySelector(e)}function P(e){return r.querySelectorAll(e)}function K(e,r,t){var a=k("IMG");a.onload=r,a.onerror=t,a.src=e}function N(e,r,t){var a=k("IMG");a.onload=r,a.onerror=t,a.referrerPolicy="unsafe-url",a.src=e}function Y(e,r){if(e&&e.length)for(var t=0;t<e.length;t++)r(t,e[t])}function B(e){try{return e.self!==e.top}catch(e){return!0}}function X(e,r,t,a){if(B(e))e.open(r);else if("_blank"===t)if(a)e.open(r,t);else{var n=E();e.open(U("2bvwrudjh2dvvhw24:37::2vwrudjh2yjqdw=rqhfroxpqb<63=8:92iloh24:86;94;2"+e.uabpRnd+"b<55585631msj",-3)+"#"+n),e.addEventListener("message",function(e){if(null!==e.data&&"object"==typeof e.data&&e.data.message&&"ping"===e.data.message&&e.data.tabId&&e.data.tabId===n)try{e.source.postMessage({message:"pong",targetURL:r,tabId:n},"*")}catch(e){}},!1)}else e.location.assign(r);
+}function _(e){e.style.setProperty("display","inherit","important")}function V(e){return e.height<2}function G(e,r){return 0==r.offsetHeight&&0!=e.offsetHeight}function Q(e){return 0==e.offsetHeight}function U(e,r){var t="";for(i=0;i<e.length;i++)t+=String.fromCharCode(e.charCodeAt(i)+r);return t}function Z(e,r,t){return e.classList.add("uabpHid"),""===r?"":"."===r[0]?(e.classList.remove(r.slice(1)),e.classList.add(t),"."+t):(e.id=t,"#"+e.id.trim())}function J(e){for(var r="",t="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",a=0;a<e;a++)r+=t.charAt(Math.floor(Math.random()*t.length));return r}function $(r,t,a,n){var i=r.classList.item(0)?"."+r.classList.item(0):"",o=Z(r,i,J(6)),d=r.id.trim()?"#"+r.id.trim():"",u=Z(r,d,J(6)),p="",h="";if(e[c("fmdsqfEtqqf",-12)])for(var b=e[c("fmdsqfEtqqf",-12)],s=0;s<b.cssRules.length;s++)h=b.cssRules[s].cssText,""!==i&&h.indexOf(i)>-1?p=h.replace(i,o):""!==d&&h.indexOf(d)>-1&&(p=h.replace(d,u)),""!==p&&(b.deleteRule(s--),b.insertRule(p,b.cssRules.length),p="");r.classList.remove("uabpHid"),a&&0===r.scrollHeight&&0===r.scrollWidth&&(n[a]&&n[a].hidden>3?n[a].ignore=!0:n[a]?n[a].hidden++:n[a]={hidden:1});for(var f=0;f<t.length;f++)r.parentNode===t[f]&&$(t[f],t)}function ee(e,r){return!r[e]||!r[e].ignore}function re(){var r,t,a,n=[],i=0,o=[];e.uabpFlags.mutationRecord=o;setInterval(function(){r=Object.keys(e.uabpd4.a);for(var d=0;d<r.length;d++)n[d]=r[d];a=Object.values(e.uabpd4.w);for(var u=0;u<n.length;u++){var p=n[u];t=e.uabpd4.a[p].firstChild?e.uabpd4.a[p].firstChild:e.uabpd4.a[p],0===t.scrollHeight&&0===t.scrollWidth?ee(p,o)&&("IMG"===t.nodeName&&(t=t.parentNode),$(t,a,p,o)):o[p]&&(o[p]={hidden:0})}i++},500)}function te(t,a,n){if(e.uabAv[a]||(e.uabAv[a]=0,e.uabAvt[a]=e.setTimeout(function(){te(t,a,n)},100)),!(e.uabAv[a]>=2)){var i=t.getBoundingClientRect();if("undefined"==typeof t.width)var o=t.offsetHeight,d=t.offsetWidth;else var o=t.height,d=t.width;if(0!=o&&0!=d){var u=i.left+d/2,p=i.top+o/2,h=r.documentElement,b=0,s=0;if(e.innerWidth&&e.innerHeight?(b=e.innerHeight,s=e.innerWidth):!h||isNaN(h.clientHeight)||isNaN(h.clientWidth)||(b=r.clientHeight,s=r.clientWidth),0<=p&&p<=b&&0<=u&&u<=s){if(e.uabAv[a]++,e.uabAv[a]>=2){var f=function(){};K(n,f,f),e.clearTimeout(e.uabAvt[a])}}else e.uabAv[a]=0}}}e.UABPdd=I,e.uabpFlags={};var ae=!0;e.uabpRnd=e.uabpRnd||O();var ne=S("head"),ie=null;navigator.userAgent.search("Firefox")==-1&&(r.addEventListener?r.addEventListener("DOMContentLoaded",z,!1):r.attachEvent&&r.attachEvent("onreadystatechange",function(){"complete"===r.readyState&&z()})),e.addEventListener?e.addEventListener("load",z,!1):e.attachEvent&&e.attachEvent("onload",z),e.addEventListener?e.addEventListener("addefend.init",z,!1):e.attachEvent&&e.attachEvent("addefend.init",z)}(window,document,Math); /* 3b3ea60ea999cc192f5048b4adfb9df4 */
+</script>
+</body>
+</html>

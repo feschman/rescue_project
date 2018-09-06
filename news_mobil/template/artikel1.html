@@ -1,0 +1,475 @@
+
+<!DOCTYPE html><!--[if IE]><![endif]-->
+<html lang="de">
+<head>
+<script>
+if (typeof Object.assign != 'function') {
+Object.defineProperty(Object, "assign", {
+value: function assign(target, varArgs) {
+'use strict';
+if (target == null) {
+throw new TypeError('Cannot convert undefined or null to object');
+}
+var to = Object(target);
+for (var index = 1; index < arguments.length; index++) {
+var nextSource = arguments[index];
+if (nextSource != null) {
+for (var nextKey in nextSource) {
+if (Object.prototype.hasOwnProperty.call(nextSource, nextKey)) {
+to[nextKey] = nextSource[nextKey];
+}
+}
+}
+}
+return to;
+},
+writable: true,
+configurable: true
+});
+}
+</script>
+<script src="https://optanon.blob.core.windows.net/consent/88fa580d-4616-44c9-b214-2f8077b249f9.js" type="text/javascript" charset="UTF-8"></script>
+<script type="text/javascript">
+String.prototype.includes = function (str) {
+var returnValue = false;
+if (this.indexOf(str) !== -1) {
+returnValue = true;
+}
+return returnValue;
+}
+var banner_logo = false;
+function OptanonWrapper() {
+if(!(document.cookie.indexOf("euconsent") > -1)){
+//Optanon.Init();
+}
+if(!banner_logo){
+cookieBannerSiteLogo();
+banner_logo = true;
+}
+}
+window.addEventListener("load", function(event) {
+if(!Optanon.IsAlertBoxClosedAndValid()){
+var elemDiv = document.createElement('div');
+elemDiv.id = "cookieBgOverlay";
+elemDiv.style.cssText = 'position:fixed;width:100%;height:100%;top:0;left:0;z-index:199999999;background:rgba(255, 255, 255, .5);';
+document.body.appendChild(elemDiv);
+cookieBgOverlay();
+}
+});
+function cookieBgOverlay(){
+if(!Optanon.IsAlertBoxClosedAndValid()){
+setTimeout(cookieBgOverlay, 500);
+} else {
+var elemDiv = document.getElementById("cookieBgOverlay");
+elemDiv.parentNode.removeChild(elemDiv);
+jQuery('body>*:not(#optanon):not(.optanon-alert-box-wrapper)').css('filter','blur(0)');
+location.reload();
+}
+}
+function cookieBannerSiteLogo(){
+jQuery('#optanon-branding-top-logo' ).clone().css('width', '80px').css('height', '30px').css('background-size', 'contain').css('background-repeat', 'no-repeat').css('background-position', 'center center').css('position', 'relative').css('float', 'left').css('margin', '10px 5px auto auto').prependTo('.optanon-alert-box-body');
+}
+</script>
+<style>
+.optanon-alert-box-wrapper{
+z-index:200000001;
+top:auto!important;
+bottom:0;
+background-color:rgba(255,255,255,.97);
+box-shadow:#333 0 5px 20px
+}
+.optanon-alert-box-wrapper p>a{
+text-decoration:underline;
+color:#6cc04a
+}
+.optanon-alert-box-wrapper p>a:before{
+content:' ';
+display:block
+}
+#optanon-popup-bg{
+z-index:200000000!important
+}
+.optanon-alert-box-wrapper .optanon-alert-box-bottom-top{
+display:none
+}
+.optanon-alert-box-wrapper .optanon-alert-box-corner-close{
+display:none
+}
+.optanon-alert-box-wrapper .optanon-alert-box-button-middle{
+text-align:center
+}
+.optanon-alert-box-wrapper .optanon-button-allow .optanon-alert-box-button-middle{
+box-shadow:#ccc 0 2px 5px;
+border-radius:4px
+}
+.optanon-alert-box-wrapper .optanon-alert-box-button{
+float:none;
+margin-right:auto
+}
+.optanon-alert-box-wrapper .optanon-alert-box-bg p{
+font-size:8pt;
+line-height:10pt
+}
+.optanon-alert-box-wrapper .optanon-alert-box-bg p.optanon-alert-box-title{
+font-size:15pt;
+line-height:12pt;
+padding:15px 0
+}
+#optanon-popup-wrapper{
+z-index:200000002!important
+}
+.optanon-alert-box-wrapper .optanon-allow-all{
+font-size:12pt!important
+}
+.optanon-alert-box-wrapper .optanon-toggle-display{
+font-size:8pt!important
+}
+.optanon-alert-box-bg .optanon-alert-box-button-container{
+padding-right:0
+}
+@media only screen and (min-width:960px){
+.optanon-alert-box-wrapper .optanon-alert-box-bg p{
+line-height:10pt
+}
+.optanon-alert-box-wrapper .optanon-alert-box-bg p.optanon-alert-box-title{
+font-size:15pt;
+padding:20px 0
+}
+.optanon-alert-box-bg .optanon-alert-box-button-container{
+top:15px;
+margin:0
+}
+.optanon-alert-box-wrapper .optanon-button-allow .optanon-alert-box-button-middle{
+padding:15px 30px;
+margin:10px
+}
+}
+</style>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime();</script>
+<link rel="canonical" href="https://www.news.at/a/regierungssprecher-bestaetigt-ende-der-lehre-fuer-asylwerber-10306797" />
+<title>Regierungssprecher bestätigt Ende der Lehre für Asylwerber • NEWS.AT</title>
+<meta name="description" content="Regierungssprecher Peter Launsky-Tieffenthal hat gegenüber der APA am Sonntag bestätigt, dass die Regierung die Möglichkeit für ..."/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="revisit-after" content="3 hours"/>
+<meta name="robots" content="index, follow, noarchive"/>
+<link rel="manifest" href="https://mobilstaging.news.at/manifest.json">
+<meta name="theme-color" content="#f3ede9">
+<link rel="preconnect" href="//dispatcher.oewabox.at">
+<link rel="preconnect" href="//newsnetw.oewabox.at">
+<link rel="preconnect" href="//qs.oewabox.at">
+<link rel="preconnect" href="//google-analytics.com">
+<link rel="preconnect" href="//imagesrv.adition.com">
+<link rel="icon" type="image/x-icon" href="/img/favicon-3283e7ad.ico"/>
+<link rel="shortcut icon" type="image/x-icon" href="/img/favicon-3283e7ad.ico"/>
+<link rel="apple-touch-icon" href="/img/touch/touch-icon-iphone-fd85a873.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/img/touch/touch-icon-ipad-2e89e71c.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/img/touch/touch-icon-iphone-retina-27cfc347.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/img/touch/touch-icon-ipad-retina-b16dc795.png">
+<link href="/css/mobile-99f2dfb1.css" rel="stylesheet" type="text/css"/>
+<link href="/css/screen/color-95e23eeb.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+<![endif]-->
+<script type="text/javascript">
+if (typeof window.console === 'undefined') {window.console = {'log':function(){}};}
+var cs_callbacks = [];
+var cs_loadSocials = {};
+var cs_loadScriptsOnReady = [];
+var cs_loadScriptsOnLoad = [];
+var cs_scriptsLoaded = [];
+</script>
+<script type="text/javascript">
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-18264662-6', 'auto');
+ga('set', 'dimension1', '10306797');
+ga('set', 'dimension2', 'nicht eingeloggt');
+ga('set', 'dimension3', 'Regierungssprecher bestätigt Ende der Lehre für Asylwerber • NEWS.AT');
+ga('set', 'dimension4', 'artikel');
+ga('set', 'dimension5', '956067');
+ga('set', 'dimension8', '2018-08-27T07:37:59+02:00');
+ga('set', 'dimension10', 'redcont');
+ga('set', 'dimension11', 'politik');
+ga('set', 'dimension12', 'politikinland');
+if(Optanon.IsAlertBoxClosedAndValid()){
+ga('set', 'dimension14', 'closed');
+} else {
+ga('set', 'dimension14', 'open');
+}
+ga('set', 'contentGroup1', 'Politik');
+ga('set', 'contentGroup2', '956067');
+ga('set', 'anonymizeIp', true);
+ga('send', 'pageview');
+</script>
+<script type="text/javascript" async src='https://www.google-analytics.com/analytics.js'></script>
+<script type="text/javascript">
+var OAS_PLACEHOLDER =
+{
+Top_mobile : 3372633
+,
+Bottom_mobile : 3372635
+,
+Content2_mobile : 4232174
+,
+Content_mobile : 3372634 };
+</script>
+<script type="text/javascript" src="https://script-at.iocnt.net/iam.js"></script>
+</head>
+<body id="mobile">
+<!-- OEWA VERSION="3.0" -->
+<div id="ivw" style="display:block;width:1px;height:1px;overflow:hidden;position:absolute;top:-9999px">
+<script type="text/javascript">
+if (window.iom) {
+var oewa_data = {
+"cn":"at",
+"st": "at_w_atnews",
+"cp":"redcont/politik/politikinland/moewa/",
+"sv":"mo",
+"ps":"lin"
+};
+iom.c(oewa_data, 2);
+}
+</script>
+</div>
+<!--/OEWA -->
+<div class="ressort-177d99">
+<header class="main">
+<a href="/" id="logo">NEWS.at Mobile</a>
+<div>
+<a href="#">Menü <span></span></a>
+</div>
+</header>
+<nav>
+<ul>
+<li class="ressort-default"><a href="https://mobilstaging.news.at/">zur Startseite <span class="ico_more"></span></a></li>
+<li class="ressort ressort-60636c"><span class="title"><a href="/fakten">Fakten <span class="ico_more"></span></a></span></li>
+<li class="ressort ressort-60636c"><span class="title"><a href="/leben">Leben <span class="ico_more"></span></a></span></li>
+<li class="ressort ressort-60636c"><span class="title"><a href="/menschen">Menschen <span class="ico_more"></span></a></span></li>
+<li class="ressort-default"><a class="vollversion vollversion_completeurl" href="http://staging.news.at">zur Vollversion <span class="ico_more"></span></a></li>
+</ul>
+</nav>
+<aside class="ad_con ad_con_mobile ad_marker" id="Top_mobile">
+<div class="ad_con placeholder-top-mobile ad-placeholder ad-placeholder-mobile">
+<div class="placeholder-inner">
+Position: Top_mobile <br />
+Slot-ID: <script type="text/javascript">document.write(OAS_PLACEHOLDER['Top_mobile']);</script><br />
+</div>
+</div>
+</aside>
+<div id="content">
+<div id="article_content">
+<article data-id="10306797">
+<header>
+<h2 class="toprow"><strong itemprop="articleSection">Flüchtlinge</strong></h2>
+<div class="info">
+<span class="time">
+<time itemprop="datePublished" datetime="2018-08-27T07:37:59+02:00">Mo, 27. Aug. 2018</time>
+von <span itemprop="author" rel="author" class="author">APA</span>
+</span>
+</div>
+<!-------------H1 TITEL-------------->
+<h1 itemprop="name">Viel Kritik an Regierung nach <br />fixem Aus der Lehre für Asylwerber</h1>
+<!-------------H1 TITEL-------------->
+<!-------------H2 TITEL-------------->
+<h2 itemprop="description">&quot;Asylrecht künftig nicht mehr mit Lehre umgehen&quot; - für SPÖ &quot;so unsinnig wie bösartig&quot;</h2>
+<!-------------H2 TITEL-------------->
+<!---------- SOCIAL BUTTONS --------->
+<!--
+<div class="socialbar">
+<a href="http://twitter.com/home?status=https%3A%2F%2Fmobilstaging.news.at%2Fa%2Fregierungssprecher-bestaetigt-ende-der-lehre-fuer-asylwerber-10306797" class="twitter" target="_blank">Twitter</a>
+<a href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fmobilstaging.news.at%2Fa%2Fregierungssprecher-bestaetigt-ende-der-lehre-fuer-asylwerber-10306797" class="facebook">Facebook</a>
+<a href="https://plusone.google.com/_/+1/confirm?url=https%3A%2F%2Fmobilstaging.news.at%2Fa%2Fregierungssprecher-bestaetigt-ende-der-lehre-fuer-asylwerber-10306797" class="google">Google plus</a>
+<a href="whatsapp://send?text=Regierungssprecher%20best%C3%A4tigt%20Ende%20der%20Lehre%20f%C3%BCr%20Asylwerber%20%E2%80%A2%20NEWS.AT https%3A%2F%2Fmobilstaging.news.at%2Fa%2Fregierungssprecher-bestaetigt-ende-der-lehre-fuer-asylwerber-10306797" class="wa-artikel">Whatsapp</a>
+</div>
+-->
+</header>
+
+<!---------- Hauptbild --------->
+<img class="teaser_pic" itemprop="image" src="/prod/rescue/news_mobil/images/teaser1.jpg" alt="Wie süss! - Nachwuchs für
+Meghan und Harry" title="Bild: APA/AFP/POOL/Yui MOK" width="618" height="355"/>
+<!---------- Hauptbild --------->
+<!---------- Copyright --------->
+<span class="copyright">
+© Bild: APA/AFP/POOL/Yui MOK
+</span>
+<!---------- Copyright --------->
+
+<!---------article_vorspann----------->
+<p class="intro" itemprop="about">Regierungssprecher Peter Launsky-Tieffenthal hat bestätigt, dass die Regierung die <a href="/a/fakten-van-bellen-gem%C3%BCter-fp%C3%B6-10272364">Möglichkeit für Asylwerber, eine Lehre</a> zu beginnen, abschaffen wird. Man arbeite an einer Neuregelung. &quot;Das Asylrecht soll künftig nicht mehr mit einer Lehre umgangen werden können.&quot;</p>
+<!---------article_vorspann----------->
+
+
+<!---------Article_text----------->
+<p>Gleichzeitig soll ein eigener Aufenthaltstitel für Lehrlinge geschaffen werden und die Rot-Weiß-Rot-Karte attraktiviert werden, &quot;um den Bedürfnissen der Wirtschaft zu entsprechen&quot;, so der Sprecher.</p>
+<p>Seit 2012 war die Lehrlingsausbildung für Asylwerber bis 25 Jahren in Mangelberufen erlaubt.</p>
+
+<!---------AD Position:Content_mobile----------->
+<!-- Render Adpositions in Content (BottomLeft, Video3, Content_mobile, Content2_mobile) Content_mobile--
+<aside class="ad_con ad_marker" id="Content_mobile">
+<div class="ad_con ad_con_mobile placeholder-Content_mobile placeholder ad-placeholder ad-placeholder-mobile" >
+<div class="placeholder-inner">
+Position: Content_mobile <br />
+Slot-ID: <script type="text/javascript">document.write(OAS_PLACEHOLDER['Content_mobile']);</script><br />
+</div>
+</div>
+</aside>
+<!---------AD Position:Content_mobile----------->
+
+<h2 class="subheadline1">Betroffene dürfen Lehre abschließen</h2>
+<p>Asylwerber, die bereits eine Lehre begonnen haben, sollen diese fertig machen dürfen. Sogar jene, die aufgrund eines negativen Asylbescheids von einer Abschiebung bedroht sind, sollen die Möglichkeit erhalten, ihre Ausbildung zu beenden. Das sehen die Pläne der Regierung vor. Der seit 2012 gültige Erlass, wonach Asylwerber bis 25 Jahre generell in Mangelberufen eine Lehre beginnen dürfen, wird aufgehoben.</p>
+<p> &quot;Jene Asylwerber, die jetzt schon eine Lehre machen, können diese fortsetzen, im Fall eines negativen Bescheids sind die rechtlichen Möglichkeiten zu prüfen, ob er die Lehre fertig machen kann, bevor er das Land verlässt&quot;, heißt es in einer Punktation der Regierung, die der APA vorliegt. Nach Angaben der Regierung befinden sich derzeit knapp 1.000 Asylwerber in Lehre.</p>
+<h2 class="subheadline1">Arbeitsmöglichkeiten sollen geschaffen werden</h2>
+<p> Gleichzeitig will Türkis-Blau Arbeitsmöglichkeiten für Asylberechtigte schaffen. Es würden sich nämlich 8.600 anerkannte Flüchtlinge unter 25 Jahren, darunter 1.300 Lehrstellensuchende, auf Jobsuche befinden, heißt es in dem Papier. Geplant sind &quot;verstärkte und zielgerichtete Bewerbungen und Betreuung durch das AMS sowie Initiativen des Wirtschaftsressorts&quot;.</p>
+
+<!---------AD Position:Content2_mobile----------->
+<!-- Render Adpositions in Content (BottomLeft, Video3, Content_mobile, Content2_mobile) Content2_mobile--
+<aside class="ad_con ad_marker" id="Content2_mobile">
+<div class="ad_con ad_con_mobile placeholder-Content2_mobile placeholder ad-placeholder ad-placeholder-mobile" >
+<div class="placeholder-inner">
+Position: Content2_mobile <br />
+Slot-ID: <script type="text/javascript">document.write(OAS_PLACEHOLDER['Content2_mobile']);</script><br />
+</div>
+</div>
+</aside>
+<!---------AD Position:Content2_mobile----------->
+
+<p> Zudem soll die Rot-Weiß-Rot-Karte &quot;an den Bedürfnissen der heimischen Wirtschaft neu ausgerichtet&quot; werden. Konkret soll diese Zuwanderungskarte für Lehren in Mangelberufen geöffnet werden. Man strebe eine &quot;klare Trennung zwischen Asyl und Migration&quot; an.</p>
+<h2 class="subheadline1">NEOS: &quot;Realitätsfremd zund zynisch&quot;</h2>
+<p>Mit völligen Unverständnis hat NEOS-Wirtschaftssprecher Sepp Schellhorn auf die Ankündigung der Regierung reagiert. &quot;Das ist völlig realitätsfremd und zynisch&quot;. Die Regierung setze das Spalten der Gesellschaft munter fort. Die Bedürfnisse der Unternehmer seien Türkis-Blau aber offenbar egal. &quot;Außerdem tritt die Bundesregierung mit solchen Maßnahmen die Integrationswilligen in diesem Land mit Füßen&quot;, ärgert sich Schellhorn.</p>
+<h2 class="subheadline1">SPÖ empört</h2>
+<p> Empört reagiert die SPÖ auf die Pläne von Türkis-Blau. &quot;Asylwerbern eine Lehre in gesuchten Berufen zu verunmöglichen und gleichzeitig über die Regionalisierung der Mangelberufsliste vermehrt Arbeitskräfte aus Drittstaaten zu holen, ist so unsinnig wie bösartig. VP und FP vergrößern damit die Probleme, die sie vorgeben zu lösen. Wir haben in Österreich bereits heute die Situation, dass es mehr freie Lehrstellen als Lehrstellensuchende gibt. Die Politik der Regierung schadet unserer Wirtschaft und ist völlig widersinnig&quot;, sagte SPÖ-Chef Christian Kern in einer Stellungnahme.</p>
+<p> &quot;Das klare Ziel der Regierung ist Lohn- und Sozialdumping. Wer jugendlichen Asylwerbern das Erlernen eines Lehrberufs verbietet, gleichzeitig aber mit der Regionalisierung der Mangelberufsliste den Arbeitsmarkt für Arbeitnehmer aus Drittstaaten außerhalb des EWR-Raums öffnet, möchte das heimische Lohnniveau drücken und betreibt das Geschäft der Konzerne und der Industrie&quot;, erklärte SPÖ-Bundesgeschäftsführer Max Lercher.</p>
+<h2 class="subheadline1">Niessl hält Vorhaben für falschen Ansatzpunkt</h2>
+<p>Burgenlands Landeshauptmann Hans Niessl (SPÖ), der derzeit auch den Vorsitz der Landeshauptleutekonferenz innehat, hält das Vorhaben der Regierung, die Möglichkeit für Asylwerber, eine Lehre zu beginnen, wieder abzuschaffen, generell für einen &quot;falschen Ansatzpunkt&quot;.</p>
+<p>Er selbst habe einen eigenen Vorschlag, den er auch für den besseren halte. &quot;Nämlich, dass Asylwerber zunächst die deutsche Sprache lernen, dass sie auf der anderen Seite auch einen Pflichtschulabschluss machen müssen&quot;, so Niessl. Das dauere etwa 14 bis 16 Monate. &quot;Und dann sollte entschieden werden, ob jemand asylberechtigt ist oder nicht asylberechtigt ist. Und das ist durchaus möglich. Ist er asylberechtigt, kann er dann nach 14 bis 16 Monaten mit der Lehre beginnen, ist er nicht asylberechtigt, dann eben nicht&quot;, erläuterte der Landeshauptmann.</p>
+<h2 class="subheadline1">Buchinger: Hindert Integration</h2>
+<p>Der Vorstand des Arbeitsmarktservice (AMS), Herbert Buchinger, sieht die Frage der Zulassung von Asylwerbern für die Lehre in Mangelberufen aus AMS-Sicht als &quot;Randerscheinung der Arbeitsmarktpolitik&quot;. Für die Integration der Betreffenden sei ein Verbot selbstverständlich hinderlich, &quot;aber man will eben Leute, die keinen Fluchtgrund haben, nicht integrieren&quot;. Das sei politisch natürlich zulässig.</p>
+<p>Per Ende Juli gibt es laut AMS in ganz Österreich 1.023 Asylwerber als Lehrlinge, die mit einer speziellen Bewilligung des AMS die Lehre in Mangelberufen beginnen konnten. Davon sind 327 - fast ein Drittel - als Köche tätig, weitere 122 als Restaurantfachkraft und 76 als Gastronomiefachkraft tätig. Das Gros dieser Lehrlinge ist in Oberösterreich beschäftigt, wo 359 junge Asylwerber als Lehrlinge arbeiten, gefolgt von Salzburg mit 155 und Tirol mit 136.</p>
+<p>Laut Buchinger ist das Problem bei den Asylberechtigten wie bei den Asylwerbern das gleiche: Die meisten von ihnen befänden sich in Wien, das Gros der offenen Lehrstellen aber in den westlichen Bundesländern. In Wien gebe es eine Lehrstellenlücke, das heißt mehr Lehrstellensuchende als offene Lehrstellen. Hingegen gebe es in den westlichen Bundesländern einen Überhang an offenen Lehrstellen.</p>
+<p> Insgesamt sind (per Ende Juli) laut AMS 10.063 Asylberechtigte unter 25 Jahren ohne Job. Davon suchen 1.459 Personen eine Lehrstelle, 5.426 sind in Schulungsmaßnahmen. Rund die Hälfte der asylberechtigten Lehrstellensuchenden lebt in Wien, nämlich 721 Personen. Hingegen waren in Oberösterreich nur 115 Asylberechtigte auf der Suche nach einer Lehrstelle, in Salzburg 93 Asylberechtigte.</p>
+<p>Jene Asylwerber, die derzeit eine Lehre machen, sollen laut den Plänen der Regierung noch ihren Lehrabschluss machen dürfen. Ob sie danach - im Fall eines negativen Asylverfahrens - abgeschoben werden, hänge wohl davon ab, ob sie nicht aus einem anderen Titel einen Aufenthaltstitel bekommen können, zum Beispiel ein humanitäres Bleiberecht wegen fortgeschrittener Integration, gibt Buchinger zu bedenken. Dies werde dann wohl in jedem einzelnen Fall geprüft werden müssen. Nach den Plänen der Regierung dürfe das AMS Asylwerber jedenfalls neu nicht mehr zu einer Lehre zulassen.</p>
+<h2 class="subheadline1">Wirtschaftskammer für humane und pragmatische Lösung</h2>
+<p>Die Wirtschaftskammer hat auf das Vorhaben verhalten reagiert und eine &quot;gemeinsame Lösung angeboten&quot;. Was bestehende Lehrverhältnisse von Abschiebung bedrohten Asylwerbern betrifft, sprach sich die WKÖ &quot;im Sinne unserer Betriebe für eine humane und pragmatische Herangehensweise, die sich an den Bedürfnissen der Wirtschaft orientiert&quot;, aus.</p>
+<p> Die Wirtschaftskammer plädierte für eine &quot;pragmatische Lösung&quot; für das Thema. &quot;Wichtig ist eine klare Regelung die sauber zwischen Asyl und qualifizierter Zuwanderung unterscheidet. Dabei tritt die Wirtschaftskammer für einen eigenen Niederlassungstitel zur Absolvierung einer Ausbildung für Lehrlinge aus Drittstaaten, als auch eine Verbesserung und Ausweitung der Rot-Weiss-Rot-Karte ein.&quot;</p>
+<h2 class="subheadline1">Caritas: &quot;Völlige Fehlentscheidung&quot;</h2>
+<p>Hilfsorganisationen haben die Regierungspläne kritisiert. Von einer &quot;völligen Fehlentscheidung&quot; sprach Caritas-Präsident Michael Landau am Montag in einer Aussendung. Rotkreuz-Präsident Gerald Schöpfer zeigte sich in einer ersten Reaktion &quot;enttäuscht&quot;. Scharfe Worte kamen auch von SOS Mitmensch und der asylkoordination.</p>
+<p> &quot;Ich halte das für eine völlige Fehlentscheidung in menschlicher und in wirtschaftlicher Hinsicht&quot;, meinte der Caritas-Präsident zu dem am Wochenende bekannt gewordenen Vorhaben von ÖVP und FPÖ. Etwas lernen zu können und einer sinnstiftenden Tätigkeit nachzugehen sei selbst dann wichtig, wenn Jugendliche nicht bleiben können. Landau: &quot;Ich appelliere an die österreichische Bundesregierung, jetzt keine überhasteten Entscheidungen zu treffen.&quot;</p>
+<h2 class="subheadline1">Rotkreuz: &quot;Unklug und falsch&quot;</h2>
+<p> Rotkreuz-Präsident Schöpfer bezeichnete es als &quot;aus ökonomischer Sicht für unklug und falsch&quot;, den Erlass von 2012 zurückzunehmen, der die Lehrlingsausbildung für Asylwerber bis 25 Jahre in Mangelberufen erlaubt. Auch aus humanitärer Sicht sei dies entschieden abzulehnen. &quot;Man sollte jungen Menschen eine Perspektive anbieten und ihnen eine Zukunftschance geben, anstatt sie zur Untätigkeit zu zwingen&quot;, so Schöpfer.</p>
+<p> Auch die asylkoordination &quot;verurteilte&quot; den Plan der Regierung, den Lehrlingserlass außer Kraft zu setzen, &quot;aufs Schärfste&quot;. Diese Maßnahme sei ein weiterer Schritt zur nachhaltigen Desintegration von jungen Flüchtlingen. &quot;Sie werden so - auch nach Zuerkennung eines Schutzstatus - auf Niedriglohnsektoren festgenagelt, wo sie gezwungen werden, zu schlechten Bedingungen zu arbeiten und so unfreiwillig zu Lohndumping beitragen&quot;.</p>
+<p> Auch SOS Mitmensch übte scharfe Kritik: &quot;Eine solche Zugangsblockade würde Integration torpedieren und die Chancen junger Menschen vernichten.&quot; Wer den Zugang zur Lehre versperre, öffne &quot;das Tor zu tiefer Leere&quot;. Es drohe &quot;ein Rückfall in die integrationspolitische Steinzeit&quot;, meinte Alexander Pollak, Sprecher von SOS Mitmensch.</p>
+<h2 class="subheadline1">Kneissl verteidigt Regierungspläne</h2>
+<p>Außenministerin <a href="/a/aussenministerin-kneissl-erlitt-kleinen-schwaecheanfall-10306795">Karin Kneissl</a> (FPÖ) hat das geplante Ende der Lehre für Asylwerber gegen Populismusvorwürfe verteidigt. Kneissl appellierte stattdessen an die Wirtschaft, mehr für die Integration jener 8.600 Asylberechtigten unter 25 auf Jobsuche zu tun, die bereits einen positiven Asylbescheid haben.</p>
+<p>&quot;Es ist uns sehr daran gelegen, aus der Flüchtlingskrise keine Integrationskrise werden zu lassen&quot;, sagte Kneissl beim Forum Alpbach bei einer Diskussionsrunde zum Thema Integration. Es gebe in Österreich über 30.000 arbeitslose Asylberechtigte. 8.700 davon seien in einem Alter, das zur Lehrlingsausbildung befähige. Demgegenüber stünden derzeit rund 800 Asylwerber, die eine Lehrausbildung machen.</p>
+<p>&quot;800, die als Asylwerber in einer Lehre sind, versus 8.700, die asylberechtigt sind, die sich bitte auf den Weg machen mögen, um eine Lehre zu beginnen.&quot; Kneissl wies auch darauf hin, dass die Lehrlingsentschädigung rund 300 Euro beträgt, während arbeitslose Asylberechtigte rund 850 Euro Mindestsicherung erhalten würden. Der Anreiz für Asylberechtigte, eine Lehrlingsausbildung zu machen, sei vor diesem Hintergrund &quot;relativ gering&quot;.</p>
+<h2 class="subheadline1">Derzeitige Abschiebepraxis bei Lehrlingen &quot;unumgänglich&quot;</h2>
+<p>Die derzeitige Abschiebepraxis bei Lehrlingen ist laut Kneissl unumgänglich. Bei Asylverfahren könne man Richtersprüche &quot;nicht einfach hinwegwischen und sagen, die Entscheidung der Gerichte interessiert mich nicht, weil dann ist der Rechtsstaat auch infrage gestellt&quot;, betonte die Ministerin. Unternehmen würden schließlich auch nicht einfach auf einem Grundstück eine Produktionsstätte errichten, wo der Rechtsstatus strittig ist.</p>
+<p>Die Wirtschaft bat Kneissl deshalb, die Bemühungen der Regierung zu unterstützen und mehr für die Integration der über 30.000 arbeitslosen Asylberechtigten zu tun, damit &quot;diese Menschen sich selbst versorgen und ihre Familien ernähren können&quot;. Asylwerbern empfahl die für Integration zuständige Ministerin, sich ehrenamtlich einzubringen. Sie könnten etwa in einem Hospiz arbeiten, das habe sie selbst in der Vergangenheit auch getan.</p>
+<p>Die Zahlen-Angaben der Regierung zu Asylwerbern und Asylberechtigten am Arbeitsmarktangaben unterscheiden sich ein wenig von jenen des AMS: Per Ende Juli gibt es laut AMS in ganz Österreich 1.023 Asylwerber als Lehrlinge, die mit einer speziellen Bewilligung des AMS die Lehre in Mangelberufen beginnen konnten. Insgesamt sind (per Ende Juli) laut AMS 10.063 Asylberechtigte unter 25 Jahren ohne Job, davon suchen 1.459 Personen eine Lehrstelle.</p>
+<h2 class="subheadline1">Schramböck: Abgelehnte Asylwerber sollen Lehre fertig machen</h2>
+<p>Wirtschaftsministerin Margarete Schramböck (ÖVP) hat bekräftigt, dass Asylwerber, die bereits eine Lehre machen, diese abschließen sollen dürfen. Auch bei jenen, die einen negativen Asylbescheid bekommen haben, werden die rechtlichen Möglichkeiten, die Lehre fertig zu machen, geprüft. &quot;Das ist glaube ich ein wichtiger Punkt. Darüber wurde viel diskutiert. Das können wir anbieten&quot;, so Schramböck im &quot;Ö1&quot;-Mittagsjournal .</p>
+<p>Man schaue sich die rechtlichen Möglichkeiten an, dass Lehrlinge mit negativem Asylbescheid die Ausbildung abschließen können, bevor sie das Land verlassen müssen, sagte die Ministerin. Sie verteidigte die Abschaffung der Lehre für Asylwerber damit, dass es in Österreich 8.600 anerkannte Flüchtlinge unter 25 Jahren gebe, die einen Job suchen.</p>
+<p>Man werde &quot;Initiativen und Programme starten für die Asylberechtigten&quot;, um die Betriebe und die Arbeitssuchenden zusammenzuführen. Besonders wichtig sei auch der geplante Niederlassungstitel für Lehrlinge über die Rot-Weiß-Rot-Card. Die Zuwanderungskarte soll bürokratisch vereinfacht werden, denn &quot;es sollen jene zu uns kommen, die wir brauchen und nicht jene, die zufällig zu uns kommen&quot;.</p>
+<!---------Article_text----------->
+
+
+<aside id="abowerbung">
+<div class="abowerbung_textcontainer">
+<div class="abowerbung_text">
+Jetzt <strong>4 Ausgaben News </strong>
+kostenlos &amp; unverbindlich lesen!* </div>
+<div class="abowerbung_sub">*Abo endet automatisch.</div>
+</div>
+<div class="abowerbung_button">
+<a href="https://aktion.guj-direct.de/vgn-2gratishefte-4?utm_source=news.at&utm_medium=display&utm_content=abo&utm_campaign=Jetzt%204%20Ausgaben%20News%20kostenlos%20%26%20unverbindlich%20lesen!*" target="_blank" class="link-external abowerbung_cta">Hier testen ▶</a>
+</div>
+</aside>
+<div class="OUTBRAIN" data-src="DROP_PERMALINK_HERE" data-widget-id="MB_2" data-ob-template="newsnetworld"></div> <script type="text/javascript" async="async" src="//widgets.outbrain.com/outbrain.js"></script>
+</article>
+
+<!---------- SOCIAL BUTTONS --------->
+<!--
+<div class="socialbar">
+<a href="http://twitter.com/home?status=https%3A%2F%2Fmobilstaging.news.at%2Fa%2Fregierungssprecher-bestaetigt-ende-der-lehre-fuer-asylwerber-10306797" class="twitter" target="_blank">Twitter</a>
+<a href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fmobilstaging.news.at%2Fa%2Fregierungssprecher-bestaetigt-ende-der-lehre-fuer-asylwerber-10306797" class="facebook">Facebook</a>
+<a href="https://plusone.google.com/_/+1/confirm?url=https%3A%2F%2Fmobilstaging.news.at%2Fa%2Fregierungssprecher-bestaetigt-ende-der-lehre-fuer-asylwerber-10306797" class="google">Google plus</a>
+<a href="whatsapp://send?text=Regierungssprecher%20best%C3%A4tigt%20Ende%20der%20Lehre%20f%C3%BCr%20Asylwerber%20%E2%80%A2%20NEWS.AT https%3A%2F%2Fmobilstaging.news.at%2Fa%2Fregierungssprecher-bestaetigt-ende-der-lehre-fuer-asylwerber-10306797" class="wa-artikel">Whatsapp</a>
+</div>
+-->
+
+<section class="GATracking_Maincontentteaser section_wrapper ressort ressort-177d99 " id="topnews">
+<div class="GATracking_Stageteaser ">
+<div class="ym-g50 ym-gl">
+<div class="ym-gbox-left">
+<a href="/a/politik-wir-panne-10300062" class='rel' title="Kogler: &quot;Wir haben<br />eine kleine Panne&quot;"><article itemscope itemtype="http://schema.org/Article" class="ressort-177d99 " >
+<img src="/_storage/asset/10300075/storage/newsat:teaser-1_74-1-l/file/136629583/67426856.jpg" alt="Politik - Kogler: &quot;Wir haben
+eine kleine Panne&quot;" title="Bild: Ricardo Herrgott"/>
+<span class="ov_interview"></span>
+<div class="toprow">
+<strong>Politik</strong>
+</div>
+<h3>Kogler: &quot;Wir haben<br />eine kleine Panne&quot;</h3>
+<p>
+Seit dem Rausflug aus dem Nationalrat arbeitet Werner Kogler intensiv an der Neuaufstellung der Grünen</p>
+</article></a>
+</div>
+</div>
+<div class="ym-g50 ym-gr">
+<div class="ym-gbox-right">
+<a href="/a/chronik-klima-zukunft-10299939" title="Hitze und Unwetter:<br />Das bringt die Zukunft"><article itemscope itemtype="http://schema.org/Article" class="ressort- " >
+<img src="/_storage/asset/10299947/storage/newsat:teaser-1_74-1-l/file/136624968/themenbild-wetter.jpg" alt="Chronik - Hitze und Unwetter:
+Das bringt die Zukunft" title="Bild: Juergen Feichter / EXPA / picturedesk.com"/>
+<div class="toprow">
+<strong>Chronik</strong>
+</div>
+<h3>Hitze und Unwetter:<br />Das bringt die Zukunft</h3>
+<p>
+Wie sich unser Leben und das unserer Kinder durch den Klimawandel in Zukunft ändern wird: ein Szenario</p>
+</article></a>
+</div>
+</div>
+</div>
+</section>
+<div class="links clearfix">
+<a href="https://mobilstaging.news.at/" class="home left">News.at Home&nbsp;<span class="ico_more"></span></a>
+</div>
+</div>
+</div>
+<aside class="ad_con ad_con_mobile ad_marker" id="Bottom_mobile">
+<div class="ad_con placeholder-bottom-mobile ad-placeholder ad-placeholder-mobile">
+<div class="placeholder-inner">
+Position: Bottom_mobile <br />
+Slot-ID: <script type="text/javascript">document.write(OAS_PLACEHOLDER['Bottom_mobile']);</script><br />
+</div>
+</div>
+</aside>
+<footer>
+<div class="clearfix">
+<a href="http://aboshop.vgn.at/news" target="_self">Abo</a>
+<a href="/agb" target="_self">AGB/ANB</a>
+<a href="/Kontakt-Datenschutz" target="_self">Kontakt Datenschutz</a>
+<a href="https://www.vgn.at/pdf/Datenschutzpolicy.pdf" target="_self">Datenschutzpolicy</a>
+<a href="/impressum" target="_self">Impressum</a>
+<a href="#" id="credits">Fotocredits</a>
+<a href="http://staging.news.at" class="last vollversion vollversion_completeurl">Vollversion</a>
+</div>
+<p>1995-2018 © News Networld Internetservice GmbH</p>
+</footer>
+</div>
+<script type="text/javascript" src="/js/bottom_mobile-b8ccf3af.js" ></script>
+<!-- Facebook Pixel Code -->
+<script type="text/plain" class="optanon-category-4">
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1689145364637008');
+fbq('track', "PageView");
+</script>
+<noscript>
+</noscript>
+<!-- End Facebook Pixel Code -->
+</body>
+</html>

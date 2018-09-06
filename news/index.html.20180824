@@ -1,0 +1,38 @@
+<style>
+  .t8 .box1{
+    height: 264px;
+    width: 45%;
+  }
+  .t8 .box1.left{
+    float:left;
+   
+  } 
+  .t8 .box1.right {
+    float: right;
+    margin: 0;
+}
+</style>
+<div class="t8 GATracking_Buehne">
+<div class="box1 left">
+<a href="//www.news.at/a/lauda-lungentransplantation-10252532">
+<img src="//www.news.at/_storage/asset/10252564/storage/newsat:content-center/file/135993903/pk-laudamotion-niki-lauda.jpg" alt="" title="Bild: APA/Herbert Pfarrhofer" width="459" height="264">
+</a>
+<div class="ov">
+<h1>
+<a href="//www.news.at/a/lauda-lungentransplantation-10252532">
+Lauda in kritischem<br>Gesundheitszustand </a>
+</h1>
+</div>
+</div>
+<div class="box1 right">
+<a href="//www.news.at/a/lady-gaga-zombie-boy-jahre-10252271">
+<img src="//www.news.at/_storage/asset/10252299/storage/newsat:content-center/file/135988237/67179765.jpg" alt="" title="Bild: AFP/FRANCOIS GUILLOT" width="459" height="264">
+</a>
+<div class="ov">
+<h1>
+<a href="//www.news.at/a/lady-gaga-zombie-boy-jahre-10252271">
+Zombie Boy <br>ist tot </a>
+</h1>
+</div>
+</div>
+</div>
